@@ -1,0 +1,154 @@
+html {
+    background-color: #90c5e1;
+}
+
+body {
+    margin: 0;
+    padding: 0px 10px 10px 20px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+    background-color: #90c5e1;
+}
+
+
+header {
+    max-width: 100%;
+    padding: 15px;
+    background-color: #0B0544;
+    text-align: center;
+    border-radius: 18px;
+    color: rgb(0, 255, 102);
+}   
+header h1{
+    font-size: 58px;
+    margin-top: 5px;
+    padding: 35px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+.buttons {
+    font-size: 18px;
+}
+/* Style the label and input elements */
+input {
+    width: 8%;
+    text-align: left;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #041878;
+    font-size: 90%;
+    border-radius: 6px;
+    margin-left: 5px;
+    font-weight: bold;
+    align-self: left;
+    color: white;
+}
+
+/* Style the label and input elements on hover and focus */
+input:hover,
+input:focus {
+    background-color: #90c5e1;
+    color: white;
+}
+
+select[id="selDataset"] {
+    width: 8%;
+    text-align: left;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #041878;
+    font-size: 90%;
+    border-radius: 6px;
+    margin-left: 5px;
+    font-weight: bold;
+    align-self: left;
+}
+
+select[id="selDataset"]:hover,
+select[id="selDataset"]:focus {
+    background-color: #90c5e1;
+    color: white;
+}
+.Dashboard .main{
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    grid-template-columns:  16% repeat(3, 1fr);
+    column-gap: 10px;
+    width: 100%;
+}
+
+.main .bar, 
+.main .vis-1, 
+.main .vis-2{
+    background-color: #041878;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 30;
+    margin-top: auto;
+}
+
+/* ! Modifying the side bar */
+/* ! ###################### */
+.side-bar {
+    background-color: #0B0544;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+}   
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+}
+#icon-info, #icon-dashboard{
+    background-color: #041878;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 270px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; /* Vertically center content */
+}
+
+#icon-info img, #icon-dashboard img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px; /* Add margin as needed */
+}
+#icon-info p, #icon-dashboard p{
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+#icon-info:hover, #icon-info:focus,
+#icon-dashboard:hover, #icon-dashboard:focus {
+    background-color: #90c5e1;
+    box-shadow: 1px 1px 1px #90c5e1;
+    color: black;
+}
+
+
+.sub .timeline {
+    grid-template-columns: 1fr;
+    background-color: #041878;
+    border-radius: 10px;
+    line-height: 30;    
+    margin-top: auto;
+    max-width: 2000px;
+}
+
+footer li{
+    list-style: none;
+    font-size: 15px;
+    color: black;
+}
+
+

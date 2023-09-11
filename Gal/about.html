@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASX-About</title>
+    <!-- ##### LIBRARIES ###### -->
+     <!-- * Bootstracsn -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- * D3 Library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+     <!-- * Plotly Library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+     <!-- * JavaScript Files -->
+
+     <!-- * CSS files -->
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+,
+    <!-- TODO: Add JavaScript file ref below-->
+
+</head>
+
+    <body>
+        <div id="container">
+            <center>
+                <header> 
+                    <center>
+                        <h1>Top 50 ASX Stocks  - Dashboard</h1>
+                        <p>Read through the information below</p>
+                    </center>
+                    <div class="buttons">
+                        <label for="stock"><b>Select a Stock:</b></label>
+                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                        <label for="dateRange_initial">Start Date:</label>
+                        <input id="dateRange_initial" type="date">
+                        <label for="dateRange_end">End Date:</label>
+                        <input id="dateRange_end" type="date"> 
+                    </div>
+                </header>
+            </center>
+            <!-- DASHBOARD -->
+            <center>
+                <div class="Dashboard">
+                    <div class="main">
+                        <!-- * Side Bar -->
+                        <div class="side-bar">
+                            <div class="icon-container">
+                                <div id="icon-info">
+                                    <img src="Icons/info.png"    type="png">
+                                    <p>Information</p>
+                                </div>
+
+                                <div id="icon-dashboard">
+                                    <img src="Icons/dashboard.png"    type="png">
+                                    <p>Dashboard</p>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <!-- * Bar chart -->
+                        <div class="bar">
+                            <p>Bar chart</p>
+                        </div>
+
+                        <!-- * Vis 1 -->
+                        <div class="vis-1">
+                            <p>Vis 1</p>
+                        </div>
+
+                        <!-- * Vis 2 -->
+                        <div class="vis-2">
+                            <p>Vis 2</p>
+                        </div>
+
+                    </div>
+
+                    <div class="sub">
+                        <!-- * Timeline -->
+                        <div class="timeline">
+                            <p>Timeline</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <footer>
+                    <li>&copy; 2023 - Monash Bootcamp - Group 2 </li>
+                </footer>
+            </center>
+
+        </div>
+
+
+    </body>
+</html>
