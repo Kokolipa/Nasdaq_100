@@ -18,7 +18,7 @@ for code in asx50:
     api_url = "https://www.alphavantage.co/query"
     data = {
         "function":"TIME_SERIES_MONTHLY",
-        "symbol":f"{code}",
+        "symbol":f"{code}.ASX",
         "datatype":"csv",
         "apikey":api_key
     }
@@ -45,13 +45,12 @@ for code in asx50:
     api_url = "https://www.alphavantage.co/query"
     data_overview = {
         "function":"OVERVIEW",
-        "symbol":f"{code}",
+        "symbol":code,
         "apikey":api_key
     }
 
     # Send a GET request to the API
     response_overview = requests.get(api_url,params=data_overview)
-
     tempdf = pd.read_json(response_overview)
 
     df = pd.concat([df,tempdf], ignore_index = True)
