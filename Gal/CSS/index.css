@@ -5,7 +5,6 @@ html {
 body {
     margin: 0;
     padding: 0px 10px 10px 20px;
-    margin-top: 15px;
     box-sizing: border-box;
     font-size: 16px;
     color: white;
@@ -15,7 +14,7 @@ body {
 
 header {
     max-width: 100%;
-    padding: 15px;
+    padding: 5px;
     background-color: #0B0544;
     text-align: center;
     border-radius: 18px;
@@ -100,7 +99,16 @@ select[id="selDataset"]:focus {
     border-radius: 10px;
     text-align: center;
     display: flex;
+    position:relative;
 }   
+.side-bar img{
+    position: absolute;
+    width: 270px;
+    height: 250px;
+    border-radius: 15px;
+    left: 4.2%;
+    top:48%;
+}
 .icon-container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -118,14 +126,37 @@ select[id="selDataset"]:focus {
     align-items:center; /* Vertically center content */
 }
 
-#icon-info img, #icon-dashboard img{
+#icon-info img {
+    position: absolute;
     width: 60px;
     height: 60px;
-    margin-right: 10px; /* Add margin as needed */
+    top:6.8%;
+    left:10%;
+    margin-right: 10px; 
 }
-#icon-info p, #icon-dashboard p{
+#icon-dashboard img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top:25%;
+    left:10%;
+    margin-right: 10px; 
+}
+#icon-info a{
     font-size: 20px;
     margin-top: 12px;
+    position:absolute;
+    top:8%;
+    left: 35%;
+    color: white;
+}
+#icon-dashboard a{
+    font-size: 20px;
+    margin-top: 12px;
+    position:absolute;
+    top:25%;
+    left: 35%;
+    color: white;
 }
 
 #icon-info:hover, #icon-info:focus,
@@ -135,6 +166,20 @@ select[id="selDataset"]:focus {
     color: black;
 }
 
+#breakdown{
+    background-color: rgba(4, 24, 120, 0.5);
+    width: 270px;
+    height: 250px;
+    border-radius: 15px;
+    position:absolute;
+    top: 48%;
+}
+
+#breakdown-info{
+    position: absolute;
+    left:5.7%;
+    top:38%;
+}
 
 .sub .timeline {
     grid-template-columns: 1fr;

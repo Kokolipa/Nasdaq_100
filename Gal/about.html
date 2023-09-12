@@ -15,7 +15,7 @@
      <!-- * JavaScript Files -->
 
      <!-- * CSS files -->
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" type="text/css" href="CSS/about.css">
 ,
     <!-- TODO: Add JavaScript file ref below-->
 
@@ -29,61 +29,45 @@
                         <h1>Top 50 ASX Stocks  - Dashboard</h1>
                         <p>Read through the information below</p>
                     </center>
-                    <div class="buttons">
-                        <label for="stock"><b>Select a Stock:</b></label>
-                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                        <label for="dateRange_initial">Start Date:</label>
-                        <input id="dateRange_initial" type="date">
-                        <label for="dateRange_end">End Date:</label>
-                        <input id="dateRange_end" type="date"> 
-                    </div>
                 </header>
             </center>
             <!-- DASHBOARD -->
-            <center>
                 <div class="Dashboard">
                     <div class="main">
                         <!-- * Side Bar -->
                         <div class="side-bar">
                             <div class="icon-container">
                                 <div id="icon-info">
-                                    <img src="Icons/info.png"    type="png">
-                                    <p>Information</p>
+                                    <a href="about.html">Information</a>
+                                        <img src="Icons/info.png"    type="png">
+                                    </a>
                                 </div>
 
                                 <div id="icon-dashboard">
-                                    <img src="Icons/dashboard.png"    type="png">
-                                    <p>Dashboard</p>
+                                    <a href="index.html">Dashboard</a>
+                                        <img src="Icons/dashboard.png"    type="png">
+                                    </a>
                                 </div> 
                             </div>
                         </div>
 
                         <!-- * Bar chart -->
-                        <div class="bar">
-                            <p>Bar chart</p>
+                        <div class="info">
+                            <img src="Icons/stocks_image.jpeg"    type="jpeg">
+                            <h2 id="dataset">About the Dataset</h2>
+                            <div id="aboutDS">
+                                <p>
+                                </p>
+                            </div>
+                            <h2 id="links">Valuable Resources</h2>
+                            
+                            <div id="valuablelinks">
+                                <p></p>
+                            </div>
                         </div>
-
-                        <!-- * Vis 1 -->
-                        <div class="vis-1">
-                            <p>Vis 1</p>
-                        </div>
-
-                        <!-- * Vis 2 -->
-                        <div class="vis-2">
-                            <p>Vis 2</p>
-                        </div>
-
-                    </div>
-
-                    <div class="sub">
-                        <!-- * Timeline -->
-                        <div class="timeline">
-                            <p>Timeline</p>
-                        </div>
-                        
                     </div>
                 </div>
-
+            <center>
                 <footer>
                     <li>&copy; 2023 - Monash Bootcamp - Group 2 </li>
                 </footer>

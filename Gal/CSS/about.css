@@ -1,0 +1,169 @@
+html {
+    background-color: #90c5e1;
+}
+
+body {
+    margin: 0;
+    padding: 0px 10px 10px 20px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+    background-color: #90c5e1;
+}
+
+
+header {
+    max-width: 100%;
+    padding: 15px;
+    background-color: #0B0544;
+    text-align: center;
+    border-radius: 18px;
+    color: rgb(0, 255, 102);
+}   
+header h1{
+    font-size: 58px;
+    margin-top: 5px;
+    padding: 35px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+/* Adding specicications to the main dashboard area - Seperating elements by column*/
+.Dashboard .main{
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    grid-template-columns:  16% repeat(1, 1fr);
+    column-gap: 10px;
+    width: 100%;
+}
+/* ! INFO PANNEL */
+/* ! Modifying the Main info pannel */
+.main .info {
+    background-color: #041878;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    height: 720px;
+}
+.info img{
+    position: absolute;
+    top:40%;
+    left: 1%;
+    width: 98%;
+    height: 420px;
+    border-radius: 15px;
+}
+
+#dataset {
+    position: absolute;
+    top:1.3%;
+    left:1.7%;
+    font-size: 25px;
+}
+
+#aboutDS {
+    background-color: #0B0544;
+    border-radius: 15px;
+    width: 98%;
+    height: 180px;
+    padding: 10px;
+    position: absolute;
+    top: 8%;
+    left:1%;
+}
+
+#links {
+    position: absolute;
+    top:33%;
+    left:1.7% ;
+    font-size: 25px;
+}
+#valuablelinks {
+    background-color: #0B0544;
+    border-radius: 15px;
+    width: 98%;
+    height: 420px;
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    left:1%;
+    background-color: rgba(4, 24, 120, 0.5);
+}
+
+/* ! Modifying the side bar */
+/* ! ###################### */
+.side-bar {
+    background-color: #0B0544;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    position:relative;
+}   
+.icon-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position:relative;
+    left: 49%;
+}
+#icon-dashboard{
+    background-color: #041878;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 270px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; 
+    position:absolute;
+    top:12%;
+}
+#icon-info{
+    background-color: #041878;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 270px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; 
+    position:absolute;
+}
+
+#icon-info img, #icon-dashboard img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    position: absolute;
+    left:7%;
+
+}
+#icon-info a, #icon-dashboard a{
+    font-size: 20px;
+    margin-top: 12px;
+    position:absolute;
+    top:15%;
+    left: 35%;
+    color: white;
+}
+
+#icon-info:hover, #icon-info:focus,
+#icon-dashboard:hover, #icon-dashboard:focus {
+    background-color: #90c5e1;
+    box-shadow: 1px 1px 1px #90c5e1;
+    color: black;
+}
+
+
+/* ! FOOTER SPECIFICATIONS */
+footer li{
+    list-style: none;
+    font-size: 15px;
+    color: black;
+}
+
+
