@@ -54,8 +54,7 @@ input:focus {
     background-color: #90c5e1;
     color: white;
 }
-
-select[id="selDataset"] {
+select[id="sector"] {
     width: 8%;
     text-align: left;
     padding: 10px;
@@ -68,6 +67,25 @@ select[id="selDataset"] {
     align-self: left;
 }
 
+select[id="sector"]:hover,
+select[id="sector"]:focus {
+    background-color: #90c5e1;
+    color: white;
+}
+select[id="selDataset"] {
+    width: 8%;
+    text-align: left;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #041878;
+    font-size: 90%;
+    border-radius: 6px;
+    margin-left: 5px;
+    font-weight: bold;
+    align-self: left;
+    
+}
+
 select[id="selDataset"]:hover,
 select[id="selDataset"]:focus {
     background-color: #90c5e1;
@@ -76,14 +94,13 @@ select[id="selDataset"]:focus {
 .Dashboard .main{
     padding: 10px 0px 10px 0px;
     display: grid;
-    grid-template-columns:  16% repeat(3, 1fr);
+    grid-template-columns:  16% 55% 1fr;    
     column-gap: 10px;
     width: 100%;
 }
 
 .main .bar, 
-.main .vis-1, 
-.main .vis-2{
+.main .vis-1{
     background-color: #041878;
     padding: 10px;
     border-radius: 10px;
@@ -101,20 +118,13 @@ select[id="selDataset"]:focus {
     display: flex;
     position:relative;
 }   
-.side-bar img{
-    position: absolute;
-    width: 270px;
-    height: 250px;
-    border-radius: 15px;
-    left: 4.2%;
-    top:48%;
-}
+
 .icon-container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center horizontally */
 }
-#icon-info, #icon-dashboard{
+#icon-info{
     background-color: #041878;
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
@@ -124,6 +134,24 @@ select[id="selDataset"]:focus {
     border-radius: 15px;
     display: flex;
     align-items:center; /* Vertically center content */
+    position: absolute;
+    top: 0;
+    left: 3.5%;
+}
+
+#icon-dashboard{
+    background-color: #041878;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 270px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; /* Vertically center content */
+    position: absolute;
+    top: 16%;
+    left: 3.5%
 }
 
 #icon-info img {
@@ -138,7 +166,7 @@ select[id="selDataset"]:focus {
     position: absolute;
     width: 60px;
     height: 60px;
-    top:25%;
+    top:12%;
     left:10%;
     margin-right: 10px; 
 }
@@ -146,7 +174,7 @@ select[id="selDataset"]:focus {
     font-size: 20px;
     margin-top: 12px;
     position:absolute;
-    top:8%;
+    top:12%;
     left: 35%;
     color: white;
 }
@@ -154,7 +182,7 @@ select[id="selDataset"]:focus {
     font-size: 20px;
     margin-top: 12px;
     position:absolute;
-    top:25%;
+    top:10%;
     left: 35%;
     color: white;
 }
@@ -167,18 +195,19 @@ select[id="selDataset"]:focus {
 }
 
 #breakdown{
-    background-color: rgba(4, 24, 120, 0.5);
+    background-color:#041878;
     width: 270px;
-    height: 250px;
+    height: 270px;
     border-radius: 15px;
     position:absolute;
-    top: 48%;
+    top: 43%;
+    left: 5%;
 }
 
 #breakdown-info{
     position: absolute;
     left:5.7%;
-    top:38%;
+    top:32%;
 }
 
 .sub .timeline {

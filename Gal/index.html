@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASX-Dashboard</title>
+    <title>Nasdaq-dashboard</title>
     <!-- ##### LIBRARIES ###### -->
      <!-- * Bootstracsn -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -26,16 +26,18 @@
             <center>
                 <header> 
                     <center>
-                        <h1>Top 50 ASX Stocks  - Dashboard</h1>
+                        <h1>Nasdaq 100  - Dashboard</h1>
                         <p>Use the interactive charts below to explore the dataset</p>
                     </center>
                     <div class="buttons">
+                        <label for="stock"><b>Select sector:</b></label>
+                        <select id="sector" onchange="optionChanged(this.value)"></select>
                         <label for="stock"><b>Select a Stock:</b></label>
                         <select id="selDataset" onchange="optionChanged(this.value)"></select>
                         <label for="dateRange_initial">Start Date:</label>
-                        <input id="dateRange_initial" type="date">
+                        <input id="dateRange_initial" type="date" min="from">
                         <label for="dateRange_end">End Date:</label>
-                        <input id="dateRange_end" type="date"> 
+                        <input id="dateRange_end" type="date" max="to"> 
                     </div>
                 </header>
             </center>
@@ -45,7 +47,6 @@
                     <div class="main">
                         <!-- * Side Bar -->
                         <div class="side-bar">
-                            <img src="Icons/stock_image2.jpeg" type="jpeg">
                             <div class="icon-container">
                                 <div id="icon-info">
                                     <a href="about.html">Information</a>
@@ -59,7 +60,9 @@
                                     </a>
                                 </div> 
                                 <h3 id="breakdown-info">About the stock:</h3>
-                                <div id="breakdown"></div>
+                            
+                                <div id="breakdown">
+                                </div>
                             </div>
                         </div>
 
@@ -70,12 +73,7 @@
 
                         <!-- * Vis 1 -->
                         <div class="vis-1">
-                            <p>Vis 1</p>
-                        </div>
-
-                        <!-- * Vis 2 -->
-                        <div class="vis-2">
-                            <p>Vis 2</p>
+                            <p>pie chart</p>
                         </div>
 
                     </div>

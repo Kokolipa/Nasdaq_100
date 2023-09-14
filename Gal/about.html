@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASX-About</title>
+    <title>Nasdaq-info</title>
     <!-- ##### LIBRARIES ###### -->
      <!-- * Bootstracsn -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/about.css">
 ,
     <!-- TODO: Add JavaScript file ref below-->
+    <script src="js/about.js"></script>
 
 </head>
 
@@ -26,9 +27,11 @@
             <center>
                 <header> 
                     <center>
-                        <h1>Top 50 ASX Stocks  - Dashboard</h1>
+                        <h1>Nasdaq 100  - Dashboard</h1>
                         <p>Read through the information below</p>
                     </center>
+                        <label id="stock"><b>Select a Stock:</b></label>
+                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
                 </header>
             </center>
             <!-- DASHBOARD -->
@@ -54,10 +57,8 @@
                         <!-- * Bar chart -->
                         <div class="info">
                             <img src="Icons/stocks_image.jpeg"    type="jpeg">
-                            <h2 id="dataset">About the Dataset</h2>
+                            <h2 id="dataset"></h2>
                             <div id="aboutDS">
-                                <p>
-                                </p>
                             </div>
                             <h2 id="links">Valuable Resources</h2>
                             

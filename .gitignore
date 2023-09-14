@@ -1,2 +1,6 @@
 # Ignore .DS_Store
 .DS_Store
+
+
+# Ignore CSV_Data folder
+CSV_Data
