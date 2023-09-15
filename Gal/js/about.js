@@ -10,7 +10,6 @@ function optionChanged(selectedValue) {
     const selectedTicker = modifyDescription(selectedValue);
     
     if (selectedTicker) {
-        // Display the description of the selected ticker
         let h2 = d3.select('#dataset');
         h2.html(`
             <h2>About ${selectedTicker.name}<h2>
@@ -20,7 +19,6 @@ function optionChanged(selectedValue) {
             <p>${selectedTicker.description}</p>
         `);
         console.log("Description: " + selectedTicker.description);
-        // You can update your dashboard or UI here with the description
     } else {
         // Handle the case when the ticker is not found
         console.log("Ticker not found");

@@ -60,7 +60,7 @@ select[id="sector"] {
     padding: 10px;
     margin-top: 5px;
     background-color: #041878;
-    font-size: 90%;
+    font-size: 78%;
     border-radius: 6px;
     margin-left: 5px;
     font-weight: bold;
@@ -78,7 +78,7 @@ select[id="selDataset"] {
     padding: 10px;
     margin-top: 5px;
     background-color: #041878;
-    font-size: 90%;
+    font-size: 78%;
     border-radius: 6px;
     margin-left: 5px;
     font-weight: bold;
@@ -129,14 +129,14 @@ select[id="selDataset"]:focus {
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
     margin-left: 5px;
-    width: 270px;
+    width: 92%;
     height: 70px;
     border-radius: 15px;
     display: flex;
     align-items:center; /* Vertically center content */
     position: absolute;
     top: 0;
-    left: 3.5%;
+    left: 2%;
 }
 
 #icon-dashboard{
@@ -144,34 +144,34 @@ select[id="selDataset"]:focus {
     padding: 20px 20px 20px 20px;
     margin-top: 20px;
     margin-left: 5px;
-    width: 270px;
+    width: 92%;
     height: 70px;
     border-radius: 15px;
     display: flex;
     align-items:center; /* Vertically center content */
     position: absolute;
     top: 16%;
-    left: 3.5%
+    left: 2%
 }
 
 #icon-info img {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    top:6.8%;
-    left:10%;
+    width: 25%;
+    height: 70%;
+    top: 14%;
+    left:6%;
     margin-right: 10px; 
 }
 #icon-dashboard img{
     position: absolute;
-    width: 60px;
-    height: 60px;
-    top:12%;
-    left:10%;
+    width: 25%;
+    height: 70%;
+    top:14%;
+    left:6%;
     margin-right: 10px; 
 }
 #icon-info a{
-    font-size: 20px;
+    font-size: 130%;
     margin-top: 12px;
     position:absolute;
     top:12%;
@@ -179,7 +179,7 @@ select[id="selDataset"]:focus {
     color: white;
 }
 #icon-dashboard a{
-    font-size: 20px;
+    font-size: 130%;
     margin-top: 12px;
     position:absolute;
     top:10%;
@@ -196,7 +196,7 @@ select[id="selDataset"]:focus {
 
 #breakdown{
     background-color:#041878;
-    width: 270px;
+    width: 92%;
     height: 270px;
     border-radius: 15px;
     position:absolute;
@@ -206,17 +206,23 @@ select[id="selDataset"]:focus {
 
 #breakdown-info{
     position: absolute;
+    font-size: 115%;
     left:5.7%;
-    top:32%;
+    top:34%;
 }
 
-.sub .timeline {
+#timeline {
     grid-template-columns: 1fr;
     background-color: #041878;
     border-radius: 10px;
     line-height: 30;    
     margin-top: auto;
-    max-width: 2000px;
+    max-width: 100%;
+    
+}
+.xy-axis-bg {
+    fill: rgba(4, 24, 120, 0.8);
+    background-color: rgba(4, 24, 120, 0.8); /* Adjust the color and transparency as needed */
 }
 
 footer li{

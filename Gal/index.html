@@ -16,9 +16,22 @@
 
      <!-- * CSS files -->
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
-,
     <!-- TODO: Add JavaScript file ref below-->
     <script src="js/logic.js"></script>
+     <!-- * Custom CSS for styling the Plotly charts -->
+     <!-- * Custom CSS for styling the Plotly charts -->
+     <style>
+     .xy-axis-bg {
+        fill: rgba(4, 24, 120, 0.8);
+    }
+    
+    #timeline {
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #041878;
+    }
+     </style>
+
 </head>
 
     <body>
@@ -80,8 +93,7 @@
 
                     <div class="sub">
                         <!-- * Timeline -->
-                        <div class="timeline">
-                            <p>Timeline</p>
+                        <div id= "timeline" class="timeline">
                         </div>
                         
                     </div>
