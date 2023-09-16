@@ -134,50 +134,71 @@ select[id="selDataset"]:focus {
     display: flex;
     position:relative;
 }   
+
 .icon-container {
     display: flex;
-    flex-direction: column; 
-    align-items: center;
-    position:relative;
-    left: 49%;
-}
-#icon-dashboard{
-    background-color: #041878;
-    margin-top: 20px;
-    margin-left: 5px;
-    width: 270px;
-    height: 70px;
-    border-radius: 15px;
-    display: flex;
-    align-items:center; 
-    position:absolute;
-    top:12%;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
 }
 #icon-info{
     background-color: #041878;
+    padding: 20px 20px 20px 20px;
     margin-top: 20px;
     margin-left: 5px;
-    width: 270px;
+    width: 92%;
     height: 70px;
     border-radius: 15px;
     display: flex;
-    align-items:center; 
-    position:absolute;
-}
-
-#icon-info img, #icon-dashboard img{
-    width: 23%;
-    height: 60px;
-    margin-right: 10px;
+    align-items:center; /* Vertically center content */
     position: absolute;
-    left:7%;
-
+    top: 0;
+    left: 2%;
 }
-#icon-info a, #icon-dashboard a{
+
+#icon-dashboard{
+    background-color: #041878;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 92%;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; /* Vertically center content */
+    position: absolute;
+    top: 12%;
+    left: 2%
+}
+
+#icon-info img {
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    top: 14%;
+    left:6%;
+    margin-right: 10px; 
+}
+#icon-dashboard img{
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    top:14%;
+    left:6%;
+    margin-right: 10px; 
+}
+#icon-info a{
     font-size: 130%;
     margin-top: 12px;
     position:absolute;
-    top:15%;
+    top:12%;
+    left: 35%;
+    color: white;
+}
+#icon-dashboard a{
+    font-size: 130%;
+    margin-top: 12px;
+    position:absolute;
+    top:10%;
     left: 35%;
     color: white;
 }
@@ -188,7 +209,6 @@ select[id="selDataset"]:focus {
     box-shadow: 1px 1px 1px #90c5e1;
     color: black;
 }
-
 
 /* ! FOOTER SPECIFICATIONS */
 footer li{

@@ -23,7 +23,7 @@ header {
 header h1{
     font-size: 58px;
     margin-top: 5px;
-    padding: 35px;
+    padding: 25px;
 }
 
 header p {
@@ -91,22 +91,32 @@ select[id="selDataset"]:focus {
     background-color: #90c5e1;
     color: white;
 }
-.Dashboard .main{
+.Dashboard .main {
     padding: 10px 0px 10px 0px;
     display: grid;
-    grid-template-columns:  16% 55% 1fr;    
+    grid-template-columns: 16% 55% auto; 
     column-gap: 10px;
     width: 100%;
-}
-
-.main .bar, 
-.main .vis-1{
+    position: relative;
+  }
+.main .bar {
+    width: 100%; /* Adjust as needed */
     background-color: #041878;
     padding: 10px;
     border-radius: 10px;
     line-height: 30;
     margin-top: auto;
-}
+  }
+.main #pie {
+    width: 100%; /* The rest of the available space will be used by the pie chart */
+    background-color: #041878;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 30;
+    margin-top: auto;
+  }
+
+
 
 /* ! Modifying the side bar */
 /* ! ###################### */
@@ -202,6 +212,10 @@ select[id="selDataset"]:focus {
     position:absolute;
     top: 43%;
     left: 5%;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 90%;
 }
 
 #breakdown-info{
@@ -220,6 +234,8 @@ select[id="selDataset"]:focus {
     max-width: 100%;
     
 }
+
+
 .xy-axis-bg {
     fill: rgba(4, 24, 120, 0.8);
     background-color: rgba(4, 24, 120, 0.8); /* Adjust the color and transparency as needed */

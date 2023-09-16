@@ -4,26 +4,41 @@ let selectedDate;
 let selectedEndDate;
 let tradesData; 
 let metadata; 
-let dates; 
+let breakdownInfo;
+let PieChart
 
 
 // ! Creating Functions - Functions Funnel
 // ! #################################################################
-
+// * A function to modify the dashboard based on the selected value
+// * #################################################################
 function modifyDashboard(selectedValue) {
-  // * matching the chart based on the selectedSample (user input based)
-    let selectedTrade = tradesData.filter(trade => trade.symbol === selectedValue);
+  const chartContainer = document.getElementById('timeline');
 
-      let dates = selectedTrade[0].date.sort();
-      let close = selectedTrade[0].close;
-      let high = selectedTrade[0].high.sort(function(a, b) {return a-b});
-      let low = selectedTrade[0].low.sort(function(a, b) {return a-b});
-      let open_price = selectedTrade[0].open;
+  if (selectedValue === "") {
+    alert("Please select a trade");
+    // Hide the chart container when the default option is selected
+    chartContainer.style.display = 'none';
+
+  } else {
+    const selectedTrade = tradesData.find(trade => trade.symbol === selectedValue);
+
+    if (!selectedTrade) {
+      alert("Trade not found");
+      // Hide the chart container when an invalid trade is selected
+      chartContainer.style.display = 'none';
+    } else {
+      const dates = selectedTrade.date.sort((a, b) => new Date(a) - new Date(b));
+      const close = selectedTrade.close;
+      const high = selectedTrade.high.sort((a, b) => a - b);
+      const low = selectedTrade.low.sort((a, b) => a - b);
+      const open_price = selectedTrade.open;
       console.log("Open Price:", open_price);
-      let trace1 = {
+
+      const trace1 = {
         x: dates,
         close: close,
-        decreasing: {line: {color: '#FF00F1'}}, 
+        decreasing: { line: { color: '#FF00F1' } },
         high: high,
         increasing: { line: { color: '#00FFD8' } },
         line: { color: 'rgba(31,120,180,2)' },
@@ -31,21 +46,21 @@ function modifyDashboard(selectedValue) {
         open: open_price,
         type: 'candlestick',
         xaxis: 'x',
-        yaxis: 'y'
+        yaxis: 'y',
       };
-  
-      let data = [trace1];
-  
-      let layout = {
+
+      const data = [trace1];
+
+      const layout = {
         dragmode: 'zoom',
         margin: {
-           r: 10,
+          r: 10,
           t: 25,
           b: 40,
           l: 60,
         },
         showlegend: false,
-        xaxis: {  
+        xaxis: {
           autorange: true,
           domain: [0, 1],
           range: [dates[0], dates[dates.length - 1]],
@@ -53,37 +68,94 @@ function modifyDashboard(selectedValue) {
           title: {
             text: 'Date',
             font: {
-              color: 'white'
-            }
+              color: 'white',
+            },
           },
           type: 'date',
-          showline: true, 
+          showline: true,
           linecolor: 'rgba(4, 24, 120, 0.8)',
-          layer: 'below', 
-          fixedrange: true, 
-          zeroline: false, 
+          layer: 'below',
+          fixedrange: true,
+          zeroline: false,
           tickfont: {
-            color: 'white'
-          }
+            color: 'white',
+          },
         },
         yaxis: {
           autorange: true,
           domain: [0, 1],
-          range: [low[0], high[high.length - 1]],
+          range: [Math.min(...low), Math.max(...high)],
           type: 'linear',
-          showgrid:true,
+          showgrid: true,
           gridcolor: 'rgba(0, 255, 102, 0.7)',
           tickfont: {
-            color: 'white'
-          }
+            color: 'white',
+          },
         },
         plot_bgcolor: 'rgba(128, 128, 128, 0.25)',
         paper_bgcolor: 'rgba(0,0,0,0)',
+        title: {
+          text: `${selectedValue}`,
+          color: 'white'
+        }
       };
-  
+
       Plotly.newPlot('timeline', data, layout);
-      return selectedTrade;
-  };
+
+      // * Plotting the Breakdown info
+      // * #################################
+      let selectedMetadata = breakdownInfo.find(field => field.symbol === selectedValue);
+      let panelBody = d3.select('#breakdown');
+      console.log(selectedMetadata)
+      panelBody.html(`
+          <p><strong>Name:</strong> ${selectedMetadata.name}</p>
+          <p><strong>Sector</strong>: ${selectedMetadata.sector}</p>
+          <p><strong>Market Cap:</strong> ${selectedMetadata.market_cap}</p>
+          <p><strong>EBITDA:</strong> ${selectedMetadata.EBITDA}</p>
+          <p><strong>Book Value:</strong> ${selectedMetadata.book_value}</p>
+          <p><strong>Dividend Yeild:</strong> ${selectedMetadata.dividend_yeild}</p>
+          <p><strong>Share Dividend:</strong> ${selectedMetadata.dividend_per_share}</p>
+      `)
+
+      // * Plotting the Breakdown info
+      // * #################################
+      let pieData = [{
+        type: 'pie',
+        values: PieChart.market_cup,
+        labels: PieChart.Unique_Sector,
+        marker: {
+          colors: ['#7A1DAC', '#00FFC5', '#6839C5', '#AAFF00', '#E4FF00', '#FF8008']
+        }
+      }];
+      
+      let layout2 = {
+        height: 489,
+        width: 450,
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        showlegend: false,
+        margin: {
+          l: 60,
+          r: 120,
+          t: 40,
+          b: 80,
+        },
+
+      };
+      
+      Plotly.newPlot('pie', pieData, layout2);
+      
+      // Show the chart container when a valid trade is selected
+      chartContainer.style.display = 'block';
+    }
+  }
+}
+
+
+
+
+
+
+
 
 // * Create a function to retreive the start date & end date --> The function will filter the data based on the date range
     // * The second condition will be that if user only applied one date object (start/end date) then the output be "please select End date/Start Date" AS PRORMPT
@@ -116,6 +188,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+   
+
 function optionChanged(selectedValue) {
     modifyDashboard(selectedValue);
     // Add a second conditino to filter by the date range if selected
@@ -124,24 +199,33 @@ function optionChanged(selectedValue) {
 
 // A function to modify the sector
 
+
+
+
+
+
+
+
 // ! #################################################################
 // ! USING D3 TO READ JSON DATA -- DATA FUNNEL
 // ! #################################################################
+// http://127.0.0.1:5000/ All is good!! 
 const path = "CSV_Data/response.json";
 d3.json(path).then(function(data) {
     console.log(data);
 
-    // Creating the metadata and validating creation of metadata
+    // * Extracting each subset to a variable
+    let trades = data.trades;
+    console.log(trades);
     metadata = data.metadata;
-    // Validating symbols creation
+    
+    // * Validating symbols creation
+    console.log(metadata);
     let symbols = metadata.map(ticker => ticker.symbol);
     console.log(symbols);
 
-    dates= data
-    let tickers = data.tickers;
-    // Creating the trades data => 
-    let trades = data.trades;
-    console.log(trades);
+    // ! Creating the trades data => 
+    // ! #################################################################
     tradesData = [];
     for (i = 0; i < trades.length; i++) {
       let trade = trades[i];
@@ -157,21 +241,65 @@ d3.json(path).then(function(data) {
       };
       tradesData.push(tradeObj);
     };
-    let test = tradesData.filter(symbol => symbol.symbol === 'AAPL')
-    console.log("Trades Dataset", test  );
+    console.log("Trades Dataset", tradesData);
+
     let sector = metadata.map(ticker => ticker.sector)
-    const uniqueSector = [... new Set(sector)];
+    let uniqueSector = [... new Set(sector)];
     console.log(uniqueSector);
 
     console.log("Sectors",  sector);
     console.log("Start Date: " + selectedDate, "End Date: " + selectedEndDate);
 
-    // * Extracting each subset to a variable
-    // TODO let tikers = data.tickes
+
+    // ! Creating the breakdown information to display the information per stock =>
+    // ! #################################################################
+    breakdownInfo = [];
+
+    for (i = 0; i < metadata.length; i++) {
+
+      let meta  = metadata[i];
+      metaInfo = {
+        'symbol': meta.symbol,
+        "name": meta.name,
+        "sector": meta.sector,
+        "market_cap": meta.market_cap.toLocaleString('en-US', {style: 'currency', currency: 'USD'}),
+        "EBITDA": meta.ebitda.toLocaleString('en-US', {style: 'currency', currency: 'USD'}),
+        'book_value': meta.book_value,
+        'dividend_yeild': meta.dividend_yeild,
+        'dividend_per_share': meta.dividend_per_share
+      };
+
+      breakdownInfo.push(metaInfo);
+    }
+    console.log("Metadata Information: ", breakdownInfo);
     
+    // ! Creating the PieChart
+    // ! #################################################################
+    let marketSum = metadata.map(summary => summary.market_cap).reduce(function(a,b) {return a + b;});
+    let marketCup = metadata.map(summary => summary.market_cap);
+    // * Validating marketSum 
+    console.log(marketSum);
+
+    let technology = metadata.filter(field => field.sector === uniqueSector[0]).map(field => field.market_cap).reduce(function(a,b) {return a + b;});
+    let trades_services = metadata.filter(field => field.sector === uniqueSector[1]).map(field => field.market_cap).reduce(function(a,b) {return a + b;});
+    let manufacturing = metadata.filter(field => field.sector === uniqueSector[2]).map(field => field.market_cap).reduce(function(a,b) {return a + b;});
+    let life_sciences = metadata.filter(field => field.sector === uniqueSector[3]).map(field => field.market_cap).reduce(function(a,b) {return a + b;});
+    let energy_transportation = metadata.filter(field => field.sector === uniqueSector[4]).map(field => field.market_cap).reduce(function(a,b) {return a + b;});
+    let real_estate = metadata.filter(field => field.sector === uniqueSector[5]).map(field => field.market_cap).reduce(function(a,b) {return a + b;});
+
+    PieChart = {
+      "market_cup": [technology, trades_services, manufacturing, life_sciences, energy_transportation, real_estate]
+        .map(value => (value / marketSum) * 100)
+        .map(value => parseFloat(value.toFixed(2))),
+      "Unique_Sector": uniqueSector
+    };
+    
+    console.log("Pie Chart: ", PieChart);
 
 
-    // ! TREATING THE TICKERS ARRAY 
+
+
+    // ! TREATING THE DROP BUTTON LISTS
     // ! ----------------------------------------------------------------
     // Creating a default option for tickers and appending all the options 
     const selectElement = document.getElementById("selDataset");
@@ -199,7 +327,7 @@ d3.json(path).then(function(data) {
       sectorElement.appendChild(optionSect);  
     })
 
-    modifyDashboard(symbols[0]);
+    // modifyDashboard(symbols[0]);
   }).catch(function(error) {
     // * Catch Errors and log them to the console
     console.log('Error loading the JSON file: ' + error);
