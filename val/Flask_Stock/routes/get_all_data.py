@@ -18,7 +18,7 @@ def get_all_data(app):
         trades_list = []
         
         # Fetch tickers and metadata
-        cursor.execute("SELECT ticker_id, symbol, asset_type, name, description, currency, country, sector, industry FROM metadata;")
+        cursor.execute("SELECT ticker_id, symbol, asset_type, name, description, currency, country, sector, industry, market_capitalization, ebitda, book_value, dividend_per_share, dividend_yield FROM metadata;")
         metadata_rows = cursor.fetchall()
         
         for row in metadata_rows:
@@ -35,7 +35,12 @@ def get_all_data(app):
                 "currency": row[5],
                 "country": row[6],
                 "sector": row[7].capitalize(),
-                "industry": row[8]
+                "industry": row[8],
+                "market_cap": row[9],
+                "ebitda": row[10], 
+                "book_value": row[11],
+                "dividend_per_share": row[12],
+                "dividend_yeild": row[13]
             })
             
             # Fetch trade data for the current ticker
@@ -49,10 +54,8 @@ def get_all_data(app):
             close_prices = []
             volumes = []
             
-            for trade in trade_rows:
-                formatted_date = datetime.strptime(trade[0], '%Y-%m-%d').strftime('%d-%m-%Y')
-                
-                dates.append(formatted_date)
+            for trade in trade_rows:  
+                dates.append(trade[0])
                 open_prices.append(trade[1])
                 high_prices.append(trade[2])
                 low_prices.append(trade[3])
@@ -75,5 +78,6 @@ def get_all_data(app):
             "metadata": metadata_list,
             "trades": trades_list
         }
-        
-        return jsonify(response_data)
+        response = jsonify(response_data)
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
