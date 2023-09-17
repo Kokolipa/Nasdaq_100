@@ -5,13 +5,22 @@ let selectedEndDate;
 let tradesData; 
 let metadata; 
 let breakdownInfo;
-let PieChart
+let PieChart;
+let sectorTrades;
+let uniqueSector;
+
+
+
 
 
 // ! Creating Functions - Functions Funnel
 // ! #################################################################
 // * A function to modify the dashboard based on the selected value
 // * #################################################################
+// * #################################################################
+// * #################################################################
+// * #################################################################
+
 function modifyDashboard(selectedValue) {
   const chartContainer = document.getElementById('timeline');
 
@@ -20,20 +29,21 @@ function modifyDashboard(selectedValue) {
     // Hide the chart container when the default option is selected
     chartContainer.style.display = 'none';
 
-  } else {
-    const selectedTrade = tradesData.find(trade => trade.symbol === selectedValue);
-
-    if (!selectedTrade) {
+  } 
+  else if (selectedValue in sectorTrades) {
+    const selectedSectorData = sectorTrades[selectedValue];
+    // chartContainer.style.display = 'none';
+    if (!selectedSectorData) {
       alert("Trade not found");
-      // Hide the chart container when an invalid trade is selected
-      chartContainer.style.display = 'none';
-    } else {
-      const dates = selectedTrade.date.sort((a, b) => new Date(a) - new Date(b));
-      const close = selectedTrade.close;
-      const high = selectedTrade.high.sort((a, b) => a - b);
-      const low = selectedTrade.low.sort((a, b) => a - b);
-      const open_price = selectedTrade.open;
-      console.log("Open Price:", open_price);
+      // chartContainer.style.display = 'none';
+    }
+    else{
+      const dates = selectedSectorData.dates;
+      const close = selectedSectorData.close;
+      const high = selectedSectorData.high;
+      const low = selectedSectorData.low;
+      const open_price = selectedSectorData.open;
+      console.log(dates)
 
       const trace1 = {
         x: dates,
@@ -52,6 +62,18 @@ function modifyDashboard(selectedValue) {
       const data = [trace1];
 
       const layout = {
+        title: {
+          text: `Trading summary for ${selectedValue}`,
+          font: {
+            color: 'white',
+          },
+          margin: {
+            l: 0,
+            r: 40,
+            t: 40, 
+            b: 0,
+          },
+        },
         dragmode: 'zoom',
         margin: {
           r: 10,
@@ -90,17 +112,147 @@ function modifyDashboard(selectedValue) {
           gridcolor: 'rgba(0, 255, 102, 0.7)',
           tickfont: {
             color: 'white',
-          },
+          }
         },
         plot_bgcolor: 'rgba(128, 128, 128, 0.25)',
         paper_bgcolor: 'rgba(0,0,0,0)',
-        title: {
-          text: `${selectedValue}`,
-          color: 'white'
+      };
+
+      //  * Plotting the candlestick chart
+      // * #################################
+      Plotly.newPlot('timeline', data, layout);
+
+      // * Plotting the Breakdown info
+      // * #################################
+      let pieData = [{
+        type: 'pie',
+        values: PieChart.market_cup,
+        labels: PieChart.Unique_Sector,
+        marker: {
+          colors: ['#04FFCE', '228BA9', '#2FBAC6', '#6442CF', '#CC11FA', '#7A1DAC']
         }
+      }];
+      
+      let layout2 = {
+        height: 489,
+        width: 450,
+        title: {
+          text: "Market Capitalisation by Sector",
+          font: {
+            color: 'white'
+          }
+        },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        showlegend: false,
+        margin: {
+          l: 25,
+          r: 70,
+          t: 35,
+          b: 70,
+        },
+        labels: {
+          font: {
+            color: 'white'
+          }
+        }
+
+      };
+      
+      Plotly.newPlot('pie', pieData, layout2);
+
+      chartContainer.style.display = 'block';
+    }
+  }
+  else {
+    const selectedTrade = tradesData.find(trade => trade.symbol === selectedValue);
+    // chartContainer.style.display = 'none';
+    if (!selectedTrade) {
+      alert("Trade not found");
+      // Hide the chart container when an invalid trade is selected
+      // chartContainer.style.display = 'none';
+    } else {
+      const dates = selectedTrade.date;
+      const close = selectedTrade.close;
+      const high = selectedTrade.high;
+      const low = selectedTrade.low;
+      const open_price = selectedTrade.open;
+      console.log("Open Price:", open_price);
+
+      const trace1 = {
+        x: dates,
+        close: close,
+        decreasing: { line: { color: '#FF00F1' } },
+        high: high,
+        increasing: { line: { color: '#00FFD8' } },
+        line: { color: 'rgba(31,120,180,2)' },
+        low: low,
+        open: open_price,
+        type: 'candlestick',
+        xaxis: 'x',
+        yaxis: 'y',
+      };
+
+      const data = [trace1];
+
+      const layout = {
+        title: {
+          text: `Trading summary for ${selectedValue}`,
+          font: {
+            color: 'white',
+          },
+          margin: {
+            l: 0,
+            r: 40,
+            t: 40, 
+            b: 10,
+          },
+        },
+        dragmode: 'zoom',
+        margin: {
+          r: 10,
+          t: 25,
+          b: 40,
+          l: 60,
+        },
+        showlegend: false,
+        xaxis: {
+          autorange: true,
+          domain: [0, 1],
+          range: [dates[0], dates[dates.length - 1]],
+          rangeslider: { range: [dates[0], dates[dates.length - 1]] },
+          title: {
+            text: 'Date',
+            font: {
+              color: 'white',
+            },
+          },
+          type: 'date',
+          showline: true,
+          linecolor: 'rgba(4, 24, 120, 0.8)',
+          layer: 'below',
+          fixedrange: true,
+          zeroline: false,
+          tickfont: {
+            color: 'white',
+          },
+        },
+        yaxis: {
+          autorange: true,
+          domain: [0, 1],
+          range: [Math.min(...low), Math.max(...high)],
+          type: 'linear',
+          showgrid: true,
+          gridcolor: 'rgba(0, 255, 102, 0.7)',
+          tickfont: {
+            color: 'white',
+          }
+        },
+        plot_bgcolor: 'rgba(128, 128, 128, 0.25)',
+        paper_bgcolor: 'rgba(0,0,0,0)',
       };
 
       Plotly.newPlot('timeline', data, layout);
+
 
       // * Plotting the Breakdown info
       // * #################################
@@ -124,21 +276,32 @@ function modifyDashboard(selectedValue) {
         values: PieChart.market_cup,
         labels: PieChart.Unique_Sector,
         marker: {
-          colors: ['#7A1DAC', '#00FFC5', '#6839C5', '#AAFF00', '#E4FF00', '#FF8008']
+          colors: ['#04FFCE', '228BA9', '#2FBAC6', '#6442CF', '#CC11FA', '#7A1DAC']
         }
       }];
       
       let layout2 = {
         height: 489,
         width: 450,
+        title: {
+          text: "Market Capitalisation by Sector",
+          font: {
+            color: 'white'
+          }
+        },
         paper_bgcolor: 'rgba(0,0,0,0)',
         showlegend: false,
         margin: {
-          l: 60,
-          r: 120,
-          t: 40,
-          b: 80,
+          l: 25,
+          r: 70,
+          t: 35,
+          b: 70,
         },
+        labels: {
+          font: {
+            color: 'white'
+          }
+        }
 
       };
       
@@ -147,13 +310,9 @@ function modifyDashboard(selectedValue) {
       // Show the chart container when a valid trade is selected
       chartContainer.style.display = 'block';
     }
+    
   }
 }
-
-
-
-
-
 
 
 
@@ -187,17 +346,28 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-
-
+  
    
-
 function optionChanged(selectedValue) {
     modifyDashboard(selectedValue);
-    // Add a second conditino to filter by the date range if selected
+};
+
+// Function to filter data based on user input
+function filterData() {
+  // Filter the data based on the date range
+  const filteredData = data.filter(item => {
+    const itemDates = item.date
+    if (itemDates[0] < selectedDate || itemDates[itemDates.length -1] > selectedEndDate) {
+      return alert("Please select a greater date");
+    } else {
+    return itemDates >= selectedDate && selectedEndDate <= endDate;
+    }
+  });
 }
-
-
-// A function to modify the sector
+// #################################################################
+// #################################################################
+// #################################################################
+// #################################################################
 
 
 
@@ -216,13 +386,18 @@ d3.json(path).then(function(data) {
 
     // * Extracting each subset to a variable
     let trades = data.trades;
-    console.log(trades);
     metadata = data.metadata;
     
     // * Validating symbols creation
-    console.log(metadata);
     let symbols = metadata.map(ticker => ticker.symbol);
     console.log(symbols);
+
+    let sector = metadata.map(ticker => ticker.sector)
+    uniqueSector = [... new Set(sector)];
+    console.log(uniqueSector);
+
+    console.log("Sectors",  sector);
+    console.log("Start Date: " + selectedDate, "End Date: " + selectedEndDate);
 
     // ! Creating the trades data => 
     // ! #################################################################
@@ -231,6 +406,7 @@ d3.json(path).then(function(data) {
       let trade = trades[i];
       // Create an object with the desired properties
       let tradeObj = {
+          'sector': sector[i],
           'symbol': symbols[i],
           'close': trade.close,
           'date': trade.date, 
@@ -243,13 +419,58 @@ d3.json(path).then(function(data) {
     };
     console.log("Trades Dataset", tradesData);
 
-    let sector = metadata.map(ticker => ticker.sector)
-    let uniqueSector = [... new Set(sector)];
-    console.log(uniqueSector);
+    // ! (A) Creating the SECTOR trades => 
+    // ! (A) #################################################################
+    // Initialize an empty object to store grouped data
+    let groupedData = [];
+    tradesData.forEach(item => {
+    let sector = item.sector;
 
-    console.log("Sectors",  sector);
-    console.log("Start Date: " + selectedDate, "End Date: " + selectedEndDate);
+    if (!groupedData[sector]) {
+    groupedData[sector] = [];
+    }
+    // Add the current item to the corresponding sector's array
+    groupedData[sector].push(item);
+    });
+    console.log("Grouped Data", groupedData);
+    let dateValues = [... new Set(groupedData['Technology'][0].date)];
 
+    console.log(dateValues, "Date Values")
+    
+    // * Defining a function to calculate the mean value for each element in a sector array =>
+    function calculateMean(arr) {
+      const sum = arr.reduce((acc, value) => acc + value, 0);
+      return sum / arr.length;
+    }
+    
+    // ! (B) Updating SectorTrades
+    sectorTrades = []; 
+    for (const sector in groupedData) {
+      const sectorData = groupedData[sector]; // Getting the data for the current sector
+
+    // Initialize an object to store means for this sector
+    const sectorMeansData = {
+      dates: [],
+      close: [],
+      high: [],
+      open: [],
+      low: [],
+    };
+
+    for (let i = 0; i < sectorData.length; i++) {
+      // Calculate the mean for each property and store it in the sectorMeansData object
+      sectorMeansData.dates.push(dateValues[i]);
+      sectorMeansData.close.push(calculateMean(sectorData[i].close));
+      sectorMeansData.high.push(calculateMean(sectorData[i].high));
+      sectorMeansData.open.push(calculateMean(sectorData[i].open));
+      sectorMeansData.low.push(calculateMean(sectorData[i].low));
+    }
+
+    // Store the calculated means for this sector in the sectorMeans object
+    sectorTrades[sector] = sectorMeansData;
+  }
+
+    console.log("Sector Trades", sectorTrades);
 
     // ! Creating the breakdown information to display the information per stock =>
     // ! #################################################################

@@ -116,6 +116,11 @@ select[id="selDataset"]:focus {
     margin-top: auto;
   }
 
+  #pie text.title-text {
+    text-anchor: middle; /* Center horizontally */
+    font-size: 16px; /* Adjust font size as needed */
+    fill: white; /* Text color should be enclosed in quotes */
+  }
 
 
 /* ! Modifying the side bar */
@@ -229,10 +234,11 @@ select[id="selDataset"]:focus {
     grid-template-columns: 1fr;
     background-color: #041878;
     border-radius: 10px;
-    line-height: 30;    
+    line-height: 37;    
+    padding: 10px;
     margin-top: auto;
+    margin-right: 40;
     max-width: 100%;
-    
 }
 
 
