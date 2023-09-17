@@ -10,17 +10,10 @@ let sectorTrades;
 let uniqueSector;
 
 
-
-
-
 // ! Creating Functions - Functions Funnel
 // ! #################################################################
 // * A function to modify the dashboard based on the selected value
 // * #################################################################
-// * #################################################################
-// * #################################################################
-// * #################################################################
-
 function modifyDashboard(selectedValue) {
   const chartContainer = document.getElementById('timeline');
 
@@ -32,17 +25,20 @@ function modifyDashboard(selectedValue) {
   } 
   else if (selectedValue in sectorTrades) {
     const selectedSectorData = sectorTrades[selectedValue];
-    // chartContainer.style.display = 'none';
+
     if (!selectedSectorData) {
       alert("Trade not found");
-      // chartContainer.style.display = 'none';
+      chartContainer.style.display = 'none';
     }
     else{
+      // * Plot the CandleStick chart
+      // * #################################
       const dates = selectedSectorData.dates;
       const close = selectedSectorData.close;
       const high = selectedSectorData.high;
       const low = selectedSectorData.low;
       const open_price = selectedSectorData.open;
+      const volumes = selectedSectorData.volume;
       console.log(dates)
 
       const trace1 = {
@@ -69,7 +65,7 @@ function modifyDashboard(selectedValue) {
           },
           margin: {
             l: 0,
-            r: 40,
+            r: 0,
             t: 40, 
             b: 0,
           },
@@ -118,11 +114,9 @@ function modifyDashboard(selectedValue) {
         paper_bgcolor: 'rgba(0,0,0,0)',
       };
 
-      //  * Plotting the candlestick chart
-      // * #################################
       Plotly.newPlot('timeline', data, layout);
 
-      // * Plotting the Breakdown info
+      // * Plotting the Pie Chart info
       // * #################################
       let pieData = [{
         type: 'pie',
@@ -161,22 +155,89 @@ function modifyDashboard(selectedValue) {
       Plotly.newPlot('pie', pieData, layout2);
 
       chartContainer.style.display = 'block';
+
+      // ! Khai's bar chart - BAR CHART
+      // ! #################################
+      date_volume_list = dates.map(function(e,i) {
+        return [new Date(e).getTime(),volumes[i]];
+      })
+
+      let barchart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'bar',
+            type: 'column',
+            backgroundColor: '#0B0544',
+            plotBackgroundColor: '#483d8b',
+        },
+        title: {
+            text: "Volume time series for " + selectedValue + " Sector",
+            style:{
+                color: 'white',
+            }
+        },
+        series: [{
+            data: date_volume_list,
+            //color: '#BDFF00',
+            borderColor: '#483d8b',
+            borderWidth: 1,
+        }],
+        xAxis: {
+            type: 'datetime',
+            labels:{
+                style:{
+                    color: 'white',
+                },
+                formatter: function() {
+                    return Highcharts.dateFormat('%b, %Y', this.value);
+                }
+            },
+        },
+        yAxis: {
+            labels:{
+                style:{
+                    color: 'white',
+                }
+            },
+            title:{
+                text: 'Volume',
+                style: {
+                    color: 'white',
+                    fontSize: '16px',
+                }
+            }
+        },
+        plotOptions:{
+            column:{
+                pointWidth:24,
+                pointPadding: 0.3, // Set pointPadding to control the space between columns
+                groupPadding: 0.3, // Set groupPadding to control the space between groups of columns
+            }
+        },
+        legend: {
+            enabled: false,
+        },
+      })
+
     }
   }
   else {
     const selectedTrade = tradesData.find(trade => trade.symbol === selectedValue);
-    // chartContainer.style.display = 'none';
+
     if (!selectedTrade) {
       alert("Trade not found");
       // Hide the chart container when an invalid trade is selected
-      // chartContainer.style.display = 'none';
+      chartContainer.style.display = 'none';
     } else {
+      // * Plot the CandleStick chart
+      // * #################################
       const dates = selectedTrade.date;
       const close = selectedTrade.close;
       const high = selectedTrade.high;
       const low = selectedTrade.low;
       const open_price = selectedTrade.open;
+      const volumes = selectedTrade.volume;
       console.log("Open Price:", open_price);
+      console.log("dates:", dates);
 
       const trace1 = {
         x: dates,
@@ -202,9 +263,9 @@ function modifyDashboard(selectedValue) {
           },
           margin: {
             l: 0,
-            r: 40,
+            r: 0,
             t: 40, 
-            b: 10,
+            b: 0,
           },
         },
         dragmode: 'zoom',
@@ -269,7 +330,7 @@ function modifyDashboard(selectedValue) {
           <p><strong>Annual Dividend:</strong> $${selectedMetadata.dividend_per_share}</p>
       `)
 
-      // * Plotting the Breakdown info
+      // * Plotting the Pie Chart info
       // * #################################
       let pieData = [{
         type: 'pie',
@@ -309,8 +370,65 @@ function modifyDashboard(selectedValue) {
       
       // Show the chart container when a valid trade is selected
       chartContainer.style.display = 'block';
+
+      date_volume_list = dates.map(function(e,i){
+        return [new Date(e).getTime(),volumes[i]];
+      })
+
+      var barchart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'bar',
+            type: 'column',
+            backgroundColor: '#0B0544',
+            plotBackgroundColor: '#483d8b',
+        },
+        title: {
+            text: "Volume time series for " + selectedValue,
+            style:{
+                color: 'white',
+            }
+        },
+        series: [{
+            data: date_volume_list,
+            //color: '#BDFF00',
+            borderColor: '#483d8b',
+            borderWidth: 1,
+        }],
+        xAxis: {
+            type: 'datetime',
+            labels:{
+                style:{
+                    color: 'white',
+                },
+                formatter: function() {
+                    return Highcharts.dateFormat('%b, %Y', this.value);
+                }
+            }
+        },
+        yAxis: {
+            labels:{
+                style:{
+                    color: 'white',
+                }
+            },
+            title:{
+                text: 'Volume',
+                style: {
+                    color: 'white',
+                    fontSize: '16px',
+                }
+            }
+        },
+        plotOptions:{
+            column:{
+                pointWidth:12,
+            }
+        },
+        legend: {
+            enabled: false,
+        },
+      })
     }
-    
   }
 }
 
@@ -346,28 +464,17 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  
+
+
    
+
 function optionChanged(selectedValue) {
     modifyDashboard(selectedValue);
-};
-
-// Function to filter data based on user input
-function filterData() {
-  // Filter the data based on the date range
-  const filteredData = data.filter(item => {
-    const itemDates = item.date
-    if (itemDates[0] < selectedDate || itemDates[itemDates.length -1] > selectedEndDate) {
-      return alert("Please select a greater date");
-    } else {
-    return itemDates >= selectedDate && selectedEndDate <= endDate;
-    }
-  });
+    // Add a second condition to filter by the date range if selected
 }
-// #################################################################
-// #################################################################
-// #################################################################
-// #################################################################
+
+
+// A function to modify the sector
 
 
 
@@ -419,7 +526,7 @@ d3.json(path).then(function(data) {
     };
     console.log("Trades Dataset", tradesData);
 
-    // ! (A) Creating the SECTOR trades => 
+// ! (A) Creating the SECTOR trades => 
     // ! (A) #################################################################
     // Initialize an empty object to store grouped data
     let groupedData = [];
@@ -455,6 +562,7 @@ d3.json(path).then(function(data) {
       high: [],
       open: [],
       low: [],
+      volume: [],
     };
 
     for (let i = 0; i < sectorData.length; i++) {
@@ -464,6 +572,7 @@ d3.json(path).then(function(data) {
       sectorMeansData.high.push(calculateMean(sectorData[i].high));
       sectorMeansData.open.push(calculateMean(sectorData[i].open));
       sectorMeansData.low.push(calculateMean(sectorData[i].low));
+      sectorMeansData.volume.push(calculateMean(sectorData[i].volume));
     }
 
     // Store the calculated means for this sector in the sectorMeans object
@@ -552,4 +661,20 @@ d3.json(path).then(function(data) {
   }).catch(function(error) {
     // * Catch Errors and log them to the console
     console.log('Error loading the JSON file: ' + error);
+});
+
+Highcharts.setOptions({
+    chart: {
+        backgroundColor: {
+            linearGradient: [0, 0, 500, 500],
+            stops: [
+                [0, 'rgb(255, 255, 255)'],
+                [1, 'rgb(240, 240, 255)']
+            ]
+        },
+        borderWidth: 2,
+        plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+        plotShadow: true,
+        plotBorderWidth: 1
+    }
 });

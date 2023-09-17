@@ -99,15 +99,11 @@ select[id="selDataset"]:focus {
     width: 100%;
     position: relative;
   }
-.main .bar {
-    width: 100%; /* Adjust as needed */
-    background-color: #041878;
-    padding: 10px;
-    border-radius: 10px;
-    line-height: 30;
-    margin-top: auto;
-  }
-.main #pie {
+
+#bar{
+    border-radius: 15px;
+}
+  .main #pie {
     width: 100%; /* The rest of the available space will be used by the pie chart */
     background-color: #041878;
     padding: 10px;
@@ -116,11 +112,6 @@ select[id="selDataset"]:focus {
     margin-top: auto;
   }
 
-  #pie text.title-text {
-    text-anchor: middle; /* Center horizontally */
-    font-size: 16px; /* Adjust font size as needed */
-    fill: white; /* Text color should be enclosed in quotes */
-  }
 
 
 /* ! Modifying the side bar */
@@ -235,17 +226,11 @@ select[id="selDataset"]:focus {
     background-color: #041878;
     border-radius: 10px;
     line-height: 37;    
-    padding: 10px;
     margin-top: auto;
-    margin-right: 40;
     max-width: 100%;
+    padding-top: 10px;
 }
 
-
-.xy-axis-bg {
-    fill: rgba(4, 24, 120, 0.8);
-    background-color: rgba(4, 24, 120, 0.8); /* Adjust the color and transparency as needed */
-}
 
 footer li{
     list-style: none;

@@ -16,10 +16,11 @@
 
      <!-- * CSS files -->
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <!-- * Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
-     <!-- * Chart.js library -->
-     <!-- <script src="Chart.js"></script> -->
-
+    <!-- * highcharts.js Library -->    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
     <!-- TODO: Add JavaScript file ref below-->
     <script src="js/logic.js"></script>
      
@@ -59,7 +60,7 @@
                         <label for="dateRange_initial">Start Date:</label>
                         <input id="dateRange_initial" type="date" min="from">
                         <label for="dateRange_end">End Date:</label>
-                        <input id="dateRange_end" type="date" max="to">
+                        <input id="dateRange_end" type="date" max="to"> 
                     </div>
                 </header>
             </center>
@@ -89,10 +90,9 @@
                         </div>
 
                         <!-- * Bar chart -->
-                        <div class="bar">
-                            <p>Bar chart</p>
+                        <div id="bar">
                         </div>
-
+                       
                         <!-- * Vis 1 -->
                         <div id="pie" class="vis-1">
                         </div>
