@@ -264,9 +264,9 @@ function modifyDashboard(selectedValue) {
           <p><strong>Sector</strong>: ${selectedMetadata.sector}</p>
           <p><strong>Market Cap:</strong> ${selectedMetadata.market_cap}</p>
           <p><strong>EBITDA:</strong> ${selectedMetadata.EBITDA}</p>
-          <p><strong>Book Value:</strong> ${selectedMetadata.book_value}</p>
-          <p><strong>Dividend Yeild:</strong> ${selectedMetadata.dividend_yeild}</p>
-          <p><strong>Share Dividend:</strong> ${selectedMetadata.dividend_per_share}</p>
+          <p><strong>Book Value:</strong> $${selectedMetadata.book_value}</p>
+          <p><strong>Dividend Yeild:</strong> %${(selectedMetadata.dividend_yeild * 100).toFixed(2)}</p>
+          <p><strong>Annual Dividend:</strong> $${selectedMetadata.dividend_per_share}</p>
       `)
 
       // * Plotting the Breakdown info
