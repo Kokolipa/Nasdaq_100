@@ -72,6 +72,10 @@ d3.json(url).then(function(data) {
 
     // TREATING THE TICKERS ARRAY
     const selectElement = document.getElementById("selDataset");
+    const DefaultElement = document.createElement("option");
+    DefaultElement.text = "Select a stock"
+    DefaultElement.value = "";
+    selectElement.appendChild(DefaultElement);
     symbols.forEach(ticker => {
         const option = document.createElement('option');
         option.text = ticker;

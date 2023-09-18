@@ -31,56 +31,6 @@ Highcharts.setOptions({
 });
 
 
-// #########################################################################################################
-// Display pie chart - Function
-// #########################################################################################################
-/**
- * Displays a pie chart.
- * @param {object} data - The pie chart data.
- * @param {HTMLElement} container - The HTML container element for the chart.
- */
-function displayPieChart(data, container) {
-  // Configure the layout for the pie chart
-
-  let pieData = [{
-    type: 'pie',
-    values: data.market_cup,
-    labels: data.Unique_Sector,
-    marker: {
-      colors: ['#04FFCE', '228BA9', '#2FBAC6', '#6442CF', '#CC11FA', '#7A1DAC']
-    }
-  }];
-  
-  let layout = {
-    height: 489,
-    width: 450,
-    title: {
-      text: "Market Capitalisation by Sector",
-      font: {
-        color: 'white'
-      }
-    },
-    paper_bgcolor: 'rgba(0,0,0,0)',
-    showlegend: false,
-    margin: {
-      l: 25,
-      r: 70,
-      t: 35,
-      b: 70,
-    },
-    labels: {
-      font: {
-        color: 'white'
-      }
-    }
-
-  };
-  
-  Plotly.newPlot('pie', pieData, layout);
-  Plotly.newPlot(container, pieData, layout);
-  container.style.display = 'block';
-}; 
-
 
 // ! #######################################################################################################
 // ! Creating Functions - Functions Funnel
@@ -194,7 +144,62 @@ function modifyDashboard(selectedValue) {
 
       // ! Plotting the Pie Chart info
       // ! #################################################################################################
-      displayPieChart(PieChart, pieContainer);
+      pie_colours = ['cyan', 'turquoise', 'teal', 'purple', 'magenta', 'violet']
+      let pieSeriesData = [];
+      for (let i = 0; i < PieChart.market_cup.length; i++) {
+          let seriesDataItem = {
+              name: PieChart.Unique_Sector[i],
+              y: PieChart.market_cup[i],
+              color: pie_colours[i % pie_colours.length],
+          };
+          pieSeriesData.push(seriesDataItem);
+      }
+      console.log("Pie Chart Series Data: ", pieSeriesData);
+      Highcharts.chart('pie', {
+        chart: {
+            backgroundColor: '#0B0544',
+            plotBackgroundColor: '',
+            plotBorderWidth: '',
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'NASDAQ industry % market cap',
+            align: 'center',
+            style: {
+              color: 'white',
+              fontSize: '24px',
+            }
+        },
+        tooltip: {
+            pointFormat: '<span style="font-size: 16px">{series.name}: <b>{point.percentage:.1f}%</b></span>',
+            headerFormat: '<span style="font-size: 18px">{point.key}</span><br/>',
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                slicedOffset: 0,
+                showInLegend: false,
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                      fontSize: '10px',
+                    }
+                },
+            }
+        },
+        series: [{
+          name: 'Market Cap',
+          colorByPoint: true,
+          data: pieSeriesData
+        }],
+      });
 
       // ! Khai's bar chart - BAR CHART
       // ! #################################################################################################
@@ -373,7 +378,62 @@ function modifyDashboard(selectedValue) {
 
       // ! Plotting the Pie Chart info
       // ! #################################################################################################################################
-      displayPieChart(PieChart, pieContainer);
+      pie_colours = ['cyan', 'turquoise', 'teal', 'purple', 'magenta', 'violet']
+      let pieSeriesData = [];
+      for (let i = 0; i < PieChart.market_cup.length; i++) {
+          let seriesDataItem = {
+              name: PieChart.Unique_Sector[i],
+              y: PieChart.market_cup[i],
+              color: pie_colours[i % pie_colours.length],
+          };
+          pieSeriesData.push(seriesDataItem);
+      }
+      console.log("Pie Chart Series Data: ", pieSeriesData);
+      Highcharts.chart('pie', {
+        chart: {
+            backgroundColor: '#0B0544',
+            plotBackgroundColor: '',
+            plotBorderWidth: '',
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'NASDAQ industry % market cap',
+            align: 'center',
+            style: {
+              color: 'white',
+              fontSize: '24px',
+            }
+        },
+        tooltip: {
+            pointFormat: '<span style="font-size: 16px">{series.name}: <b>{point.percentage:.1f}%</b></span>',
+            headerFormat: '<span style="font-size: 18px">{point.key}</span><br/>',
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                slicedOffset: 0,
+                showInLegend: false,
+                dataLabels: {
+                    enabled: true,
+                    style: {
+                      fontSize: '10px',
+                    }
+                },
+            }
+        },
+        series: [{
+          name: 'Market Cap',
+          colorByPoint: true,
+          data: pieSeriesData
+        }],
+      });
       
       // ! Plotting the Bar Chart info
       // ! #################################################################################################################################
