@@ -9,7 +9,7 @@ from Constants import ndq100
 api_key = keys.alphaAPI
 
 # Output folder for the stock data
-output_folder = 'stockdata'
+output_folder = '../stockdata'
 
 #______________________________________OVERVIEW______________________________________________
 
@@ -38,5 +38,5 @@ for code in ndq100:
     # AlphaVantage has max 5 calls per minute, set to 4 call per minute for stability.
     time.sleep(15)
 
-df.to_csv("overviewdata/overview_asx.csv", encoding='utf-8', index=False)
+df.to_csv("../overviewdata/overview_asx.csv", encoding='utf-8', index=False)
 print("Dataframe converted to csv complete")

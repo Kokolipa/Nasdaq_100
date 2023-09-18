@@ -9,7 +9,7 @@ from Constants import ndq100
 api_key = keys.alphaAPI
 
 # Output folder for the stock data
-output_folder = 'stockdata'
+output_folder = '../stockdata'
 
 #_______________________________________MONTHLY______________________________________________
 # Loop through each ASX 50 code and fetch monthly data
