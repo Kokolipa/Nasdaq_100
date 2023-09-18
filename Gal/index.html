@@ -57,10 +57,8 @@
                         <select id="sector" onchange="optionChanged(this.value)"></select>
                         <label for="stock"><b>Select a Stock:</b></label>
                         <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                        <label for="dateRange_initial">Start Date:</label>
-                        <input id="dateRange_initial" type="date" min="from">
-                        <label for="dateRange_end">End Date:</label>
-                        <input id="dateRange_end" type="date" max="to"> 
+                        <label for="years"><b>Select a Year:</b></label>
+                        <select id="setYears" onchange="optionChanged(this.value)"></select>
                     </div>
                 </header>
             </center>
@@ -101,7 +99,7 @@
 
                     <div class="sub">
                         <!-- * Timeline -->
-                        <div id= "timeline" class="timeline">
+                        <div id= "timeline" class="candlestick-chart-container">
                         </div>
                         
                     </div>

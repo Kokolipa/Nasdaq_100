@@ -108,7 +108,7 @@ select[id="selDataset"]:focus {
 
 #links {
     position: absolute;
-    top:33%;
+    top:30%;
     left:1.7% ;
     font-size: 25px;
 }
@@ -122,6 +122,10 @@ select[id="selDataset"]:focus {
     top: 40%;
     left:1%;
     background-color: rgba(4, 24, 120, 0.5);
+    color: white;
+}
+.white-text {
+    color: white;
 }
 
 /* ! Modifying the side bar */

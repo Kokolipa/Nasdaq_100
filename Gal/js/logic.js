@@ -1,5 +1,6 @@
+// ! #########################################################################################################
 // ! Subsets Variables
-// ! #################################################################
+// ! #########################################################################################################
 let selectedDate;
 let selectedEndDate;
 let tradesData; 
@@ -10,17 +11,90 @@ let sectorTrades;
 let uniqueSector;
 
 
+//  #########################################################################################################
+//  Bar chart specification
+//  #########################################################################################################
+Highcharts.setOptions({
+  chart: {
+      backgroundColor: {
+          linearGradient: [0, 0, 500, 500],
+          stops: [
+              [0, 'rgb(255, 255, 255)'],
+              [1, 'rgb(240, 240, 255)']
+          ]
+      },
+      borderWidth: 2,
+      plotBackgroundColor: 'rgba(255, 255, 255, .9)',
+      plotShadow: true,
+      plotBorderWidth: 1
+  }
+});
+
+
+// #########################################################################################################
+// Display pie chart - Function
+// #########################################################################################################
+/**
+ * Displays a pie chart.
+ * @param {object} data - The pie chart data.
+ * @param {HTMLElement} container - The HTML container element for the chart.
+ */
+function displayPieChart(data, container) {
+  // Configure the layout for the pie chart
+
+  let pieData = [{
+    type: 'pie',
+    values: data.market_cup,
+    labels: data.Unique_Sector,
+    marker: {
+      colors: ['#04FFCE', '228BA9', '#2FBAC6', '#6442CF', '#CC11FA', '#7A1DAC']
+    }
+  }];
+  
+  let layout = {
+    height: 489,
+    width: 450,
+    title: {
+      text: "Market Capitalisation by Sector",
+      font: {
+        color: 'white'
+      }
+    },
+    paper_bgcolor: 'rgba(0,0,0,0)',
+    showlegend: false,
+    margin: {
+      l: 25,
+      r: 70,
+      t: 35,
+      b: 70,
+    },
+    labels: {
+      font: {
+        color: 'white'
+      }
+    }
+
+  };
+  
+  Plotly.newPlot('pie', pieData, layout);
+  Plotly.newPlot(container, pieData, layout);
+  container.style.display = 'block';
+}; 
+
+
+// ! #######################################################################################################
 // ! Creating Functions - Functions Funnel
-// ! #################################################################
-// * A function to modify the dashboard based on the selected value
-// * #################################################################
+// ! #######################################################################################################
 function modifyDashboard(selectedValue) {
-  const chartContainer = document.getElementById('timeline');
+  const candleContainer = document.getElementById('timeline');
+  const pieContainer = document.getElementById('pie');
+  const barContainer = document.getElementById('bar');
+  const breakdownContainer = document.getElementById('breakdown');
 
   if (selectedValue === "") {
     alert("Please select a trade");
     // Hide the chart container when the default option is selected
-    chartContainer.style.display = 'none';
+    candleContainer.style.display = 'none';
 
   } 
   else if (selectedValue in sectorTrades) {
@@ -28,11 +102,11 @@ function modifyDashboard(selectedValue) {
 
     if (!selectedSectorData) {
       alert("Trade not found");
-      chartContainer.style.display = 'none';
+      candleContainer.style.display = 'none';
     }
     else{
-      // * Plot the CandleStick chart
-      // * #################################
+      // ! Plotting the Candlestick
+      // ! #################################################################################################
       const dates = selectedSectorData.dates;
       const close = selectedSectorData.close;
       const high = selectedSectorData.high;
@@ -115,53 +189,18 @@ function modifyDashboard(selectedValue) {
       };
 
       Plotly.newPlot('timeline', data, layout);
+      candleContainer.style.display = 'block';
 
-      // * Plotting the Pie Chart info
-      // * #################################
-      let pieData = [{
-        type: 'pie',
-        values: PieChart.market_cup,
-        labels: PieChart.Unique_Sector,
-        marker: {
-          colors: ['#04FFCE', '228BA9', '#2FBAC6', '#6442CF', '#CC11FA', '#7A1DAC']
-        }
-      }];
-      
-      let layout2 = {
-        height: 489,
-        width: 450,
-        title: {
-          text: "Market Capitalisation by Sector",
-          font: {
-            color: 'white'
-          }
-        },
-        paper_bgcolor: 'rgba(0,0,0,0)',
-        showlegend: false,
-        margin: {
-          l: 25,
-          r: 70,
-          t: 35,
-          b: 70,
-        },
-        labels: {
-          font: {
-            color: 'white'
-          }
-        }
-
-      };
-      
-      Plotly.newPlot('pie', pieData, layout2);
-
-      chartContainer.style.display = 'block';
+      // ! Plotting the Pie Chart info
+      // ! #################################################################################################
+      displayPieChart(PieChart, pieContainer);
 
       // ! Khai's bar chart - BAR CHART
-      // ! #################################
+      // ! #################################################################################################
       date_volume_list = dates.map(function(e,i) {
         return [new Date(e).getTime(),volumes[i]];
       })
-
+      console.log('Kahis solution:', date_volume_list);
       let barchart = new Highcharts.Chart({
         chart: {
             renderTo: 'bar',
@@ -177,7 +216,6 @@ function modifyDashboard(selectedValue) {
         },
         series: [{
             data: date_volume_list,
-            //color: '#BDFF00',
             borderColor: '#483d8b',
             borderWidth: 1,
         }],
@@ -226,10 +264,10 @@ function modifyDashboard(selectedValue) {
     if (!selectedTrade) {
       alert("Trade not found");
       // Hide the chart container when an invalid trade is selected
-      chartContainer.style.display = 'none';
+      candleContainer.style.display = 'none';
     } else {
       // * Plot the CandleStick chart
-      // * #################################
+      // * #################################################################################################################################
       const dates = selectedTrade.date;
       const close = selectedTrade.close;
       const high = selectedTrade.high;
@@ -316,7 +354,7 @@ function modifyDashboard(selectedValue) {
 
 
       // * Plotting the Breakdown info
-      // * #################################
+      // * #################################################################################################################################
       let selectedMetadata = breakdownInfo.find(field => field.symbol === selectedValue);
       let panelBody = d3.select('#breakdown');
       console.log(selectedMetadata)
@@ -331,45 +369,11 @@ function modifyDashboard(selectedValue) {
       `)
 
       // * Plotting the Pie Chart info
-      // * #################################
-      let pieData = [{
-        type: 'pie',
-        values: PieChart.market_cup,
-        labels: PieChart.Unique_Sector,
-        marker: {
-          colors: ['#04FFCE', '228BA9', '#2FBAC6', '#6442CF', '#CC11FA', '#7A1DAC']
-        }
-      }];
-      
-      let layout2 = {
-        height: 489,
-        width: 450,
-        title: {
-          text: "Market Capitalisation by Sector",
-          font: {
-            color: 'white'
-          }
-        },
-        paper_bgcolor: 'rgba(0,0,0,0)',
-        showlegend: false,
-        margin: {
-          l: 25,
-          r: 70,
-          t: 35,
-          b: 70,
-        },
-        labels: {
-          font: {
-            color: 'white'
-          }
-        }
-
-      };
-      
-      Plotly.newPlot('pie', pieData, layout2);
+      // * #################################################################################################################################
+      displayPieChart(PieChart, pieContainer);
       
       // Show the chart container when a valid trade is selected
-      chartContainer.style.display = 'block';
+      candleContainer.style.display = 'block';
 
       date_volume_list = dates.map(function(e,i){
         return [new Date(e).getTime(),volumes[i]];
@@ -390,7 +394,6 @@ function modifyDashboard(selectedValue) {
         },
         series: [{
             data: date_volume_list,
-            //color: '#BDFF00',
             borderColor: '#483d8b',
             borderWidth: 1,
         }],
@@ -433,59 +436,17 @@ function modifyDashboard(selectedValue) {
 }
 
 
-
-// * Create a function to retreive the start date & end date --> The function will filter the data based on the date range
-    // * The second condition will be that if user only applied one date object (start/end date) then the output be "please select End date/Start Date" AS PRORMPT
-document.addEventListener("DOMContentLoaded", function() {
-    let dateInput = document.getElementById("dateRange_initial");
-    let endDateInput = document.getElementById("dateRange_end"); 
-
-    dateInput.addEventListener("change", function() {
-      // Get the selected date value from the input element
-      selectedDate = dateInput.value;
-      
-      if (!endDateInput.value){ 
-        alert("Please select End date");
-      } else {
-        console.log("Start Date: " + selectedDate, "End Date: " + endDateInput.value);
-      }
-    });
-  
-    endDateInput.addEventListener("change", function() {
-      // Get the selected date value from the input element
-      selectedEndDate = endDateInput.value;
-      
-      if (!dateInput.value){
-        alert("Please select Start date");
-      } else {
-        console.log("Start Date: " + dateInput.value, "End Date: " + selectedEndDate);
-      }
-    });
-  });
-
-
-
-
-   
-
 function optionChanged(selectedValue) {
     modifyDashboard(selectedValue);
-    // Add a second condition to filter by the date range if selected
+
 }
 
 
-// A function to modify the sector
 
 
-
-
-
-
-
-
-// ! #################################################################
+// ! #################################################################################################################################
 // ! USING D3 TO READ JSON DATA -- DATA FUNNEL
-// ! #################################################################
+// ! #################################################################################################################################
 // http://127.0.0.1:5000/ All is good!! 
 const path = "CSV_Data/response.json";
 d3.json(path).then(function(data) {
@@ -504,10 +465,9 @@ d3.json(path).then(function(data) {
     console.log(uniqueSector);
 
     console.log("Sectors",  sector);
-    console.log("Start Date: " + selectedDate, "End Date: " + selectedEndDate);
 
     // ! Creating the trades data => 
-    // ! #################################################################
+    // ! #################################################################################################################################
     tradesData = [];
     for (i = 0; i < trades.length; i++) {
       let trade = trades[i];
@@ -526,9 +486,8 @@ d3.json(path).then(function(data) {
     };
     console.log("Trades Dataset", tradesData);
 
-// ! (A) Creating the SECTOR trades => 
-    // ! (A) #################################################################
-    // Initialize an empty object to store grouped data
+    // ! (A) Creating the SECTOR trades => 
+    // ! #################################################################################################################################
     let groupedData = [];
     tradesData.forEach(item => {
     let sector = item.sector;
@@ -550,7 +509,8 @@ d3.json(path).then(function(data) {
       return sum / arr.length;
     }
     
-    // ! (B) Updating SectorTrades
+    // ! (B) Updating SectorTrades  
+    // ! #################################################################################################################################
     sectorTrades = []; 
     for (const sector in groupedData) {
       const sectorData = groupedData[sector]; // Getting the data for the current sector
@@ -581,8 +541,9 @@ d3.json(path).then(function(data) {
 
     console.log("Sector Trades", sectorTrades);
 
+
     // ! Creating the breakdown information to display the information per stock =>
-    // ! #################################################################
+    // ! #################################################################################################################################
     breakdownInfo = [];
 
     for (i = 0; i < metadata.length; i++) {
@@ -604,7 +565,7 @@ d3.json(path).then(function(data) {
     console.log("Metadata Information: ", breakdownInfo);
     
     // ! Creating the PieChart
-    // ! #################################################################
+    // ! #################################################################################################################################
     let marketSum = metadata.map(summary => summary.market_cap).reduce(function(a,b) {return a + b;});
     let marketCup = metadata.map(summary => summary.market_cap);
     // * Validating marketSum 
@@ -628,9 +589,9 @@ d3.json(path).then(function(data) {
 
 
 
-
+    // ! #################################################################################################################################
     // ! TREATING THE DROP BUTTON LISTS
-    // ! ----------------------------------------------------------------
+    // ! #################################################################################################################################
     // Creating a default option for tickers and appending all the options 
     const selectElement = document.getElementById("selDataset");
     const defaultOption = document.createElement('option');
@@ -655,7 +616,24 @@ d3.json(path).then(function(data) {
       optionSect.text = sect;
       optionSect.value = sect;
       sectorElement.appendChild(optionSect);  
-    })
+    });
+
+    // Creating a default option for DATES and appending all the options
+    console.log(dateValues.filter(d=> d.slice(0, 4) ==="2023"))
+    dateSet = [... new Set(dateValues.map(d => d.slice(0, 4)))]
+    console.log("Date Set: " , dateSet);
+
+    const dateElement = document.getElementById("setYears");
+    const defaultDateElement = document.createElement("option");
+    defaultDateElement.text = "Select Year";
+    defaultDateElement.value = "";
+    dateElement.appendChild(defaultDateElement);
+    dateSet.forEach( year => {
+      const dateOption = document.createElement("option");
+      dateOption.text = year;
+      dateOption.value = year;
+      dateElement.appendChild(dateOption);
+    });
 
     // modifyDashboard(symbols[0]);
   }).catch(function(error) {
@@ -663,18 +641,3 @@ d3.json(path).then(function(data) {
     console.log('Error loading the JSON file: ' + error);
 });
 
-Highcharts.setOptions({
-    chart: {
-        backgroundColor: {
-            linearGradient: [0, 0, 500, 500],
-            stops: [
-                [0, 'rgb(255, 255, 255)'],
-                [1, 'rgb(240, 240, 255)']
-            ]
-        },
-        borderWidth: 2,
-        plotBackgroundColor: 'rgba(255, 255, 255, .9)',
-        plotShadow: true,
-        plotBorderWidth: 1
-    }
-});

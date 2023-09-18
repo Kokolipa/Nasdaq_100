@@ -34,7 +34,7 @@ header p {
     font-size: 18px;
 }
 /* Style the label and input elements */
-input {
+#setYears {
     width: 8%;
     text-align: left;
     padding: 10px;
@@ -49,8 +49,8 @@ input {
 }
 
 /* Style the label and input elements on hover and focus */
-input:hover,
-input:focus {
+#setYears:hover,
+#setYears:focus {
     background-color: #90c5e1;
     color: white;
 }
@@ -227,8 +227,12 @@ select[id="selDataset"]:focus {
     border-radius: 10px;
     line-height: 37;    
     margin-top: auto;
-    max-width: 100%;
+    width: 100%;
     padding-top: 10px;
+}
+
+.candlestick-chart-container {
+    width: 100%; /* Adjust this value as needed */
 }
 
 
