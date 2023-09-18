@@ -232,7 +232,8 @@ select[id="selDataset"]:focus {
 }
 
 .candlestick-chart-container {
-    width: 100%; /* Adjust this value as needed */
+    width: 100%;
+    height: 460px;
 }
 
 

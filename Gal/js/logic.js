@@ -185,11 +185,12 @@ function modifyDashboard(selectedValue) {
           }
         },
         plot_bgcolor: 'rgba(128, 128, 128, 0.25)',
-        paper_bgcolor: 'rgba(0,0,0,0)',
+        paper_bgcolor: 'rgba(0,0,0,0)'
       };
 
       Plotly.newPlot('timeline', data, layout);
       candleContainer.style.display = 'block';
+
 
       // ! Plotting the Pie Chart info
       // ! #################################################################################################
@@ -255,7 +256,8 @@ function modifyDashboard(selectedValue) {
             enabled: false,
         },
       })
-
+      candleContainer.style.display = 'block';
+      barContainer.style.display = 'block';
     }
   }
   else {
@@ -265,9 +267,10 @@ function modifyDashboard(selectedValue) {
       alert("Trade not found");
       // Hide the chart container when an invalid trade is selected
       candleContainer.style.display = 'none';
-    } else {
-      // * Plot the CandleStick chart
-      // * #################################################################################################################################
+    } 
+    else {
+      // ! Plot the CandleStick chart
+      // ! #################################################################################################################################
       const dates = selectedTrade.date;
       const close = selectedTrade.close;
       const high = selectedTrade.high;
@@ -353,8 +356,8 @@ function modifyDashboard(selectedValue) {
       Plotly.newPlot('timeline', data, layout);
 
 
-      // * Plotting the Breakdown info
-      // * #################################################################################################################################
+      // ! Plotting the Breakdown info
+      // ! #################################################################################################################################
       let selectedMetadata = breakdownInfo.find(field => field.symbol === selectedValue);
       let panelBody = d3.select('#breakdown');
       console.log(selectedMetadata)
@@ -368,13 +371,12 @@ function modifyDashboard(selectedValue) {
           <p><strong>Annual Dividend:</strong> $${selectedMetadata.dividend_per_share}</p>
       `)
 
-      // * Plotting the Pie Chart info
-      // * #################################################################################################################################
+      // ! Plotting the Pie Chart info
+      // ! #################################################################################################################################
       displayPieChart(PieChart, pieContainer);
       
-      // Show the chart container when a valid trade is selected
-      candleContainer.style.display = 'block';
-
+      // ! Plotting the Bar Chart info
+      // ! #################################################################################################################################
       date_volume_list = dates.map(function(e,i){
         return [new Date(e).getTime(),volumes[i]];
       })
@@ -431,6 +433,9 @@ function modifyDashboard(selectedValue) {
             enabled: false,
         },
       })
+      candleContainer.style.display = 'block';
+      barContainer.style.display = 'block';
+      breakdownContainer.display = 'block';
     }
   }
 }
