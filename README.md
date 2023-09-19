@@ -131,12 +131,9 @@
 │   |   |   ├── logic.js
 │   |   ├── about.html                                             
 │   |   ├── index.html                                              
-│   ├── Python Scripts  
-│   |   ├── Combine_data.py                                             
+│   ├── NYTimes API                                     
 │   |   ├── Constants.py                                            
 │   |   ├── import_articles.py                                              
-│   |   ├── Import_overview.py
-│   |   ├── import_timeseries.py                                              
 |___README.md
 |___.gitignore
 |___nytimes_articles.json                    
