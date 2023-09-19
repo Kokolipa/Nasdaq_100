@@ -15,9 +15,12 @@
 ![information-image](https://github.com/Kokolipa/Nasdaq_100/blob/main/Dashboard_images/information.png)
 
 
-<!-- TODO => Add the ETL Image HERE -->
+
 ### Project outline - ETL 
 ----------------------------------------------------------------
+![ETL](https://github.com/Kokolipa/Nasdaq_100/blob/main/Dashboard_images/image.png)
+
+
 #### Extract: 
 * **Data Extraction:** 
     * Calling the Alpha Vantage API to retrive the Nasdaq index 100 trading data and metadata (an overview of each of the 101 companies within  the index) from the last 5 years and return the data in jsonified format. 
