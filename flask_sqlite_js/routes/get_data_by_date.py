@@ -4,7 +4,7 @@ from datetime import datetime
 
 DATABASE_PATH = ".././nasdaq.sqlite"
 
-# Example: http://localhost:5000/date/01-01-2020/31-12-2020
+# Example: http://localhost:5000/date/2020-01-01/2021-01-01
 def get_data_by_date_route(app):
     @app.route("/date/<string:start_date>/<string:end_date>")
     def get_data_by_date(start_date, end_date):
@@ -51,7 +51,12 @@ def get_data_by_date_route(app):
                 "currency": row[5],
                 "country": row[6],
                 "sector": row[7].capitalize(),
-                "industry": row[8]
+                "industry": row[8],
+                "market_cap": row[9],
+                "ebitda": row[10], 
+                "book_value": row[11],
+                "dividend_per_share": row[12],
+                "dividend_yeild": row[13]
             })
             
             # Fetch trade data for the current ticker within the specified date range
@@ -90,5 +95,6 @@ def get_data_by_date_route(app):
             "metadata": metadata_list,
             "trades": trades_list
         }
-        
-        return jsonify(response_data)
+        response = jsonify(response_data)
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
