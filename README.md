@@ -1,8 +1,8 @@
 # Nasdaq 100 - Interactive Dashboard
 ## TLDR - Project Description - [![Leaflet-map](https://img.shields.io/badge/Dashboard-Presentation-black?style=flat&logo=atandt)](https://kokolipa.github.io/leaflet-challenge/) 
-* Creating an interactive dashboard to explore the Nasdaq 100 share index using API's to call the data, Python and SQLAlchemy to clean and transform the data as well loading the data to a SQLite database using SQLAlchemy's ORM.
+* Creating an interactive dashboard to explore the Nasdaq 100 share index using APIs to call the data, Python and SQLAlchemy to clean and transform the data, as well as loading the data to a SQLite database using SQLAlchemy's ORM.
 * Reading the data from "nasdaq.sqlite" to create a Flask API.
-* Rendering the Flask API using D3 library and JavaScript to feed the HTML elements with data.
+* Rendering the Flask API using the D3 library and JavaScript to feed the HTML elements with data.
     * Dropdown buttons
     * Visuals 
     * A company description
@@ -23,50 +23,50 @@
 
 #### Extract: 
 * **Data Extraction:** 
-    * Calling the Alpha Vantage API to retrive the Nasdaq index 100 trading data and metadata (an overview of each of the 101 companies within  the index) from the last 5 years and return the data in jsonified format. 
-    * Extracting data from New York Times API (NYT) to retrieve the 5 latest corresponding **article snippits** for each share in Nasdaq 100 as well as the **web_url** for the article.
+    * Calling the Alpha Vantage API to retrieve the Nasdaq index 100 trading data and metadata (an overview of each of the 101 companies within the index) from the last five years and return the data in jsonified format and CSV format. 
+    * Extracting data from New York Times API (NYT) to retrieve the 5 latest corresponding **article snippets** for each share in Nasdaq 100 as well as the **web_url** for the article.
 #### Transform: 
-* **Data Cleasing, Manipulation and Transformation:** Transforming the jsonified data (meta data & trading data) into Pandas DataFrames and manipulating the data to create unique ID for each ticker symbol for both of the datasets. Removing irrelevant columns and renaming the left columns to enhance the clarity.
-* **Database Creation**: Using SQLAlchemy **ORM** to create the seven tables and load them with the **declerative base**. The tables were created to achieve a normalised database (third normal form correspondance). Domain integrity was enforced by defining one allowable data type for each column. Key integrity was enforced by assigning a unique primary key for each record in each table. Referential integrity was enforced by assigning foreign keys and defining relationships between tables. 
+* **Data Cleansing, Manipulation and Transformation:** Transforming the jsonified and CSV data (metadata & trading data) into Pandas DataFrames and manipulating the data to create a unique ID for each ticker symbol for both of the datasets. Removing irrelevant columns and renaming the left columns to enhance clarity.
+* **Database Creation**: Using SQLAlchemy **ORM** to create the seven tables and load them with the **declerative base**. The tables were created to achieve a normalised database (third normal form correspondence). Domain integrity was enforced by defining one allowable data type for each column. Key integrity was enforced by assigning a unique primary key for each record in each table. Referential integrity was enforced by assigning foreign keys and defining relationships between tables. 
 * **NYT API** - Transforming the data returned from NYT to JSON format
 * **Load**: 
-    * Creating an API using Flask and SQLAlchemy. Loading data from the "nasdaq.sqlite" and assigning and the data to each Flask route that was created. Two routes were created, one to retrive all the data in jsonified format(a list of dicrionaries with two keys: **matadata**, **trades**, and **tickers**). 
-    * Calling the API created with JavaScript D3 library to render the data and feed the interactive visuals there were created with Plotly and HighChart. 
-    * Retriving the data from the NYT to feed the HTML elements using JavaScript and D3. 
+    * Creating an API using Flask and SQLAlchemy. Loading data from the "nasdaq.sqlite" and assigning the data to each Flask route that was created. Two routes were created, one to retrieve all the data in jsonified format(a list of dicrionaries with two keys: **metadata**, **trades**, and **tickers**). 
+    * Calling the API created with JavaScript D3 library to render the data and feed the interactive visuals that were created with Plotly and HighChart. 
+    * Retrieving the data from the NYT to feed the HTML elements using JavaScript and D3. 
 ![ERD](https://github.com/Kokolipa/Nasdaq_100/blob/main/ETL/ERD.png)
 
 
 ### Dashboard Functionality: 
 ----------------------------------------------------------------
 #### Dashboard
-* The backend design was implemented with CSS and HTML. To insure the design flexability we've used position relative and absolute as well as sizing HTML elements with precentage as apposed to pixels.
-* To enable the modification of the dashboard based on a user selection we stored within the HTML element a function and called it in the JavaScript code.
+* The backend design was implemented with CSS and HTML. To ensure the design flexibility, we've used position relative and absolute as well as sizing HTML elements with percentages as opposed to pixels.
+* To enable the modification of the dashboard based on a user selection, we stored within the HTML element a function and called it in the JavaScript code.
 ``` HTML
 <label for="stock"><b>Select sector:</b></label>
 <select id="sector" onchange="optionChanged(this.value)"></select>
 <label for="stock"><b>Select a Stock:</b></label>
 <select id="selDataset" onchange="optionChanged(this.value)"></select>
 ```
-* The dashboard allow the selection from the the sector and stock drop buttons.
-* Initially, if sector is selected, the dashboard will provide:
-    * A candlestick chart to which summurise trading period for the sector selected(inclusive, all time, based on the api GET call) and enable an overview of:
+* The dashboard allows the selection from the sector and stock drop buttons.
+* Initially, if a sector is selected, the dashboard will provide:
+    * A candlestick chart to which summarise the trading period for the sector selected(inclusive, all time, based on the API GET call) and enable an overview of:
         * closing price, opening price, low price, and high price.
-    * A bar chart to explore the volume per sector (inclusive, all time period specified).
+    * A bar chart to explore the volume per sector (inclusive of all time periods specified).
     * Pie chart to explore the market cap per sector. 
 * Otherwise, if a stock was selected initially, the dashboard will provide: 
-    * A breakdown info of the stock (name, sector, market cap, EBITDA, book value, dividend per share, and dividend yeild).
-    * A bar chart to explore the volume per share (inclusive, all time period specified).
+    * A breakdown info of the stock (name, sector, market cap, EBITDA, book value, dividend per share, and dividend yield).
+    * A bar chart to explore the volume per share (inclusive all time periods specified).
     * Pie chart to explore the market cap per sector. 
-    * A candlestick chart to which summurise trading period for the share selected (inclusive, all time, based on the api GET call) and enable an overview of:
+    * A candlestick chart to summarise trading period for the share selected (inclusive, all time, based on the API GET call) and enable an overview of:
         * closing price, opening price, low price, and high price.
-* If default option was selected for both of the dropdown lists, all the visuals will be removed from the dashboard until new selection is made.
+* If the default option was selected for both of the dropdown lists, all the visuals will be removed from the dashboard until a new selection is made.
 ##### About logic.js
-To enable the above functionality, the logic was seperated into two funnels.
-1. **Functions funnel** => This funnel enables the flexibility per selection and modify the dashboard accordingly (based on the selection the returned value from the subset created in the data funnel returned for plotting).
-2. **Data funnel** => This funnel returns a subset of the data, structured to be easlily accesed by the plotting libraries.
+To enable the above functionality, the logic was separated into two funnels.
+1. **Functions funnel** => This funnel enables flexibility per selection and modifies the dashboard accordingly (based on the selection, the returned value from the subset created in the data funnel returned for plotting).
+2. **Data funnel** => This funnel returns a subset of the data, structured to be easily accessed by the plotting libraries.
 #### Information
 * The information page includes one dropdown list containing the stocks. 
-* When a stock is selected, the description of the company selected will be displayed as well as the latest five articles from NYT if those articles are available.
+* When a stock is selected, the description of the company selected will be displayed, as well as the latest five articles from NYT if those articles are available.
 
 
 #### Libraries & APIs Used
@@ -78,7 +78,7 @@ To enable the above functionality, the logic was seperated into two funnels.
 * SQLAlchemy
 * Datetime
 * os
-* time
+* Time
 * requests
 
 **JavaScript Libraries:**
