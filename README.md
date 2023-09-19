@@ -9,10 +9,10 @@
 * Reading data from the New York Times API to retrieve the most recent five corresponding articles for a given Nasdaq 100 share. 
 
 ##### Dashboard
-[dashboard-image](https://github.com/Kokolipa/Nasdaq_100/blob/main/Dashboard_images/dashboard.png)
+![dashboard-image](https://github.com/Kokolipa/Nasdaq_100/blob/main/Dashboard_images/dashboard.png)
 ----------------------------------------------------------------
 ##### Information
-[information-image](https://github.com/Kokolipa/Nasdaq_100/blob/main/Dashboard_images/information.png)
+![information-image](https://github.com/Kokolipa/Nasdaq_100/blob/main/Dashboard_images/information.png)
 
 
 <!-- TODO => Add the ETL Image HERE -->
