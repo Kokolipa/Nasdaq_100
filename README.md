@@ -82,8 +82,54 @@
 #### Folder structure
 ``` yml
 .
-│   ├── Data source zips  # This folder contain ths source datasets           
-│   ├── Data source zips  # This folder contain ths source datasets                      
-│   ├── Data source zips  # This folder contain ths source datasets                      
+│   ├── ETL 
+│   |   ├── clean_db_data                    # This folder contains the database tables
+│   |   |   ├── clean_asset_type.csv
+│   |   |   ├── clean_country.csv
+│   |   |   ├── clean_currency.csv
+│   |   |   ├── clean_industry.csv
+│   |   |   ├── clean_metadata.csv
+│   |   |   ├── clean_sector.csv
+│   |   |   ├── clean_trade_data.csv
+│   |   ├── ERD.png            
+│   |   ├── alpha_vantage_constants.py             
+│   |   ├── alpha_vantage_extract.ipynb             
+│   |   ├── alpha_vantage_load.ipynb             
+│   |   ├── alpha_vantage_transform.ipynb            
+│   |   ├── nasdaq.sqlite                   # This is the database             
+│   ├── flask_sqlite     
+│   |   ├── routes      
+│   |   |   ├── __pycache__
+│   |   |   |   ├── get_all_data.cpython-310.pyc
+│   |   |   |   ├── get_data_by_date.cpython-310.pyc
+│   |   |   |   ├── get_data_by_sector.cpython-310.pyc
+│   |   |   ├── get_all_data.py
+│   |   |   ├── get_data_by_date.py 
+│   |   ├── app.py                          # To run the api use the file (commend => python app.py)                      
+│   ├── html_css_js                         # This folder contains the JavaScript, the CSS, and the HTML code 
+│   |   ├── CSS        
+│   |   |   ├── about.css
+│   |   |   ├── index.css
+│   |   ├── CSV_Data                        # This folder contains the CSV data for "all the data returned by the API "      
+│   |   |   ├── nytimes_articles.json       # This folder contains the data extracted from the NYT API 
+│   |   |   ├── response.json
+│   |   ├── Icons                      
+│   |   |   ├── dashboard.png
+│   |   |   ├── info.png
+│   |   |   ├── stock_image2.jpeg
+│   |   |   ├── stocks_image.jpeg
+│   |   ├── js             
+│   |   |   ├── about.js
+│   |   |   ├── logic.js
+│   |   ├── about.html                                             
+│   |   ├── index.html                                              
+│   ├── Python Scripts  
+│   |   ├── Combine_data.py                                             
+│   |   ├── Constants.py                                            
+│   |   ├── import_articles.py                                              
+│   |   ├── Import_overview.py
+│   |   ├── import_timeseries.py                                              
 |___README.md
+|___.gitignore
+|___nytimes_articles.json                    
 ``` 
