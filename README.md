@@ -60,6 +60,10 @@
     * A candlestick chart to which summurise trading period for the share selected (inclusive, all time, based on the api GET call) and enable an overview of:
         * closing price, opening price, low price, and high price.
 * If default option was selected for both of the dropdown lists, all the visuals will be removed from the dashboard until new selection is made.
+##### About logic.js
+To enable the above functionality, the logic was seperated into two funnels.
+1. **Functions funnel** => This funnel enables the flexibility per selection and modify the dashboard accordingly (based on the selection the returned value from the subset created in the data funnel returned for plotting).
+2. **Data funnel** => This funnel returns a subset of the data, structured to be easlily accesed by the plotting libraries.
 #### Information
 * The information page includes one dropdown list containing the stocks. 
 * When a stock is selected, the description of the company selected will be displayed as well as the latest five articles from NYT if those articles are available.
