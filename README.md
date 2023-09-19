@@ -133,7 +133,11 @@
 │   |   ├── index.html                                              
 │   ├── NYTimes API                                     
 │   |   ├── Constants.py                                            
-│   |   ├── import_articles.py                                              
+│   |   ├── import_articles.py        
+│   ├── Dashboard_images                                   
+│   |   ├── dashboard.png                                           
+│   |   ├── image.png                                      
+│   |   ├── information.png                                      
 |___README.md
 |___.gitignore
 |___nytimes_articles.json                    
