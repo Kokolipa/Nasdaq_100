@@ -2,7 +2,7 @@ from flask import jsonify
 import sqlite3
 from datetime import datetime
 
-DATABASE_PATH = ".././nasdaq.sqlite"
+DATABASE_PATH = "../ETL/nasdaq.sqlite"
 
 # Example: http://localhost:5000/
 def get_all_data(app):

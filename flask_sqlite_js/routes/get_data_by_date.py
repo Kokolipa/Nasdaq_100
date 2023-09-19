@@ -2,7 +2,7 @@ from flask import jsonify
 import sqlite3
 from datetime import datetime
 
-DATABASE_PATH = ".././nasdaq.sqlite"
+DATABASE_PATH = "../ETL/nasdaq.sqlite"
 
 # Example: http://localhost:5000/date/2020-01-01/2021-01-01
 def get_data_by_date_route(app):
