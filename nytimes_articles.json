@@ -1,0 +1,1760 @@
+{
+    "AAPL": [
+        {
+            "headline": "App Smart | Put the Apple Watch to Work",
+            "web_url": "https://www.nytimes.com/video/technology/personaltech/100000003747553/app-smart-put-the-apple-watch-to-work.html",
+            "snippet": "Many of the 3,500 available apps showcase the capabilities of the Apple Watch. Here are just a few that show off what our wearable tech can do."
+        },
+        {
+            "headline": "Apple Announces Streaming Music Service",
+            "web_url": "https://www.nytimes.com/video/technology/100000003730604/apple-announces-streaming-music-service.html",
+            "snippet": "Apple\u2019s chief executive, Timothy D. Cook, and its head of software and internet services, Eddy Cue, announced the company\u2019s new music streaming service on Monday in San Francisco."
+        },
+        {
+            "headline": "App Smart | Stream Music For Free",
+            "web_url": "https://www.nytimes.com/video/technology/personaltech/100000003720597/app-smart-stream-music-for-free.html",
+            "snippet": "There are plenty of great streaming music services that you can already try, often for free, and while the big players are jockeying to dominate the market, now is a great time to experiment."
+        },
+        {
+            "headline": "Apple Unveils the Apple Watch",
+            "web_url": "https://www.nytimes.com/video/technology/100000003561738/apple-unveils-the-apple-watch.html",
+            "snippet": "Timothy D. Cook, Apple\u2019s chief executive, introduced the Apple Watch, an edition of which is made of 18-karat gold and retails starting at $10,000."
+        },
+        {
+            "headline": "Apple\u2019s Cook Makes Case for Equal Rights",
+            "web_url": "https://www.nytimes.com/video/us/100000003206992/apples-cook-makes-case-for-equal-rights.html",
+            "snippet": "In a speech on Oct. 27, Timothy D. Cook, Apple\u2019s chief executive, urged his home state of Alabama to move faster on ensuring equality for all."
+        }
+    ],
+    "MSFT": [
+        {
+            "headline": "Musing on the Prospects of a Microsoft Counterbid for Motorola",
+            "web_url": "https://dealbook.nytimes.com/2011/08/16/musing-on-the-prospects-of-a-microsoft-counterbid-for-motorola/",
+            "snippet": "One analyst thinks that Microsoft may be motivated to top Google\u2019s $12.5 billion deal for Motorola. But there are many concerns that have to be considered."
+        },
+        {
+            "headline": "The Future of Skype",
+            "web_url": "https://pogue.blogs.nytimes.com/2011/05/12/the-future-of-skype/",
+            "snippet": "Every time some big clumsy corporate behemoth buys a popular consumer-tech product, David Pogue cringes. It almost never works out."
+        },
+        {
+            "headline": "Skype Deal Gets a Mixed Reaction",
+            "web_url": "https://dealbook.nytimes.com/2011/05/10/skype-deal-gets-a-mixed-reaction/",
+            "snippet": "Analysts see a tax advantage to using Microsoft\u2019s huge cash hoard, but others question the company\u2019s track record with large acquisitions."
+        },
+        {
+            "headline": "Court Hears Microsoft Patent Case",
+            "web_url": "https://www.nytimes.com/2011/04/19/technology/19bizcourt.html",
+            "snippet": "Some justices suggested that the court\u2019s precedents were at odds with Microsoft\u2019s position."
+        },
+        {
+            "headline": "U.S. Says It Shut Down Password Theft Network",
+            "web_url": "https://bits.blogs.nytimes.com/2011/04/14/u-s-says-it-shut-down-password-theft-network/",
+            "snippet": "The Justice Department and the F.B.I. said they had dismantled a giant network of computers infected by malicious software, one that was used in an eight-year financial crime spree."
+        }
+    ],
+    "AMZN": [
+        {
+            "headline": "Balyasny Says Inquiry Found Nothing Improper",
+            "web_url": "https://dealbook.nytimes.com/2009/11/16/balyasny-finds-nothing-improper-after-internal-probe/",
+            "snippet": "Balyasny Asset Management, the big Chicago hedge fund run by Dmitry Balyasny, discovered no signs of improper activity after conducting an internal review into trading records and communications of a former employee who recently surfaced in the in..."
+        },
+        {
+            "headline": "Geniuses at Play, on the Job",
+            "web_url": "https://www.nytimes.com/2009/02/26/technology/personaltech/26pogue.html",
+            "snippet": "Let\u2019s sift through some of the lesser-known projects created during Google\u2019s \u201c20 percent time.\u201d"
+        },
+        {
+            "headline": "Amazon Claims \u2018Best Ever\u2019 Christmas (Whatever That Means)",
+            "web_url": "https://bits.blogs.nytimes.com/2008/12/26/amazon-claims-best-ever-christmas-whatever-that-means/",
+            "snippet": "Amazon.com said its holiday season was the \u201cbest ever\u201d but the retailer was silent on key details \u2014 like sales, profits and the total number of goods sold."
+        },
+        {
+            "headline": "Amazon Claims \u2018Best Ever\u2019 Christmas",
+            "web_url": "https://bits.blogs.nytimes.com/2008/12/26/blogs/26bits-amazon-c2139.html",
+            "snippet": "Amazon.com said its holiday season was the \"best ever\" but the retailer was silent on key details -- like sales, profits and the total number of goods sold."
+        },
+        {
+            "headline": "Free Services to Inspire Your Cellphone",
+            "web_url": "https://www.nytimes.com/2006/11/23/technology/free-services-to-inspire-your-cellphone.html",
+            "snippet": "David Pogue column on sojme of exciting and powerful free services available for cellphone user; photos (M)"
+        }
+    ],
+    "NVDA": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "META": [
+        {
+            "headline": "8 More Companies Pledge to Make A.I. Safe, White House Says",
+            "web_url": "https://www.nytimes.com/2023/09/12/technology/white-house-ai-tech-pledge.html",
+            "snippet": "The voluntary safety commitments made by Nvidia, IBM, Palantir and others are part of a packed week of A.I. announcements in Washington."
+        },
+        {
+            "headline": "TikTok Popularizes Products. Can It Sell Them, Too?",
+            "web_url": "https://www.nytimes.com/2023/09/12/business/tiktok-shop-e-commerce.html",
+            "snippet": "The company is beginning to introduce TikTok Shop to all of the app\u2019s users in the U.S., hoping to add a major new revenue stream."
+        },
+        {
+            "headline": "Investors Warily Await the Instacart and Arm I.P.O.s",
+            "web_url": "https://www.nytimes.com/2023/09/11/business/investors-instacart-arm-ipo.html",
+            "snippet": "The valuations for both companies have come in below expectations, reflecting a cautious outlook on Wall Street as firms start to go public again after a fallow patch."
+        },
+        {
+            "headline": "Elon Musk Has Crossed a Line",
+            "web_url": "https://www.nytimes.com/2023/09/11/opinion/elon-musk-adl.html",
+            "snippet": "A consistent booster of far-right and antisemitic accounts on Twitter, Elon Musk is now melding a sense of victimhood with the most toxic elements of the right."
+        },
+        {
+            "headline": "Microsoft, Google and Antitrust: Similar Legal Theories in a Different Era",
+            "web_url": "https://www.nytimes.com/2023/09/11/technology/microsoft-google-antitrust.html",
+            "snippet": "The government\u2019s antitrust case against Google borrows heavily from the landmark lawsuit against Microsoft 25 years ago. But it lacks the same cultural impact."
+        }
+    ],
+    "GOOG": [
+        {
+            "headline": "One Complicated Life, Illustrated ",
+            "web_url": "https://www.nytimes.com/2013/11/01/books/american-mirror-about-norman-rockwell-by-deborah-solomon.html",
+            "snippet": "\u201cAmerican Mirror\u201d grapples with the aesthetic and psychological influences on the illustrator Norman Rockwell\u2019s work."
+        },
+        {
+            "headline": "From Example to Excess in Silicon Valley",
+            "web_url": "https://www.nytimes.com/2013/09/01/technology/from-example-to-excess-in-silicon-valley.html",
+            "snippet": "The tech industry\u2019s spirit of good will seems to have gone by the wayside, perhaps overshadowed by a chase for power and wealth."
+        },
+        {
+            "headline": "Google\u2019s Aggregator Gives Way to an Heir",
+            "web_url": "https://www.nytimes.com/2013/05/09/technology/personaltech/three-ways-feedly-outdoes-the-vanishing-google-reader.html",
+            "snippet": "Google Reader is scheduled to end July 1. And Feedly.com is just the newsreader to replace it."
+        },
+        {
+            "headline": "\u2018The New Digital Age\u2019: Give Kids Phones",
+            "web_url": "https://www.nytimes.com/video/multimedia/100000002723162/timestalks-the-new-digital-age-part-14.html",
+            "snippet": "Part 14: Schmidt and Cohen explore technology\u2019s potential future impact on education and medicine."
+        },
+        {
+            "headline": "\u2018The New Digital Age\u2019: Your Identity",
+            "web_url": "https://www.nytimes.com/video/multimedia/100000002723160/timestalks-the-new-digital-age-part-13.html",
+            "snippet": "Part 13: Schmidt and Cohen reflect on the future of personal identity and the problems that may come with increasingly visible aggregated identities."
+        }
+    ],
+    "TSLA": [
+        {
+            "headline": "Tesla Shares Jump on Their First Day",
+            "web_url": "https://wheels.blogs.nytimes.com/2010/06/29/tesla-shares-zoom-higher-in-first-day-of-trading/",
+            "snippet": "The Tesla I.P.O. is off to a good start."
+        },
+        {
+            "headline": "Tesla Shares Zoom Higher in First Day of Trading",
+            "web_url": "https://dealbook.nytimes.com/2010/06/29/tesla-shares-zoom-higher-in-first-day-of-trading/",
+            "snippet": "Shares in Tesla Motors proved on Tuesday to be as coveted as the electric cars it produces, as its stock rose about 8 percent above its offering price in its market debut."
+        }
+    ],
+    "AVGO": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "ADBE": [
+        {
+            "headline": "Adobe Systems Inc.(ADBE,NNM) reports earnings for Qtr to Aug 26",
+            "web_url": "https://www.nytimes.com/1994/09/21/business/adobe-systems-inc-adbennm-reports-earnings-for-qtr-to-aug-26.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Adobe Systems Inc.(ADBE,NMS) reports earnings for Qtr to May 27",
+            "web_url": "https://www.nytimes.com/1994/06/27/business/adobe-systems-inc-adbenms-reports-earnings-for-qtr-to-may-27.html",
+            "snippet": ""
+        },
+        {
+            "headline": "FORJOYOEMtLLER; Or. adb.e Nurse Is En'gged tge w. Jelliffe, Who J{lumnus of Harva'r,,d=",
+            "web_url": "https://www.nytimes.com/1954/03/14/archives/forjoyoemtller-or-adbe-nurse-is-engged-tge-w-jelliffe-who-jlumnus.html",
+            "snippet": ""
+        }
+    ],
+    "COST": [
+        {
+            "headline": "How a Yale Student\u2019s Rape Accusation Exposed Her to a Defamation Lawsuit",
+            "web_url": "https://www.nytimes.com/2023/09/17/us/yale-rape-case-defamation.html",
+            "snippet": "The woman\u2019s allegation led to the expulsion of Saifullah Khan, who was acquitted in a criminal trial. His lawsuit is now challenging these disciplinary hearings."
+        },
+        {
+            "headline": "Tech Fears Are Showing Up on Picket Lines",
+            "web_url": "https://www.nytimes.com/2023/09/16/business/dealbook/uaw-strike-tech-ai-unions.html",
+            "snippet": "What\u2019s being called the \u201csummer of strikes\u201d comes at a time when workers increasingly fear new technologies will threaten their jobs."
+        },
+        {
+            "headline": "The National Book Awards Longlist",
+            "web_url": "https://www.nytimes.com/2023/09/16/briefing/national-book-awards-longlist.html",
+            "snippet": "Is your next favorite book on it?"
+        },
+        {
+            "headline": "Coming Soon in New York: Cocktails, Steak and Hypocrisy",
+            "web_url": "https://www.nytimes.com/2023/09/16/opinion/un-sustainability-goals-poverty.html",
+            "snippet": "At the U.N., world leaders promised to work to end poverty, illiteracy and child marriage. So much for their promises."
+        },
+        {
+            "headline": "Montreal\u2019s Mayor Reclaims a Famous Road From Cars and Trucks",
+            "web_url": "https://www.nytimes.com/2023/09/16/world/canada/montreal-valerie-plante-cycling.html",
+            "snippet": "The closing of a road through Mount Royal Park is part of Val\u00e9rie Plante\u2019s ambitious project to get Montrealers on bikes."
+        }
+    ],
+    "PEP": [
+        {
+            "headline": "From \u2018America\u2019s Mayor\u2019 to Criminal Defendant: Giuliani\u2019s Long Tumble",
+            "web_url": "https://www.nytimes.com/2023/08/15/nyregion/rudy-giuliani-trump-indictment.html",
+            "snippet": "An indictment in the Georgia election conspiracy case marked perhaps the lowest point in the career of Rudolph W. Giuliani, who had staked his legacy on blind allegiance to the Trump administration."
+        },
+        {
+            "headline": "Tuesday Briefing",
+            "web_url": "https://www.nytimes.com/2023/08/15/briefing/tuesday-briefing.html",
+            "snippet": "Donald Trump\u2019s indictment on racketeering charges in Georgia."
+        },
+        {
+            "headline": "For Mayor Adams, Any Day Has the Makings of Flag Day",
+            "web_url": "https://www.nytimes.com/2023/08/05/nyregion/eric-adams-flags.html",
+            "snippet": "From Belgium to the Bahamas, Mayor Eric Adams has raised the flags of at least 31 countries since taking office, a civic gesture with political benefits."
+        },
+        {
+            "headline": "Favorite Drinks of All the Top Stars? He Has Them Memorized.",
+            "web_url": "https://www.nytimes.com/2023/08/01/nyregion/sardis-bartender-joe-petrsoric.html",
+            "snippet": "\u201cJoe\u201d Petrsoric, the longtime bartender at Broadway\u2019s go-to saloon, is finally retiring."
+        },
+        {
+            "headline": "A Facebook Internship That Led to a 650-Guest Wedding Celebration",
+            "web_url": "https://www.nytimes.com/2023/07/28/style/zabreen-khan-hamza-choudery-wedding.html",
+            "snippet": "In New York, Hamza Choudery and Zabreen Khan quickly bonded over a shared culture and cricket. This month they were married in Lahore."
+        }
+    ],
+    "CSCO": [
+        {
+            "headline": "Editorial Observer; An Online Financial Pioneer Acquires Bricks and Mortar",
+            "web_url": "https://www.nytimes.com/2002/01/10/opinion/editorial-observer-an-online-financial-pioneer-acquires-bricks-and-mortar.html",
+            "snippet": "Andres Martinez's Editorial Observer column on shift in strategy by E*Trade, online discount broker, to mimic Charles Schwab and others that have blended online business with branch offices (M)"
+        },
+        {
+            "headline": "A Barbour, a Baker, a Chinese Rainmaker",
+            "web_url": "https://www.nytimes.com/2001/07/22/business/a-barbour-a-baker-a-chinese-rainmaker.html",
+            "snippet": "Republican fund-raiser and heavyweight lobbyist Haley Barbour has signed up as a senior adviser to Milestone Merchant Partners, a newly formed private equity group"
+        },
+        {
+            "headline": "Private Sector; Knowing Where to Eat in New York",
+            "web_url": "https://www.nytimes.com/2001/07/22/business/private-sector-knowing-where-to-eat-in-new-york.html",
+            "snippet": "New York Stock Exchange chief executive, Richard A Grasso, entertains Michael Dell of Dell Computers and John Chambers of Cisco, who were respectively named chief executive of year this year and last year by Chief Executive magazine, and expresses..."
+        },
+        {
+            "headline": "CISCO SYSTEMS INC. (CSCO, NNM)",
+            "web_url": "https://www.nytimes.com/1997/02/05/business/cisco-systems-inc-csco-nnm.html",
+            "snippet": "Cisco Systems Inc reports fiscal 1996 second quarter net of $338.46 million, compared with $209.7 million in year-earlier period (S)"
+        },
+        {
+            "headline": "Cisco Systems Inc.(CSCO,NNM) reports earnings for 4th qtr to Jul 30",
+            "web_url": "https://www.nytimes.com/1995/08/18/business/cisco-systems-inc-csconnm-reports-earnings-for-4th-qtr-to-jul-30.html",
+            "snippet": ""
+        }
+    ],
+    "NFLX": [
+        {
+            "headline": "Technology Briefing",
+            "web_url": "https://www.nytimes.com/2002/05/08/technology/technology-briefing.html",
+            "snippet": "Technology Briefing"
+        },
+        {
+            "headline": "Interactive N.F.L. Is on Way",
+            "web_url": "https://www.nytimes.com/1998/05/10/sports/pro-football-notebook-interactive-nfl-is-on-way.html",
+            "snippet": "National Football League is working with St Joe Corp, real estate development company, to form several interactive entertainment centers that will include technology-based games, retail stores and restaurants, all located in atmosphere similar to ..."
+        },
+        {
+            "headline": "A Land Giant Is Stirring. Will Florida Ever Be the Same?",
+            "web_url": "https://www.nytimes.com/1998/04/12/business/a-land-giant-is-stirring-will-florida-ever-be-the-same.html",
+            "snippet": "Profile of St Joe Corp, which plans to build environment-friendly resort and residential communities as it develops its vast land holdings along Florida's panhandle; area, despite white-sand beaches, has lagged behind state's east and west coasts ..."
+        }
+    ],
+    "CMCSA": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "AMD": [
+        {
+            "headline": "Chip Makers Turn Cutthroat in Fight for Share of Federal Money",
+            "web_url": "https://www.nytimes.com/2023/02/23/business/economy/chip-makers-fight-federal-money.html",
+            "snippet": "Semiconductor companies, which united to get the CHIPS Act approved, have set off a lobbying frenzy as they argue for more cash than their competitors."
+        },
+        {
+            "headline": "Susan Wojcicki, YouTube\u2019s Longtime C.E.O., Says She Will Step Down",
+            "web_url": "https://www.nytimes.com/2023/02/16/technology/susan-wojcicki-youtube-ceo-step-down.html",
+            "snippet": "One of the most prominent women in Silicon Valley, she was an early Google employee and a key member of the inner circle of the company\u2019s founders."
+        },
+        {
+            "headline": "Inside Intel\u2019s Delays in Delivering a Crucial New Microprocessor",
+            "web_url": "https://www.nytimes.com/2023/01/10/technology/intel-sapphire-rapids-microprocessor.html",
+            "snippet": "The company grappled with missteps for years while developing a microprocessor code-named Sapphire Rapids. It comes out on Tuesday."
+        },
+        {
+            "headline": "The Best of CES 2023: What We\u2019re Looking Forward to Most",
+            "web_url": "https://www.nytimes.com/wirecutter/blog/best-ces-2023-products/",
+            "snippet": "Can you feel it in the air? No, it\u2019s not the familiar dank of our work-from-home setup but the crisp desert Las Vegas atmosphere\u2014or at least as much of it as can be experienced from poorly ventilated convention centers. For the first time since 20..."
+        },
+        {
+            "headline": "We Are Suddenly Taking On China and Russia at the Same Time",
+            "web_url": "https://www.nytimes.com/2022/10/12/opinion/china-semiconductors-exports.html",
+            "snippet": "A battle over computer chips could have more long-term global impact than the Ukraine war."
+        }
+    ],
+    "TMUS": [
+        {
+            "headline": "THE DANCE: TMU-NA, FROM ISRAEL",
+            "web_url": "https://www.nytimes.com/1987/04/04/arts/the-dance-tmu-na-from-israel.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Dissidents Charge Ford Misused Company Funds; Ford Denied Similar Charges; Entertainment Costs Cited; Henry Ford Faces New Fund Charges",
+            "web_url": "https://www.nytimes.com/1979/01/31/archives/dissidents-charge-ford-misused-company-funds-ford-denied-similar.html",
+            "snippet": "Dissident shareholders in Ford Motor Co charge Henry Ford 2d used $300,000 in Ford corp funds to entertain 32 state govs attending '77 Natl Govs Conf (S)"
+        },
+        {
+            "headline": "Weather Reports and Forecast",
+            "web_url": "https://www.nytimes.com/1977/07/29/archives/weather-reports-and-forecast-summary.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Lakers 99, Bucks 92",
+            "web_url": "https://www.nytimes.com/1975/10/29/archives/lakers-99-bucks-92.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Toru Simon Is Bride of T. F. Bratton",
+            "web_url": "https://www.nytimes.com/1969/06/16/archives/toru-simon-is-bride-of-t-f-bratton.html",
+            "snippet": ""
+        }
+    ],
+    "INTC": [
+        {
+            "headline": "Market Place; For some buyers, analysts see Intel as an opportunity.",
+            "web_url": "https://www.nytimes.com/1994/12/13/business/market-place-for-some-buyers-analysts-see-intel-as-an-opportunity.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Intel Corp.(INTC:NMS) reports earnings for Qtr to Apr 2",
+            "web_url": "https://www.nytimes.com/1994/04/19/business/intel-corp-intc-nms-reports-earnings-for-qtr-to-apr-2.html",
+            "snippet": ""
+        },
+        {
+            "headline": "A Sunday in Chapultepec Park Evokes All Mexico",
+            "web_url": "https://www.nytimes.com/1979/12/23/archives/a-sunday-in-chapultepec-park-evokes-all-mexico-a-sunday-tour-in.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Islanders Beat Whalers. 2 to 1",
+            "web_url": "https://www.nytimes.com/1979/10/27/archives/islanders-beat-whalers-2-to-1-arbour-sees-improvement-flames-7.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Strong Army Buildup By Vietnam Reported On Laos\u2010China Border",
+            "web_url": "https://www.nytimes.com/1979/09/07/archives/strong-army-buildup-by-vietnam-reported-on-laoschina-border-vietnam.html",
+            "snippet": "Yunnan Province, China, official Pan Jingxi says Vietnamese regular army troops have taken up fortified positions along Laotian border with China in last few months; emphasizes that there have been no shooting incidents; movement of Vietnamese for..."
+        }
+    ],
+    "INTU": [
+        {
+            "headline": "The Moods of Sliding Scales, From Ethereal to Animated",
+            "web_url": "https://www.nytimes.com/2005/02/08/arts/music/the-moods-of-sliding-scales-from-ethereal-to-animated.html",
+            "snippet": "Allan Kozinn reviews Kronos Quartet performance at Zankel Hall (S)"
+        },
+        {
+            "headline": "The Listings",
+            "web_url": "https://www.nytimes.com/2005/02/04/arts/movies/the-listings.html",
+            "snippet": "Theater    A selective listing by critics of The Times: New or noteworthy Broadway and Off Broadway shows this weekend. Approximate running times are in parentheses. * denotes a highly recommended show.  + means discounted tickets were available a..."
+        },
+        {
+            "headline": "Intuit Inc.(INTU,NNM) reports earnings for Qtr to Jan 31",
+            "web_url": "https://www.nytimes.com/1995/03/08/business/intuit-inc-intunnm-reports-earnings-for-qtr-to-jan-31.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Intuit Inc.(INTU,NNM) reports earnings for Qtr to Oct 31",
+            "web_url": "https://www.nytimes.com/1994/12/03/business/intuit-inc-intunnm-reports-earnings-for-qtr-to-oct-31.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Edison Bulb Turns 100; Research Flourishes",
+            "web_url": "https://www.nytimes.com/1979/02/06/archives/edison-bulb-turns-100-research-flourishes-16-billion-bulbs-sold.html",
+            "snippet": "Article on 100th anniversary of Thomas Edison's invention of elec light bulb; notes work now under way at GE, the co Edison created, to improve efficiency of incandescent light bulb and develop other kinds of lamps; drawing; illus (M)"
+        }
+    ],
+    "TXN": [
+        {
+            "headline": "Texaco Inc.(TX,N) reports earnings for Qtr to Mar 31",
+            "web_url": "https://www.nytimes.com/1995/04/25/business/texaco-inc-txn-reports-earnings-for-qtr-to-mar-31.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Texaco Inc.(TX,N) reports earnings for Qtr to Dec 31",
+            "web_url": "https://www.nytimes.com/1995/01/24/business/texaco-inc-txn-reports-earnings-for-qtr-to-dec-31.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Texaco Inc.(TX,N) reports earnings for Qtr to Sept 30",
+            "web_url": "https://www.nytimes.com/1994/10/26/business/texaco-inc-txn-reports-earnings-for-qtr-to-sept-30.html",
+            "snippet": ""
+        },
+        {
+            "headline": "TEXAS INSTRUMENTS INC. (TXN,N)",
+            "web_url": "https://www.nytimes.com/1994/04/22/business/company-reports-texas-instruments-inc-txnn.html",
+            "snippet": ""
+        },
+        {
+            "headline": "\u201cButch Cassidy\u2019",
+            "web_url": "https://www.nytimes.com/1978/11/12/archives/butch-cassidy-was-my-western-magic-is-my-hitchcock.html",
+            "snippet": "article on William Goldman, screenwriter of movie; illus (L)"
+        }
+    ],
+    "AMGN": [
+        {
+            "headline": "Amgen Inc.(AMGN,NNM) reports earnings for Qtr to Sept 30",
+            "web_url": "https://www.nytimes.com/1994/10/19/business/amgen-inc-amgnnnm-reports-earnings-for-qtr-to-sept-30.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Amgen Inc.(AMGN,NMS) reports earnings for Qtr to June 30",
+            "web_url": "https://www.nytimes.com/1994/07/20/business/amgen-inc-amgnnms-reports-earnings-for-qtr-to-june-30.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Amgen Inc.(AMGN,NMS) reports earnings for Qtr to Mar 31",
+            "web_url": "https://www.nytimes.com/1994/04/23/business/amgen-inc-amgnnms-reports-earnings-for-qtr-to-mar-31.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Uncovered Short Sales Rise to Big Board Record",
+            "web_url": "https://www.nytimes.com/1994/01/21/business/uncovered-short-sales-rise-to-big-board-record.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Closed End Funds",
+            "web_url": "https://www.nytimes.com/1978/06/21/archives/closed-end-funds.html",
+            "snippet": ""
+        }
+    ],
+    "AMAT": [
+        {
+            "headline": "Want an All-Access Pass to the Rio Olympics? Being Royalty Helps.",
+            "web_url": "https://www.nytimes.com/2016/08/21/sports/olympics/credentials-access-royalty-ioc.html",
+            "snippet": "Members of the \u2018Olympic Family\u2019 receive credentials that provide privileges such as special seating and private transportation."
+        },
+        {
+            "headline": "Meet the Highest-Paid C.E.O.s in 2015",
+            "web_url": "https://www.nytimes.com/interactive/2016/05/29/business/how-much-ceos-made-last-year.html",
+            "snippet": "Here are 200 of the highest-paid chief executives in American business."
+        },
+        {
+            "headline": "A Gay Couple\u2019s Exclusion Is an Occasion to Talk",
+            "web_url": "https://www.nytimes.com/2016/03/06/fashion/a-gay-couples-exclusion-is-an-occasion-to-talk.html",
+            "snippet": "Also, etiquette for store grazers; previewing a daughter\u2019s birthday plans; and walking back a tasteless comment."
+        },
+        {
+            "headline": "Pat Haden\u2019s Joyous Nights at U.S.C. Outweigh the Sleepless Ones",
+            "web_url": "https://www.nytimes.com/2015/09/19/sports/ncaafootball/a-heros-journey-for-pat-haden-at-usc-complete-with-setbacks.html",
+            "snippet": "After five years as athletic director, Haden is still trying to return U.S.C. to football greatness, but he has had other victories, including securing a long-term lease of L.A. Coliseum."
+        },
+        {
+            "headline": "Review: \u2018Sicario\u2019 Digs Into the Depths of Drug Cartel Violence",
+            "web_url": "https://www.nytimes.com/2015/09/18/movies/review-sicario-digs-into-the-depths-of-drug-cartel-violence.html",
+            "snippet": "Denis Villeneuve\u2019s new movie, which stars Emily Blunt and Josh Brolin, tries to paint a morally complicated picture instead of restaging a morality play."
+        }
+    ],
+    "HON": [
+        {
+            "headline": "Rhode Island Investigates \u2018Disturbing\u2019 Behavior on Official Trip",
+            "web_url": "https://www.nytimes.com/2023/06/14/us/rhode-island-philadelphia-trip.html",
+            "snippet": "A Philadelphia developer has accused one Rhode Island official of making racist and sexist remarks, and has said another declined to stop him."
+        },
+        {
+            "headline": "Kilauea Erupts in Hawaii With \u2018Incandescent\u2019 Glow",
+            "web_url": "https://www.nytimes.com/2023/06/07/science/kilauea-volcano-eruption-hawaii.html",
+            "snippet": "The volcano on the Big Island gave hints in the past month that an eruption might be imminent."
+        },
+        {
+            "headline": "Read the criminal complaint against Jack Teixeira",
+            "web_url": "https://www.nytimes.com/interactive/2023/04/14/us/teixeira-docs.html",
+            "snippet": "Mr. Teixeira, a 21-year-old member of the Massachusetts Air National Guard, is facing two counts related to the leaking of hundreds of classified documents on a gaming chat server."
+        },
+        {
+            "headline": "The Subversive Art of Phillis Wheatley",
+            "web_url": "https://www.nytimes.com/2023/03/07/books/review/the-odyssey-of-phillis-wheatley-david-waldstreicher.html",
+            "snippet": "A biography by David Waldstreicher offers a radical new vision of the life and work of colonial America\u2019s brilliant Black female poet."
+        },
+        {
+            "headline": "Read the Church Committee Open Letter",
+            "web_url": "https://www.nytimes.com/interactive/2023/02/16/us/church-jordan-letter.html",
+            "snippet": "Aides to the Select Committee to Study Governmental Operations With Respect to Intelligence Activities, created in 1975, wrote to Representative Jim Jordan, the Ohio Republican leading the new Judiciary Select Subcommittee on the Weaponization of ..."
+        }
+    ],
+    "QCOM": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "BKNG": [
+        {
+            "headline": "Uncovered Short Sales Are Up 0.4% on Big Board",
+            "web_url": "https://www.nytimes.com/1991/06/21/business/uncovered-short-sales-are-up-0.4-on-big-board.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Uncovered Short Sales Are Off 1.8% on Big Board",
+            "web_url": "https://www.nytimes.com/1991/05/22/business/uncovered-short-sales-are-off-1.8-on-big-board.html",
+            "snippet": ""
+        },
+        {
+            "headline": "N.A.S.D. Reports Slight Drop in Short Positions",
+            "web_url": "https://www.nytimes.com/1991/04/25/business/nasd-reports-slight-drop-in-short-positions.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Uncovered Short Sales Fall by 1.2% on Big Board",
+            "web_url": "https://www.nytimes.com/1991/04/20/business/uncovered-short-sales-fall-by-1.2-on-big-board.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Uncovered Short Sales Are Off 7.5% on Big Board",
+            "web_url": "https://www.nytimes.com/1991/03/22/business/uncovered-short-sales-are-off-7.5-on-big-board.html",
+            "snippet": ""
+        }
+    ],
+    "SBUX": [
+        {
+            "headline": "Tell Us: What Ails Starbucks?",
+            "web_url": "https://topics.blogs.nytimes.com/2008/07/02/blogs/02topics-tell-us-83.html",
+            "snippet": "Starbucks is profitable, but not as profitable as Wall Street would like."
+        },
+        {
+            "headline": "Starbucks to cut expenses after 28 percent drop in quarterly profit",
+            "web_url": "https://www.nytimes.com/2008/05/01/business/worldbusiness/01iht-sbux.1.12480992.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Starbucks shakes up  its entertainment unit",
+            "web_url": "https://www.nytimes.com/2008/04/25/business/worldbusiness/25iht-sbux.1.12340880.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Starbucks  projects drop in earnings for 2008",
+            "web_url": "https://www.nytimes.com/2008/04/24/business/worldbusiness/24iht-sbux.1.12301631.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Starbucks is ordered to pay $105 million in back tips",
+            "web_url": "https://www.nytimes.com/2008/03/21/business/worldbusiness/21iht-sbux.1.11310795.html",
+            "snippet": ""
+        }
+    ],
+    "ISRG": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "ADP": [
+        {
+            "headline": "The Job Market\u2019s Cues",
+            "web_url": "https://www.nytimes.com/2022/11/03/briefing/fed-interest-rates.html",
+            "snippet": "Two measurements tell two stories about the strength of U.S. employment."
+        },
+        {
+            "headline": "A Group Raised Money to Push Adams\u2019s Agenda. Much of It Went to One Man.",
+            "web_url": "https://www.nytimes.com/2022/11/02/nyregion/eric-adams-pac-cockfield.html",
+            "snippet": "A political action committee has given more money to its founder and his charter school than to candidates aligned with Mayor Eric Adams."
+        },
+        {
+            "headline": "Your Paycheck Next Year Will Be Affected by Inflation. Here\u2019s How.",
+            "web_url": "https://www.nytimes.com/2022/10/20/your-money/paycheck-inflation-2023.html",
+            "snippet": "If you get a raise, you may not end up in a higher tax bracket. But more of your income may be subject to Social Security taxes. And you\u2019ll probably pay more for health care."
+        },
+        {
+            "headline": "More Companies Offer Emergency Savings Option to Workers",
+            "web_url": "https://www.nytimes.com/2022/10/07/your-money/rainy-day-fund-work.html",
+            "snippet": "Such rainy-day funds may help attract employees. The plans are meant to support consumers who don\u2019t have a cash cushion for smaller, unexpected expenses."
+        },
+        {
+            "headline": "50/50 Chance",
+            "web_url": "https://www.nytimes.com/2022/08/25/crosswords/daily-puzzle-2022-08-26.html",
+            "snippet": "You can count on Robert Logan\u2019s Friday puzzle."
+        }
+    ],
+    "MDLZ": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "GILD": [
+        {
+            "headline": "\u2018Your Dad Is Better Than You\u2019: The N.B.A. Star Fueled by Family Legacy",
+            "web_url": "https://www.nytimes.com/2023/04/06/sports/basketball/domantas-sabonis-sacramento-kings.html",
+            "snippet": "The Sacramento Kings big man Domantas Sabonis plays with the bruising style of his father, Arvydas. It has made him an All-Star and helped the Kings break a 16-season playoff drought."
+        },
+        {
+            "headline": "What to Cook This Weekend",
+            "web_url": "https://www.nytimes.com/2023/03/31/dining/what-to-cook-this-weekend.html",
+            "snippet": "Centerpiece salads, Saltie\u2019s focaccia, cheesy leeks."
+        },
+        {
+            "headline": "When Superheros Need Leather, These \u2018Pop Artisans\u2019 Go to Work",
+            "web_url": "https://www.nytimes.com/2023/03/29/fashion/craftsmanship-leather-whitaker-malem-london.html",
+            "snippet": "Whitaker Malem has dressed everyone from Captain America to Megan Thee Stallion in custom-sculpted bodywear."
+        },
+        {
+            "headline": "4 People Accused of $13 Million in Pro Athlete Fraud Schemes",
+            "web_url": "https://www.nytimes.com/2023/03/23/sports/basketball/nba-wire-fraud.html",
+            "snippet": "Prosecutors said the people, including a former N.B.A. agent, took money from professional basketball players and spent it on luxury goods and home renovations."
+        },
+        {
+            "headline": "A Skeptic in Football Paradise",
+            "web_url": "https://www.nytimes.com/2023/02/11/sports/football/super-bowl-damar-hamlin.html",
+            "snippet": "The festivities leading up to the Super Bowl are full of fun and feel-good stories. But they obscure the harsh reality of the N.F.L.\u2019s dangerous game."
+        }
+    ],
+    "LRCX": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "REGN": [
+        {
+            "headline": "Highest-Paid Chiefs in 2014",
+            "web_url": "https://www.nytimes.com/interactive/2015/05/14/business/executive-compensation.html",
+            "snippet": "Here are 200 of the highest-paid chief executives in American business."
+        },
+        {
+            "headline": "The Pay at the Top",
+            "web_url": "https://www.nytimes.com/interactive/2014/06/08/business/the-pay-at-the-top.html",
+            "snippet": "200 of the highest-paid chief executives in American business."
+        },
+        {
+            "headline": "Beyond the Cubicle",
+            "web_url": "https://opinionator.blogs.nytimes.com/2011/07/18/beyond-the-cubicle/",
+            "snippet": "The nature of work has changed, so why hasn\u2019t workplace design changed with it?"
+        },
+        {
+            "headline": "Letters to the Editor",
+            "web_url": "https://www.nytimes.com/2000/07/20/technology/letters-to-the-editor.html",
+            "snippet": "Letters to the Editor"
+        },
+        {
+            "headline": "Information by Design",
+            "web_url": "https://www.nytimes.com/2000/07/20/technology/l-information-by-design-295760.html",
+            "snippet": "Louise Sandhaus letter comments on difference between computer graphic designers and so-called 'information architects' (July 13 article)"
+        }
+    ],
+    "ADI": [
+        {
+            "headline": "Review: From an Eco Art Village, a Dance About Community",
+            "web_url": "https://www.nytimes.com/2023/01/13/arts/dance/review-vertigo-dance-pardes.html",
+            "snippet": "Vertigo Dance Company\u2019s \u201cPardes\u201d is handsomely constructed if occasionally contrived."
+        },
+        {
+            "headline": "Haunted by Disaster, Volunteers Search for Survivors in Indonesia",
+            "web_url": "https://www.nytimes.com/2022/11/23/world/asia/indonesia-earthquake-rescue.html",
+            "snippet": "Amid aftershocks and landslides from Monday\u2019s deadly quake in West Java, bands of volunteer rescuers have put aside their daily lives to save others."
+        },
+        {
+            "headline": "Tie-Dye, From Stylish to Traditional",
+            "web_url": "https://www.nytimes.com/2022/10/27/fashion/craftsmanship-tiedye-adire-lagos-shibori-japan.html",
+            "snippet": "The textile technique has gotten celebrity attention again this season, but it\u2019s always been part of the arts scene in places like Nigeria and Japan."
+        },
+        {
+            "headline": "Adidas Cuts Ties With Kanye West",
+            "web_url": "https://www.nytimes.com/2022/10/25/business/dealbook/adidas-kanye-west-antisemitism-terminates-partnership.html",
+            "snippet": "The sportswear brand calculates it will incur a $246 million cost for its decision to terminate its partnership with the hip-hop mogul."
+        },
+        {
+            "headline": "Adidas Ends Partnership With Kanye West at a Considerable Cost",
+            "web_url": "https://www.nytimes.com/2022/10/25/business/adidas-kanye-west.html",
+            "snippet": "The German sportswear giant is the latest company to cut ties with Mr. West, now known as Ye, after his antisemitic remarks. Ending the partnership is expected to hurt company profits."
+        }
+    ],
+    "VRTX": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "MU": [
+        {
+            "headline": "Chefs and Bartenders Are Injecting New Life Into Taiwan\u2019s Oldest City",
+            "web_url": "https://www.nytimes.com/2023/01/27/t-magazine/tainan-taiwan-travel-guide.html",
+            "snippet": "Grilled beef tongue and black-sesame espresso martinis await in Tainan."
+        },
+        {
+            "headline": "\u2018New Gods: Yang Jian\u2019 Review: \u2018Cowboy Bebop\u2019 Without the Bop",
+            "web_url": "https://www.nytimes.com/2023/01/19/movies/new-gods-yang-jian-review.html",
+            "snippet": "In this animated fantasy, a former deity must confront his traumatic past if he hopes to find absolution and save the world."
+        },
+        {
+            "headline": "China\u2019s Population Falls, Heralding a Demographic Crisis",
+            "web_url": "https://www.nytimes.com/2023/01/16/business/china-birth-rate.html",
+            "snippet": "Deaths outnumbered births last year for the first time in six decades. Experts see major implications for China, its economy and the world."
+        },
+        {
+            "headline": "Review: In \u2018KPOP,\u2019 Korean Pop and Broadway Meet (Too) Cute",
+            "web_url": "https://www.nytimes.com/2022/11/27/theater/kpop-review-broadway.html",
+            "snippet": "The worldwide sensation and American-style musical theater form an awkward alliance onstage."
+        },
+        {
+            "headline": "American Track Athletes Showed Up. Did American Fans?",
+            "web_url": "https://www.nytimes.com/2022/07/18/sports/american-track-field.html",
+            "snippet": "Track and field officials were hoping that having the world championships on U.S. soil would help reignite American interest in the sport. But progress takes time."
+        }
+    ],
+    "PANW": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "MELI": [
+        {
+            "headline": "Hawaii\u2019s Next Wave of Natural Skin-Care Brands",
+            "web_url": "https://www.nytimes.com/2020/12/11/t-magazine/hawaii-skincare-beauty.html",
+            "snippet": "A new generation of beauty companies is rediscovering the islands\u2019 powerful native ingredients, from taro to ferns."
+        },
+        {
+            "headline": "For the Arts in Europe, Lockdown Feels Different This Time",
+            "web_url": "https://www.nytimes.com/2020/11/05/arts/second-lockdown-coronavirus-culture.html",
+            "snippet": "Many of the continent\u2019s museums, theaters, concert halls and bookshops have been forced to close again, and now, people\u2019s reactions have changed."
+        },
+        {
+            "headline": "Long Waits for U.K. Hospital Treatment as N.H.S. Fights Coronavirus",
+            "web_url": "https://www.nytimes.com/2020/07/18/world/europe/nhs-waiting-times-coronavirus.html",
+            "snippet": "With routine operations in England curtailed, some patients have experienced a significant deterioration."
+        },
+        {
+            "headline": "Review: Details Matter in Riccardo Muti\u2019s Precise \u2018Aida\u2019",
+            "web_url": "https://www.nytimes.com/2019/06/23/arts/music/aida-verdi-muti-chicago-review.html",
+            "snippet": "The conductor led the Chicago Symphony Orchestra and Chorus in a Verdi performance that was crystal clear, yet too cool to the touch."
+        },
+        {
+            "headline": "9 New Books We Recommend This Week",
+            "web_url": "https://www.nytimes.com/2019/06/20/books/review/9-new-books-we-recommend-this-week.html",
+            "snippet": "Suggested reading from critics and editors at The New York Times."
+        }
+    ],
+    "SNPS": [
+        {
+            "headline": "The Monoliths of Bratislava",
+            "web_url": "https://www.nytimes.com/2015/11/01/travel/slovakia-bratislava-tourism.html",
+            "snippet": "Some destinations lure visitors with evocative phrases suitable for travel brochures. The panelaks of Bratislava, Slovakia\u2019s capital on the Danube, will never make the list."
+        },
+        {
+            "headline": "Can the Union Hang On?",
+            "web_url": "https://douthat.blogs.nytimes.com/2015/05/11/can-the-union-hang-on/",
+            "snippet": "Why the United Kingdom might be more resilient than it seems."
+        },
+        {
+            "headline": "UK to face make-up or break-up choice",
+            "web_url": "https://www.nytimes.com/video/multimedia/100000003674392/uk-to-face-make-up-or-break-up-choice.html",
+            "snippet": "A shock surge in Thursday's UK election for David Cameron's Conservatives and the SNP's near clean sweep in Scotland revives the spectre of a possible British breakaway from Europe - and the break-up of Britain itself.  David Pollard reports."
+        },
+        {
+            "headline": "UK to face make-up or break-up choice",
+            "web_url": "https://www.nytimes.com/video/multimedia/100000003674391/uk-to-face-make-up-or-break-up-choice.html",
+            "snippet": "A shock surge in Thursday's UK election for David Cameron's Conservatives and the SNP's near clean sweep in Scotland revives the spectre of a possible British breakaway from Europe - and the break-up of Britain itself.  David Pollard reports."
+        },
+        {
+            "headline": "Nicola Sturgeon, Not Running in British Election, May Yet Prevail",
+            "web_url": "https://www.nytimes.com/2015/05/06/world/europe/nicola-sturgeon-snp-british-election.html",
+            "snippet": "The leader of the Scottish National Party could emerge from the general election as a national political force, and is eager to use her clout."
+        }
+    ],
+    "KLAC": [
+        {
+            "headline": "Stocks Close Little Changed",
+            "web_url": "https://www.nytimes.com/2001/10/08/business/stocks-close-little-changed.html",
+            "snippet": "Stocks fell modestly today as the uncertainty surrounding American military action in Afghanistan cast a pall on the domestic and global markets."
+        },
+        {
+            "headline": "Dolly Hall, John Kochman",
+            "web_url": "https://www.nytimes.com/2001/06/24/style/weddings-dolly-hall-john-kochman.html",
+            "snippet": ""
+        },
+        {
+            "headline": "KLA Instruments Corp.(KLAC,NNM) reports earnings for Qtr to Jun 30",
+            "web_url": "https://www.nytimes.com/1995/07/28/business/kla-instruments-corp-klacnnm-reports-earnings-for-qtr-to-jun-30.html",
+            "snippet": ""
+        },
+        {
+            "headline": "KLA Instruments Corp.(KLAC,NNM) reports earnings for Qtr to Dec 31",
+            "web_url": "https://www.nytimes.com/1995/01/16/business/kla-instruments-corp-klacnnm-reports-earnings-for-qtr-to-dec-31.html",
+            "snippet": ""
+        },
+        {
+            "headline": "KLA Instruments (KLAC,NNM) reports earnings for Qtr to Sept 30",
+            "web_url": "https://www.nytimes.com/1994/10/19/business/kla-instruments-klacnnm-reports-earnings-for-qtr-to-sept-30.html",
+            "snippet": ""
+        }
+    ],
+    "PYPL": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "CDNS": [
+        {
+            "headline": "Chocolate by the Book",
+            "web_url": "https://www.nytimes.com/2016/01/20/dining/chocolate-book-camille-becerra-dragon-bowl.html",
+            "snippet": "Also, a mac-and-cheese muffin, a floating thermometer, an elegant moonshine, the flavors of Africa, and dragon bowls."
+        },
+        {
+            "headline": "What Net Neutrality Rules Say",
+            "web_url": "https://www.nytimes.com/interactive/2015/03/12/technology/net-neutrality-rules-explained.html",
+            "snippet": "Excerpts from and analysis of rules and explanations released by the Federal Communications Commission regarding an Open Internet."
+        },
+        {
+            "headline": "For Nuncio Accused of Abuse, Dominicans Want Justice at Home, Not Abroad",
+            "web_url": "https://www.nytimes.com/2014/08/24/world/americas/whisked-away-vatican-ambassador-accused-of-sexual-abuse-of-minors.html",
+            "snippet": "A top Vatican ambassador, or nuncio, was accused of child sexual abuse in the Dominican Republic, but the Vatican has stirred an outcry because it helped him avoid prosecution there."
+        },
+        {
+            "headline": "Cloud Technology, in Translation",
+            "web_url": "https://bits.blogs.nytimes.com/2014/06/11/cloud-technology-in-translation/",
+            "snippet": "A glossary of key terms and phrases about cloud computing, including the distinction between private and public clouds, and what someone might mean by exclaiming \u201cw00t!\u201d"
+        },
+        {
+            "headline": "The Technology Behind the NYTimes.com Redesign",
+            "web_url": "https://open.blogs.nytimes.com/2014/01/08/the-technology-behind-the-nytimes-com-redesign/",
+            "snippet": "The NYTimes.com redesign is more than a fresh coat of paint \u2014 in addition to the new look, our article pages also rely on a new framework and codebase to run faster while making future changes easier."
+        }
+    ],
+    "CHTR": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "MAR": [
+        {
+            "headline": "The 2024 Executive Power Survey \u2013 Joe Biden",
+            "web_url": "https://www.nytimes.com/interactive/2023/us/politics/joseph-biden-executive-power.html",
+            "snippet": "We asked candidates about presidential authority. Here is what they said."
+        },
+        {
+            "headline": "The 2024 Executive Power Survey \u2013 Marianne Williamson",
+            "web_url": "https://www.nytimes.com/interactive/2023/us/politics/marianne-williamson-executive-power.html",
+            "snippet": "We asked candidates about presidential authority. Here is what they said."
+        },
+        {
+            "headline": "Your End-of-Summer Politics Quiz Is Here",
+            "web_url": "https://www.nytimes.com/interactive/2023/09/14/opinion/Fall-Politics-Quiz.html",
+            "snippet": "Test how closely you followed the news this summer."
+        },
+        {
+            "headline": "Judge Tells Trump to Use Secure Facility for Secret Evidence in Documents Case",
+            "web_url": "https://www.nytimes.com/2023/09/13/us/politics/cannon-trump-scif-secret-documents.html",
+            "snippet": "Judge Aileen Cannon\u2019s order did not specify where the former president could discuss the classified material but suggested it should not be Mar-a-Lago."
+        },
+        {
+            "headline": "Trump Has Been Privately Encouraging G.O.P. Lawmakers to Impeach Biden",
+            "web_url": "https://www.nytimes.com/2023/09/13/us/politics/trump-gop-biden-impeachment.html",
+            "snippet": "The former president has talked regularly with members of the House Freedom Caucus and other congressional Republicans who pushed for impeachment."
+        }
+    ],
+    "CSX": [
+        {
+            "headline": "For Rail Workers, Anger Persists Over Sick Leave",
+            "web_url": "https://www.nytimes.com/2022/10/28/business/railroad-workers-strike-threat.html",
+            "snippet": "A tentative new contract brokered by the White House offered employees one day off, leaving some dissatisfied and raising the risk of another impasse."
+        },
+        {
+            "headline": "Railroads\u2019 Strategy Thrilled Wall Street, but Not Customers and Workers",
+            "web_url": "https://www.nytimes.com/2022/09/19/business/freight-rail.html",
+            "snippet": "Freight railways pushed to streamline their operations and improve their profit margins. Critics say the approach left the system stretched thin."
+        },
+        {
+            "headline": "The Story Behind the Averted Rail Strike Is About Employers and Exploitation",
+            "web_url": "https://www.nytimes.com/2022/09/16/opinion/railroad-strike-labor-unions.html",
+            "snippet": "The single best thing President Biden and the Democratic Party could do for workers is to give them the tools and support to build power for themselves."
+        },
+        {
+            "headline": "Workers Say Railroads\u2019 Efficiency Push Became Too Much",
+            "web_url": "https://www.nytimes.com/2022/09/15/business/economy/railroad-workers-strike.html",
+            "snippet": "Employees say the inflexibility of scheduling upended their personal lives. The companies say they maintained service while using fewer resources."
+        },
+        {
+            "headline": "Biden Maneuvers to Try to Avoid Devastating Rail Strike",
+            "web_url": "https://www.nytimes.com/2022/09/14/us/politics/rail-strike-biden.html",
+            "snippet": "The Biden administration is considering executive action to try to avoid a shutdown of the nation\u2019s rail network that would harm the economy ahead of the midterm elections."
+        }
+    ],
+    "ABNB": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "MNST": [
+        {
+            "headline": "Getting Into The Act",
+            "web_url": "https://www.nytimes.com/1964/09/20/archives/getting-into-the-act.html",
+            "snippet": ""
+        },
+        {
+            "headline": "WORKS OF ART AT AUCTION; MR. J. ABNER HARPER'S PAINTINGS UNDER THE HAMMER. THE FIRST NIGHT OF THE PICTURE SALE AT CHICKERING HALL--A GOOD ATTENDANCE AND GOOD PRICES--THE PICTURESSOLD.",
+            "web_url": "https://www.nytimes.com/1880/03/13/archives/works-of-art-at-auction-mr-j-abner-harpers-paintings-under-the.html",
+            "snippet": ""
+        },
+        {
+            "headline": "CONCERNING DRAFTING, AGAIN.; Notes and Queries on the Great Question of the Day Anxious Inquiries as to the Draft Who are Exempt and Who are Not? The Law and Gospel on the Subject.",
+            "web_url": "https://www.nytimes.com/1862/08/06/archives/concerning-drafting-again-notes-and-queries-on-the-great-question.html",
+            "snippet": "Explanation of draft law and exemptions"
+        },
+        {
+            "headline": "The Government and the War A Word to Members of the Cabinet.",
+            "web_url": "https://www.nytimes.com/1861/11/22/archives/the-government-and-the-war-a-word-to-members-of-the-cabinet.html",
+            "snippet": ""
+        }
+    ],
+    "ORLY": [
+        {
+            "headline": "Hundreds of Flights in France Canceled as Air Traffic Control Workers Strike",
+            "web_url": "https://www.nytimes.com/2022/09/16/business/france-air-strike.html",
+            "snippet": "More than 400 flights departing from or arriving to Paris Charles de Gaulle and Paris Orly airports had been canceled, and about 200 had been delayed, by midday on Friday."
+        },
+        {
+            "headline": "Celebrities, Shows and Clothes: Everything You Need to Know About Fashion Week",
+            "web_url": "https://www.nytimes.com/2022/09/07/style/what-to-know-fashion-week-2022.html",
+            "snippet": "It\u2019s back and as big as ever."
+        },
+        {
+            "headline": "Jacques P\u00e9pin, in Search of Lost Cars and Cuisine",
+            "web_url": "https://www.nytimes.com/2022/08/05/business/jacques-pepin-french-cars-cuisine.html",
+            "snippet": "Have France\u2019s distinctive food and automobiles slipped in their cultural cachet? The celebrity chef and serial owner of French cars has opinions on the matter."
+        },
+        {
+            "headline": "\u2018I\u2019m Always Worrying\u2019: The Emotional Toll of Financial Stress",
+            "web_url": "https://www.nytimes.com/2022/07/25/well/mind/stress-money-relationships.html",
+            "snippet": "Experts share tips on how to feel empowered and manage stress as prices continue to rise."
+        },
+        {
+            "headline": "A Conductor\u2019s Career, Cut Short, Still Blazes on Recordings",
+            "web_url": "https://www.nytimes.com/2022/07/05/arts/music/guido-cantelli-conductor.html",
+            "snippet": "With an abundance of albums out on multiple labels, we have as complete a portrait of the Toscanini prot\u00e9g\u00e9 Guido Cantelli as we are ever likely to."
+        }
+    ],
+    "PDD": [
+        {
+            "headline": "Clowns, on the Trail and the Train",
+            "web_url": "https://www.nytimes.com/2005/05/29/nyregion/jersey-clowns-on-the-trail-and-the-train.html",
+            "snippet": "ONE clown encounter in a day constitutes a curiosity. Two clown encounters in a day constitute a newspaper column.    The day in question was May 14, a Saturday. A little after noon, I was headed south on Route 1 near West Windsor when I noticed a..."
+        },
+        {
+            "headline": "Testimony Before the 9/11 Commission",
+            "web_url": "https://www.nytimes.com/2004/04/14/politics/testimony-before-the-911-commission.html",
+            "snippet": "The following is the text of the April 14 hearings on law enforcement, counterterrorism and intelligence collection in the United States prior to Sept. 11, as transcribed by FDCH e-Media, Inc."
+        },
+        {
+            "headline": "Public Testimony Before 9/11 Panel",
+            "web_url": "https://www.nytimes.com/2004/03/24/politics/public-testimony-before-911-panel.html",
+            "snippet": "WASHINGTON, March 24 - Following is the the transcript of public testimony from four high-ranking officials from the Bush and Clinton administrations before the independent commission investigating the Sept. 11 attacks, as recorded by Federal News..."
+        },
+        {
+            "headline": "Public Testimony Before 9/11 Panel",
+            "web_url": "https://www.nytimes.com/2004/03/23/politics/public-testimony-before-911-panel.html",
+            "snippet": "WASHINGTON, March 23 - Following is the the transcript of public testimony from four high-ranking officials from the Bush and Clinton administrations before the independent commission investigating the Sept. 11 attacks, as recorded by Federal News..."
+        },
+        {
+            "headline": "When Autism Strikes",
+            "web_url": "https://www.nytimes.com/2002/12/08/nyregion/when-autism-strikes.html",
+            "snippet": "Article on autism and its sometimes devastating effects on families; focuses on Kristie Vaughan, 12, of Croton-on-Hudson, NY, who has severe autism; girl's mother, Astrid, describes her efforts to help Kristie, family's coping with disorder and ag..."
+        }
+    ],
+    "ASML": [
+        {
+            "headline": "Netherlands and Japan Said to Join U.S. in Curbing Chip Technology Sent to China",
+            "web_url": "https://www.nytimes.com/2023/01/28/business/economy/netherlands-japan-china-chips.html",
+            "snippet": "A new agreement is expected to expand the reach of U.S. technology restrictions on China issued last year."
+        },
+        {
+            "headline": "Activist Investors Are Circling Salesforce",
+            "web_url": "https://www.nytimes.com/2023/01/23/business/elliott-salesforce-benioff.html",
+            "snippet": "Elliott Management, the $55 billion hedge fund, has taken a big stake in the struggling tech giant, putting more pressure on its co-founder, Marc Benioff."
+        },
+        {
+            "headline": "Netherlands Considers Sending Patriot Missile System to Ukraine",
+            "web_url": "https://www.nytimes.com/2023/01/17/us/politics/netherlands-patriot-system-ukraine.html",
+            "snippet": "The Dutch prime minister, Mark Rutte, met in Washington with President Biden, who is trying to shore up alliances to help counter Russia and China."
+        },
+        {
+            "headline": "Biden Seeks to Resolve Trans-Atlantic Tensions During Macron Visit",
+            "web_url": "https://www.nytimes.com/2022/12/01/business/biden-macron-trade-eu-russia.html",
+            "snippet": "The president\u2019s \u201cMade in America\u201d plan has drawn accusations of protectionism from Europe as the United States tries to keep its Western allies aligned against Russia."
+        },
+        {
+            "headline": "NATO Nations Grow More Receptive to U.S. Pleas to Confront China",
+            "web_url": "https://www.nytimes.com/2022/11/30/world/europe/nato-china-biden.html",
+            "snippet": "After the pain of an energy crisis brought on by the Ukraine war, Europe is keen to reduce its strategic vulnerabilities to China, not to speak of other authoritarian governments."
+        }
+    ],
+    "NXPI": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "WDAY": [
+        {
+            "headline": "Classical Radio Plays Only To Sweet Tooths",
+            "web_url": "https://www.nytimes.com/1998/05/31/arts/classical-radio-plays-only-to-sweet-tooths.html",
+            "snippet": "David Schiff, composer, bemoans current fare on classical-radio music stations; says bland format has become norm on commercial and public stations alike, as station managers across country cater to audiences they think want continuous and homogen..."
+        },
+        {
+            "headline": "Peggy Lee at 67: Still in the Swingtime of Her Life",
+            "web_url": "https://www.nytimes.com/1988/01/31/arts/peggy-lee-at-67-still-in-the-swingtime-of-her-life.html",
+            "snippet": ""
+        },
+        {
+            "headline": "TEXT OF STATEMENT ON THE REACTION OF REAGAN",
+            "web_url": "https://www.nytimes.com/1984/02/11/world/text-of-statement-on-the-reaction-of-reagan.html",
+            "snippet": ""
+        },
+        {
+            "headline": "THE 1972 CAMPAIGN",
+            "web_url": "https://www.nytimes.com/1972/04/30/archives/black-voters-wooed-by-two-rivals-in-ohio.html",
+            "snippet": "McGovern and Humphrey strive hard in Ohio for votes of Negroes, who comprise only 9% of primary vote but who are concentrated and easily reached in urban areas; Jackson virtually ignoring Negro vote; Humphrey relies on long civil rights record and..."
+        },
+        {
+            "headline": "Text of the Supreme Court's Opinion in Libel Case Against The New York Times",
+            "web_url": "https://www.nytimes.com/1964/03/10/archives/text-of-the-supreme-courts-opinion-in-libel-case-against-the-new.html",
+            "snippet": "text of opinions"
+        }
+    ],
+    "CTAS": [
+        {
+            "headline": "What You Get for ... $2,500,000",
+            "web_url": "https://www.nytimes.com/2014/07/10/greathomesanddestinations/homes-for-sale-in-chicago-massachusetts-and-new-orleans.html",
+            "snippet": "This week\u2019s properties include a brick house in Chicago, a contemporary in Massachusetts and a converted church in New Orleans."
+        },
+        {
+            "headline": "The Gun Report: May 14, 2014",
+            "web_url": "https://nocera.blogs.nytimes.com/2014/05/14/the-gun-report-may-14-2014/",
+            "snippet": "A day in the life of armed America."
+        },
+        {
+            "headline": "When the Prescription Is Fresh Air",
+            "web_url": "https://www.nytimes.com/2014/02/02/realestate/when-the-prescription-is-fresh-air.html",
+            "snippet": "At the innovative 1912 Cherokee Apartments on the Upper East Side, many windows double as doors to the outside."
+        },
+        {
+            "headline": "The Gun Report: December 20, 2013",
+            "web_url": "https://nocera.blogs.nytimes.com/2013/12/20/the-gun-report-december-20-2013/",
+            "snippet": "A day in the life of armed America."
+        },
+        {
+            "headline": "The Gun Report: December 19, 2013",
+            "web_url": "https://nocera.blogs.nytimes.com/2013/12/19/the-gun-report-december-19-2013/",
+            "snippet": "A day in the life of armed America."
+        }
+    ],
+    "FTNT": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "LULU": [
+        {
+            "headline": "Henry Threadgill\u2019s Musical Spring Is Varied and Extreme. Like He Is.",
+            "web_url": "https://www.nytimes.com/2023/05/28/arts/music/henry-threadgill-composer.html",
+            "snippet": "The Pulitzer Prize-winning composer has released a memoir, \u201cEasily Slip Into Another World,\u201d and a new album, \u201cThe Other One.\u201d"
+        },
+        {
+            "headline": "\u2018The Wrath of Becky\u2019 Review: Teenage Riot",
+            "web_url": "https://www.nytimes.com/2023/05/25/movies/the-wrath-of-becky-review-teenage-riot.html",
+            "snippet": "The traumatized teen is back to finalize even more fascists in this comically bloody sequel."
+        },
+        {
+            "headline": "NADA Art Fair Takes Chelsea With High Energy",
+            "web_url": "https://www.nytimes.com/2023/05/19/arts/design/nada-art-fair.html",
+            "snippet": "The New Art Dealers Alliance offers the chance to scout for treasures from Vancouver to Tokyo without actually leaving Manhattan."
+        },
+        {
+            "headline": "Millions of People Watched Her Grow Up Online. What Did It Cost Her?",
+            "web_url": "https://www.nytimes.com/2023/05/11/opinion/kidfluencer-whitney-bjerken.html",
+            "snippet": "Whitney Bjerken has been a YouTuber for as long as she can remember. At 18, she\u2019s taking stock of her viral childhood."
+        },
+        {
+            "headline": "What\u2019s on Students\u2019 Minds: School Shootings, Trans Bias, Content Warnings and More",
+            "web_url": "https://www.nytimes.com/2023/05/06/opinion/letters/student-letters-competition.html",
+            "snippet": "It\u2019s our annual letter-writing competition. The envelope, please!"
+        }
+    ],
+    "MRVL": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "ADSK": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "KDP": [
+        {
+            "headline": "Hurt by Debt, Dynegy Says Bankruptcy Is a Possibility",
+            "web_url": "https://dealbook.nytimes.com/2011/03/09/dynegys-bankruptcy-fears/",
+            "snippet": "The energy producer, which has warned for months about its financial troubles, says bankruptcy could be the next step if it cannot reach an agreement with its creditors."
+        },
+        {
+            "headline": "Icahn Offers to Buy Dynegy for $665 Million",
+            "web_url": "https://dealbook.nytimes.com/2010/12/15/icahn-to-buy-dynegy-for-665-million-in-cash/",
+            "snippet": "After criticizing Blackstone\u2019s $5-a-share bid for Dynegy, Carl C. Icahn agrees to buy it for $5.50 a share in cash."
+        },
+        {
+            "headline": "Who Killed Zardasht Osman?",
+            "web_url": "https://atwar.blogs.nytimes.com/2010/10/06/who-killed-zardasht-osman/",
+            "snippet": "Many believe the young freelance journalist was killed for the scathing Web posts that he had written against the Kurdish authorities."
+        },
+        {
+            "headline": "Harrah\u2019s Stock Sale to Benefit Paulson, Mostly",
+            "web_url": "https://dealbook.nytimes.com/2010/08/16/harrahs-stock-sale-to-mostly-benefit-paulson/",
+            "snippet": "Harrah\u2019s Entertainment said in a regulatory filing that it plans to sell up to $710 million in common stock and have the shares listed on a major stock exchange again. But rather than primarily benefit the casino operator, it will instead mainly l..."
+        },
+        {
+            "headline": "Election Reaction From Around Iraq",
+            "web_url": "https://atwar.blogs.nytimes.com/2010/03/09/election-reaction-from-around-iraq/",
+            "snippet": "Speaking to Iraqis around the country about their choices, hopes and expectations."
+        }
+    ],
+    "ODFL": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "PCAR": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "PAYX": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "MCHP": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "CPRT": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "ON": [
+        {
+            "headline": "Police Continue Search for Suspect in Midtown Stabbings",
+            "web_url": "https://www.nytimes.com/1980/12/31/archives/police-continue-search-for-suspect-in-midtown-stabbings.html",
+            "snippet": ""
+        },
+        {
+            "headline": "DISCOVERIES; 1. Tintinnabulation 2. T-Shirts, Size 1/8 3. Watches of Yore 4. Wish I Were Here Learning Calligraphy",
+            "web_url": "https://www.nytimes.com/1980/12/31/archives/discoveries-1-tintinnabulation-2-tshirts-size-18-3-watches-of-yore.html",
+            "snippet": ""
+        },
+        {
+            "headline": "'Upstate' Spells Enchantment For Fresh Air Fund's Children",
+            "web_url": "https://www.nytimes.com/1980/12/31/archives/upstate-spells-enchantment-for-fresh-air-funds-children.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Paula Belknap, R.J. Reynolds Are Married",
+            "web_url": "https://www.nytimes.com/1980/12/31/archives/paula-belknap-rj-reynolds-are-married.html",
+            "snippet": ""
+        },
+        {
+            "headline": "FINANCE BRIEFS",
+            "web_url": "https://www.nytimes.com/1980/12/31/archives/finance-briefs.html",
+            "snippet": ""
+        }
+    ],
+    "MRNA": [
+        {
+            "headline": "What if There Was Never a Pandemic Again?",
+            "web_url": "https://www.nytimes.com/2023/05/28/opinion/last-pandemic.html",
+            "snippet": "Pandemics are not inevitable."
+        },
+        {
+            "headline": "A U.S. Experiment on Single-Payer Care Just Ended",
+            "web_url": "https://www.nytimes.com/2023/05/15/upshot/covid-tests-experiment-over.html",
+            "snippet": "The system for one disease, Covid, had similarities to \u201cMedicare for all.\u201d"
+        },
+        {
+            "headline": "Pancreatic Cancer Vaccine Shows Promise in Small Trial",
+            "web_url": "https://www.nytimes.com/2023/05/10/health/pancreatic-cancer-vaccine-mrna.html",
+            "snippet": "Using mRNA tailored to each patient\u2019s tumor, the vaccine may have staved off the return of one of the deadliest forms of cancer in half of those who received it."
+        },
+        {
+            "headline": "A Century-Old Vaccine Fails to Protect Against Covid",
+            "web_url": "https://www.nytimes.com/2023/04/26/health/bcg-vaccine-covid.html",
+            "snippet": "Early in the pandemic, scientists began testing an old TB vaccine against the coronavirus. But the trial enrolled fewer participants than expected as new Covid vaccines were introduced, and no discernible effect was found."
+        },
+        {
+            "headline": "Can Africa Get Close to Vaccine Independence? Here\u2019s What It Will Take.",
+            "web_url": "https://www.nytimes.com/2023/04/25/health/africa-vaccine-independence.html",
+            "snippet": "Leaders on the continent have vowed that if there is another pandemic, they won\u2019t be shut out of the vaccine market."
+        }
+    ],
+    "ROST": [
+        {
+            "headline": "The Ascension of Cauliflower ",
+            "web_url": "https://www.nytimes.com/2018/06/08/well/cauliflower-vegetables-rice-pasta-carbs-gluten.html",
+            "snippet": "Food companies are capitalizing on the low-carb, gluten-free trend by using vegetables like cauliflower to replace flour, rice and other simple carbs. "
+        },
+        {
+            "headline": "Montana Primary Election Results",
+            "web_url": "https://www.nytimes.com/interactive/2018/06/05/us/elections/results-montana-primary-elections.html",
+            "snippet": "See full results and maps from the Montana primaries."
+        },
+        {
+            "headline": "They Shared Drugs. Someone Died. Does That Make Them Killers?",
+            "web_url": "https://www.nytimes.com/2018/05/25/us/drug-overdose-prosecution-crime.html",
+            "snippet": "Prosecutors are increasingly treating overdose deaths as homicides, but they aren\u2019t just going after dealers. Friends, family and fellow users are going to prison."
+        },
+        {
+            "headline": "Transgender Workers Gain New Protection Under Court Ruling",
+            "web_url": "https://www.nytimes.com/2018/03/24/us/politics/transgender-title-vii.html",
+            "snippet": "Federal judges say that employers cannot legally discriminate against employees transitioning from one sex to the other."
+        },
+        {
+            "headline": "\u2018I Want Change to Come From This,\u2019 Louisiana Teacher Says of Arrest",
+            "web_url": "https://www.nytimes.com/2018/01/11/us/deyshia-hargrave-louisiana-teacher-rally.html",
+            "snippet": "Deyshia Hargrave was arrested at a school board meeting on Monday after speaking out against a renewed contract for the district\u2019s superintendent."
+        }
+    ],
+    "KHC": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "DXCM": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "AZN": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "EXC": [
+        {
+            "headline": "Transcript of Catherine Austin Fitts' Visit to the Drug Policy Forum",
+            "web_url": "https://www.nytimes.com/2002/02/11/readersopinions/transcript-of-catherine-austin-fitts-visit-to-the-drug.html",
+            "snippet": "On Tuesday, Feb. 5, the NYTimes.com's Drug Policy forum hosted author Catherine Austin Fitts. This discussion was part of the speaker series organized by forum participants."
+        },
+        {
+            "headline": "A Line of Scrimmage at $85, Technically Speaking",
+            "web_url": "https://www.nytimes.com/1999/09/18/your-money/IHT-a-line-of-scrimmage-at-85-technically-speaking.html",
+            "snippet": "FOR MUCH of the company's brief history, the battle between bulls and bears for control of DaimlerChrysler AG has been waged at $85 a share. Since first breaching that level in November, soon after the takeover, the stock remained above it until J..."
+        },
+        {
+            "headline": "Paid Notice: Deaths  KENNEDY, JOHN F. JR.",
+            "web_url": "https://www.nytimes.com/1999/07/22/classified/paid-notice-deaths-kennedy-john-f-jr.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Paid Notice: Deaths  KENNEDY, JOHN F. JR.",
+            "web_url": "https://www.nytimes.com/1999/07/21/classified/paid-notice-deaths-kennedy-john-f-jr.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Paid Notice: Deaths  KENNEDY, JOHN F., JR.",
+            "web_url": "https://www.nytimes.com/1999/07/20/classified/paid-notice-deaths-kennedy-john-f-jr.html",
+            "snippet": ""
+        }
+    ],
+    "AEP": [
+        {
+            "headline": "Tax-Exempt Groups Shield Political Gifts of Businesses",
+            "web_url": "https://www.nytimes.com/2012/07/08/us/politics/groups-shield-political-gifts-of-businesses.html",
+            "snippet": "Corporations are funding policy organizations that are free of the disclosure rules applying to parties, candidates and PACs."
+        },
+        {
+            "headline": "A.E.P. Backs Down on Coal Plant Retrofit",
+            "web_url": "https://green.blogs.nytimes.com/2012/05/30/aep-backs-down-on-coal-plant-retrofit/",
+            "snippet": "American Electric Power withdrew its application to refit Big Sandy, a plant in eastern Kentucky, with pollution controls."
+        },
+        {
+            "headline": "Natural Gas Is on a Roll, Executive Declares",
+            "web_url": "https://green.blogs.nytimes.com/2012/04/26/natural-gas-is-on-a-roll-executive-says/",
+            "snippet": "The effects of the shift from coal to natural gas will be felt for decades to come, a top executive says."
+        },
+        {
+            "headline": "Citi Names New Head of Global Commodities",
+            "web_url": "https://dealbook.nytimes.com/2010/02/11/citi-names-new-head-of-global-commodities/",
+            "snippet": "Citigroup said Wednesday that it has named Stuart Staley to replace the retiring head of global commodities, a unit that the third-largest U.S. bank aims to expand by 30 to 40 percent over the next three years, Reuters said."
+        },
+        {
+            "headline": "Winners and Losers of Cap-and-Trade",
+            "web_url": "https://green.blogs.nytimes.com/2009/11/02/winners-and-losers-of-cap-and-trade/",
+            "snippet": "A new study breaks down the potential impact of pending legislation on the fossil fuel industry and utilities."
+        }
+    ],
+    "IDXX": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "SGEN": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "CRWD": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "BIIB": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "BKR": [
+        {
+            "headline": "Best Illustrated Books of 2011",
+            "web_url": "https://www.nytimes.com/slideshow/2011/11/09/books/bkr-illo-ss.html",
+            "snippet": "Selected pages from the New York Times Best Illustrated Children\u2019s Books of 2011."
+        },
+        {
+            "headline": "Holiday Songs",
+            "web_url": "https://www.nytimes.com/slideshow/2011/11/09/books/bkr-bookshelf-holiday.html",
+            "snippet": "Children\u2019s books about holiday songs."
+        },
+        {
+            "headline": "Baker (Michael) Corp.(BKR,A) reports earnings for 3d qtr to Sept 30",
+            "web_url": "https://www.nytimes.com/1995/10/20/business/baker-michael-corp-bkra-reports-earnings-for-3d-qtr-to-sept-30.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Baker (Michael) (BKR,A) reports earnings for 2d qtr to Jun 30",
+            "web_url": "https://www.nytimes.com/1995/07/27/business/baker-michael-bkra-reports-earnings-for-2d-qtr-to-jun-30.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Baker (Michael) Corp.(BKR,A) reports earnings for Qtr to Mar 31",
+            "web_url": "https://www.nytimes.com/1995/04/27/business/baker-michael-corp-bkra-reports-earnings-for-qtr-to-mar-31.html",
+            "snippet": ""
+        }
+    ],
+    "TTD": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "CTSH": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "VRSK": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "CEG": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "CSGP": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "EA": [
+        {
+            "headline": "FTX\u2019s Collapse Casts a Pall on a Philanthropy Movement",
+            "web_url": "https://www.nytimes.com/2022/11/13/business/ftx-effective-altruism.html",
+            "snippet": "Sam Bankman-Fried, the chief executive of the embattled cryptocurrency exchange, was a proponent and donor of the \u201ceffective altruism\u201d movement."
+        },
+        {
+            "headline": "How a Scottish Moral Philosopher Got Elon Musk\u2019s Number",
+            "web_url": "https://www.nytimes.com/2022/10/08/business/effective-altruism-elon-musk.html",
+            "snippet": "In a few short years, effective altruism has become the giving philosophy for many Silicon Valley programmers, hedge funders and even tech billionaires."
+        },
+        {
+            "headline": "Kylian Mbapp\u00e9 Is Coming for It All",
+            "web_url": "https://www.nytimes.com/2022/09/06/sports/soccer/kylian-mbappe-champions-league-psg.html",
+            "snippet": "In a rare interview, the French soccer star discussed chasing the Champions League title, supplanting his teammate Lionel Messi as world player of the year and the possibility of a move to Real Madrid."
+        },
+        {
+            "headline": "In Sarah Nurse, a Found Voice for Hockey",
+            "web_url": "https://www.nytimes.com/2022/08/25/sports/hockey/sarah-nurse-world-championship.html",
+            "snippet": "Nurse, 27, is the first Black woman to win Olympic gold in women\u2019s hockey. Before she set the single-tournament points record in Beijing, she faced years of underestimation."
+        },
+        {
+            "headline": "Transcript: Ezra Klein Interviews William MacAskill",
+            "web_url": "https://www.nytimes.com/2022/08/09/podcasts/transcript-ezra-klein-interviews-will-macaskill.html",
+            "snippet": "A covnersation with philosopher William MacAskill."
+        }
+    ],
+    "GFS": [
+        {
+            "headline": "As Navy Heads to Haiti, Hurricane Matthew Threatens U.S. Coast",
+            "web_url": "https://dotearth.blogs.nytimes.com/2016/10/03/haiti-most-imperiled-as-hurricane-matthew-roars-north/",
+            "snippet": "Haiti, the country in the Caribbean least able to handle a big storm, girds for a powerful blow from Hurricane Matthew."
+        },
+        {
+            "headline": "Blizzard Questions, Including Why a European Weather Model (Usually) Excels at U.S. Forecasts",
+            "web_url": "https://dotearth.blogs.nytimes.com/2015/01/26/blizzard-questions-including-why-a-european-weather-model-excels-at-u-s-forecasts/",
+            "snippet": "Three questions about the great Northeast blizzard."
+        },
+        {
+            "headline": "From Katrina to Isaac \u2013 How Much Has Hurricane Forecasting Improved?",
+            "web_url": "https://dotearth.blogs.nytimes.com/2012/08/27/from-katrina-to-isaac-how-much-has-hurricane-track-forecasting-improved/",
+            "snippet": "A look at changes in hurricane track forecasting in the seven years between two hurricane threats to New Orleans."
+        },
+        {
+            "headline": "What We\u2019re Reading",
+            "web_url": "https://dinersjournal.blogs.nytimes.com/2012/02/07/what-were-reading-367/",
+            "snippet": "A collection of links from the reporters and editors of the Dining section."
+        },
+        {
+            "headline": "Switzerland pays price for isolationism",
+            "web_url": "https://www.nytimes.com/2008/12/01/business/worldbusiness/01iht-pain.4.18300965.html",
+            "snippet": ""
+        }
+    ],
+    "XEL": [
+        {
+            "headline": "Beyond OLED",
+            "web_url": "https://gadgetwise.blogs.nytimes.com/2009/01/08/beyond-oled/",
+            "snippet": "Sony shows a new flexible OLED display."
+        },
+        {
+            "headline": "Samsung Turns Thumbs Down on OLED",
+            "web_url": "https://gadgetwise.blogs.nytimes.com/2008/12/09/samsung-nixes-oled/",
+            "snippet": "Samsung says no to OLED TVs."
+        },
+        {
+            "headline": "TV images to dazzle the jaded",
+            "web_url": "https://www.nytimes.com/2008/05/01/technology/01iht-01pogue.12486049.html",
+            "snippet": ""
+        },
+        {
+            "headline": "TV Images to Dazzle the Jaded",
+            "web_url": "https://www.nytimes.com/2008/05/01/technology/personaltech/01pogue.html",
+            "snippet": "What has an 11-inch screen, offers breathtaking pictures and costs $2,500? It\u2019s the new TV from Sony."
+        },
+        {
+            "headline": "In Limited Release, a Small-Screen Newcomer With Big Promise and a High Price",
+            "web_url": "https://www.nytimes.com/2008/04/03/technology/personaltech/03sony.html",
+            "snippet": "The first television available United States to use organic light-emitting diodes, the Sony XEL-1 provides strong contrast, pure blacks and good detail in a screen that is thinner than the cord that powers it."
+        }
+    ],
+    "TEAM": [
+        {
+            "headline": "A Remote Road Trip",
+            "web_url": "https://www.nytimes.com/2023/09/17/briefing/mongolia-adventure-tourism.html",
+            "snippet": "Adventure tourism in places like Mongolia is becoming more popular."
+        },
+        {
+            "headline": "How Coco Gauff Embodies the Biggest Story in Sports",
+            "web_url": "https://www.nytimes.com/2023/09/17/sports/tennis/coco-gauff-women-sports-streeter.html",
+            "snippet": "As our Sports of The Times columnist moves to a new assignment, he reflects on a recurring theme from his tenure: the rise of female athletes."
+        },
+        {
+            "headline": "\u2018Live With Kelly and Mark\u2019: Till Death (or Cancellation) Do They Part",
+            "web_url": "https://www.nytimes.com/2023/09/17/arts/television/live-with-kelly-and-mark.html",
+            "snippet": "As co-hosts, Kelly Ripa and Mark Consuelos are tasked with enacting a version of their marriage on-camera. Where does that performance begin and end?"
+        },
+        {
+            "headline": "For America\u2019s \u2018Wild Girls,\u2019 the Natural World Meant Freedom",
+            "web_url": "https://www.nytimes.com/2023/09/17/books/review/wild-girls-tiya-miles.html",
+            "snippet": "In her new book, the historian Tiya Miles shows how formative outdoor experiences helped diverse women \u2014 from Harriet Tubman to Indigenous athletes \u2014 transcend prescribed social and gender roles."
+        },
+        {
+            "headline": "After Fatal Shooting of L.A. County Deputy, an Outpouring of Grief",
+            "web_url": "https://www.nytimes.com/2023/09/17/us/los-angeles-sheriff-deputy-shooting.html",
+            "snippet": "The officer was found unconscious in his patrol car in Palmdale, a city near Los Angeles. It was unclear whether there was more than one suspect or what the motive was."
+        }
+    ],
+    "FAST": [
+        {
+            "headline": "Maui Fire Death Toll Drops to 97 After Weeks of DNA Review",
+            "web_url": "https://www.nytimes.com/2023/09/15/us/maui-fire-death-toll-drops.html",
+            "snippet": "For more than three weeks, officials said 115 people had died in the wildfire that destroyed most of Lahaina. They announced on Friday that they had overstated the death toll."
+        },
+        {
+            "headline": "The Rise of Tech, According to Sandra Bullock Movies",
+            "web_url": "https://www.nytimes.com/interactive/2023/09/15/style/sandra-bullock-movies-technology.html",
+            "snippet": "A completely correct theory, in which one of our greatest movie stars reveals humanity\u2019s changing relationship to modernity."
+        },
+        {
+            "headline": "Wonking Out: Time, Memory and Inflation",
+            "web_url": "https://www.nytimes.com/2023/09/15/opinion/inflation-economy-polls.html",
+            "snippet": "One reason voters don\u2019t see the good news (yet)."
+        },
+        {
+            "headline": "An Essential Mitski Primer",
+            "web_url": "https://www.nytimes.com/2023/09/15/arts/music/amplifier-newsletter-mitski.html",
+            "snippet": "The singer-songwriter\u2019s seventh album, \u201cThe Land Is Inhospitable and So Are We,\u201d is out Friday."
+        },
+        {
+            "headline": "In Toronto, Films That Will Break Your Heart (and Heal It, Too)",
+            "web_url": "https://www.nytimes.com/2023/09/15/movies/toronto-international-film-festival-highlights.html",
+            "snippet": "The festival\u2019s highlights ranged from Agnieszka Holland\u2019s agonizing \u201cGreen Border,\u201d about the migrant crisis, to Richard Linklater\u2019s fizzy \u201cHit Man.\u201d"
+        }
+    ],
+    "GEHC": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "DDOG": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "FANG": [
+        {
+            "headline": "\u2018My Heart Was Racing\u2019: The Week 5 Winner of Our Summer Reading Contest",
+            "web_url": "https://www.nytimes.com/2023/07/25/learning/my-heart-was-racing-the-week-5-winner-of-our-summer-reading-contest.html",
+            "snippet": "Yugottam Koirala, 18, a student from Nepal, writes about what Himalayan glacier loss could mean for his country."
+        },
+        {
+            "headline": "For Young Arab Americans in Michigan, the Hookah Lounge Feels like Home",
+            "web_url": "https://www.nytimes.com/interactive/2023/07/20/style/hookah-dearborn-michigan.html",
+            "snippet": "A new generation of immigrants, refugees and their descendants is finding a sense of connection and community around the shisha pipe."
+        },
+        {
+            "headline": "In Guatemala, A Collective of Young Artists Finds Family Through Film",
+            "web_url": "https://www.nytimes.com/interactive/2023/07/13/style/guatemala-film-community.html",
+            "snippet": "The members of the Desobediencia Perfecta film production house did not see themselves reflected on screen. So they decided to create a space to tell stories of their own."
+        },
+        {
+            "headline": "Kiki or Bouba?",
+            "web_url": "https://www.nytimes.com/interactive/2023/06/28/arts/kiki-bouba-effect.html",
+            "snippet": "Nearly a century after a landmark psychology study was conducted, we revisit its findings \u2014 with your help!"
+        },
+        {
+            "headline": "Hamish Harding, an Explorer Who Knew No Bounds, Dies at 58",
+            "web_url": "https://www.nytimes.com/2023/06/22/us/hamish-harding-dead.html",
+            "snippet": "An aviation tycoon who pushed the limits, he went to the depths of the ocean and the blackness of space before his fateful dive to the Titanic on Sunday."
+        }
+    ],
+    "WBD": [
+        {
+            "headline": "VOHD\"A CL-O-gKRY WBD TO F. A. GROUT; Grey Court Alumna Married to Penn' State Graduate at Brick Presbyterian",
+            "web_url": "https://www.nytimes.com/1955/06/12/archives/vohda-clogkry-wbd-to-f-a-grout-grey-court-alumna-married-to-penn.html",
+            "snippet": ""
+        },
+        {
+            "headline": "JULI Si WIHTON EGAG. TO WBD; Snith Graduate Bethrothed to John I. R/yfolds 3d, Alumnus of Williams . , .-. ,",
+            "web_url": "https://www.nytimes.com/1955/02/06/archives/juli-si-wihton-egag-to-wbd-snith-graduate-bethrothed-to-john-i.html",
+            "snippet": ""
+        },
+        {
+            "headline": "MISS NARIOH' 'WBD TO H. L. BLANTO i; Hospital Chapel at ,'Newport Base,Scene of Marriage to I Marine Corps Lieutenant I I",
+            "web_url": "https://www.nytimes.com/1954/12/05/archives/miss-narioh-wbd-to-h-l-blanto-i-hospital-chapel-at-newport.html",
+            "snippet": ""
+        },
+        {
+            "headline": "MISS*M, R, LEIKEH ENGAGED TO WBD; i Corne{l' Alumna Is*Betrothed to Alan\" Laties, Graduate:, Student at Tufts: College 'i",
+            "web_url": "https://www.nytimes.com/1954/11/28/archives/missm-r-leikeh-engaged-to-wbd-i-cornel-alumna-isbetrothed-to-alan.html",
+            "snippet": ""
+        },
+        {
+            "headline": "MISS ANNR LOEB BltGA6BD TO WBD; Fine Arts Graduate' Will Be Bride of R. B, Ireland Jr., Lieutenant in Navy",
+            "web_url": "https://www.nytimes.com/1954/09/21/archives/miss-annr-loeb-bltga6bd-to-wbd-fine-arts-graduate-will-be-bride-of.html",
+            "snippet": ""
+        }
+    ],
+    "ANSS": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "DLTR": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "ALGN": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "ILMN": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "ZS": [
+        {
+            "headline": "Watches, Unusual Names and Social Responsibility",
+            "web_url": "https://www.nytimes.com/2021/09/26/fashion/watches-social-responsibility.html",
+            "snippet": "Brands like DecideAndAct and Triwa say they create timepieces with the planet in mind."
+        },
+        {
+            "headline": "Jay-Z\u2019s \u2018Black Album\u2019 Helped Me Beat the Odds. Will We Finally Even Them?",
+            "web_url": "https://www.nytimes.com/2021/08/09/arts/jay-z-black-album.html",
+            "snippet": "In 2003, our writer absorbed the rapper\u2019s message of individual triumph. But in a new moment of collective action, it\u2019s time to write new rules."
+        },
+        {
+            "headline": "Wild Guess",
+            "web_url": "https://www.nytimes.com/2021/07/20/crosswords/daily-puzzle-2021-07-21.html",
+            "snippet": "Alex Vratsanos shows some pizazz."
+        },
+        {
+            "headline": "Victoria\u2019s Secret Swaps Angels for \u2018What Women Want.\u2019 Will They Buy It?",
+            "web_url": "https://www.nytimes.com/2021/06/16/business/victorias-secret-collective-megan-rapinoe.html",
+            "snippet": "The embattled lingerie giant is attempting the most extreme brand turnaround in recent memory: an effort to redefine not just itself but also the very idea of what \u201csexy\u201d is."
+        },
+        {
+            "headline": "One Surreal Night With the Rap Veterans of Mount Westmore",
+            "web_url": "https://www.nytimes.com/2021/05/10/arts/music/mount-westmore-snoop-dogg-e40-ice-cube-too-short.html",
+            "snippet": "Snoop Dogg, Ice Cube, E-40 and Too Short \u2014 the old school titans in this new supergroup \u2014 made their live debut at an event featuring pop stars and TikTok influencers."
+        }
+    ],
+    "EBAY": [
+        {
+            "headline": "British Museum Director Resigns After Worker Fired for Theft",
+            "web_url": "https://www.nytimes.com/2023/08/25/arts/design/british-museum-director-resigns.html",
+            "snippet": "Hartwig Fischer, who had led the museum since 2016, said that the museum\u2019s failure to adequately respond to earlier warnings \u201cmust ultimately rest with the director.\u201d"
+        },
+        {
+            "headline": "Before Gran Turismo Inspired a Movie, It Drove a Teenager to Greatness",
+            "web_url": "https://www.nytimes.com/2023/08/25/movies/gran-turismo-game-jann-mardenborough.html",
+            "snippet": "The PlayStation video game\u2019s realistic cars and racetracks helped Jann Mardenborough find his calling as a professional driver."
+        },
+        {
+            "headline": "British Museum Was Warned Gems Were Being Sold on eBay, Emails Show",
+            "web_url": "https://www.nytimes.com/2023/08/22/arts/design/british-museum-thefts.html",
+            "snippet": "An antiquities dealer contacted the museum with concerns in 2021, but the institution swiftly closed the case, according to documents seen by The New York Times."
+        },
+        {
+            "headline": "Corporate America\u2019s Chief Critic, Carl Icahn, Gets His Comeuppance",
+            "web_url": "https://www.nytimes.com/2023/08/21/business/carl-icahn-nathan-anderson-short-selling.html",
+            "snippet": "After a short seller targeted Icahn Enterprises, the activist investor made changes. At 87, he insists he\u2019s not going anywhere and will refocus on rattling company cages."
+        },
+        {
+            "headline": "The Next Frontier for Corporate Benefits: Menopause",
+            "web_url": "https://www.nytimes.com/2023/08/19/business/corporate-benefits-menopause.html",
+            "snippet": "In an effort to attract and retain experienced women, some companies are adding menopause-specific care to their benefits packages."
+        }
+    ],
+    "WBA": [
+        {
+            "headline": "At 46, Holyfield refuses to be counted out",
+            "web_url": "https://www.nytimes.com/2008/12/17/sports/17iht-BOX.1.18753419.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Holyfield to meet Valuev for WBA title",
+            "web_url": "https://www.nytimes.com/2008/11/13/sports/13iht-boxing13.17803265.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Valuev outpoints Ruiz and regaines WBA heavyweight title",
+            "web_url": "https://www.nytimes.com/2008/08/31/sports/31iht-boxing31.15770210.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Philippine soldiers briefly halt war to root for Filipino boxing star",
+            "web_url": "https://www.nytimes.com/2008/03/16/sports/16iht-boxing16.11144430.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Samuel Peter stops Oleg Maskaev in 6th to take WBC heavyweight title",
+            "web_url": "https://www.nytimes.com/2008/03/09/sports/09iht-boxing9.10841747.html",
+            "snippet": ""
+        }
+    ],
+    "ZM": [
+        {
+            "headline": "Loews Weighs Atlantic City Casino",
+            "web_url": "https://www.nytimes.com/1977/05/28/archives/loews-weighs-atlantic-city-casino.html",
+            "snippet": "Loews Corp to conduct feasibility study to determine whether it should enter casino hotel business in Atlantic City (M)"
+        },
+        {
+            "headline": "Wide Range of Propositions to Confront Voters on Crowded Ballot in November",
+            "web_url": "https://www.nytimes.com/1974/10/06/archives/wide-range-of-propositions-to-confront-voters-on-crowded-ballot-in.html",
+            "snippet": "5 propositions will be on NJ ballot Nov 5; most important and controversial proposal concerns legalization of casino gambling (M)"
+        },
+        {
+            "headline": "William Rieder Weds Miss Susan M. Dughi",
+            "web_url": "https://www.nytimes.com/1971/07/18/archives/william-rieder-weds-miss-susan-zm-dughi.html",
+            "snippet": ""
+        },
+        {
+            "headline": "Po??r?o, ;; Jersey City Commissioner in/ 1927-49 Was Defeated by Kenny's Fusion Ticket",
+            "web_url": "https://www.nytimes.com/1958/03/24/archives/poro-jersey-city-commissioner-in-192749-was-defeated-by-kennys.html",
+            "snippet": "Potterton, Arth"
+        },
+        {
+            "headline": "ilio.--ugrh,zm",
+            "web_url": "https://www.nytimes.com/1955/09/28/archives/iliougrhzm.html",
+            "snippet": ""
+        }
+    ],
+    "SIRI": [
+        {
+            "headline": "In the Age of A.I., Tech\u2019s Little Guys Need Big Friends",
+            "web_url": "https://www.nytimes.com/2023/07/05/business/artificial-intelligence-power-data-centers.html",
+            "snippet": "Creating a new A.I. system requires lots of money and lots of computing power, which is controlled by the industry\u2019s giants."
+        },
+        {
+            "headline": "How Amazon Taught Alexa to Speak in an Irish Brogue",
+            "web_url": "https://www.nytimes.com/2023/07/01/technology/amazon-alexa-irish.html",
+            "snippet": "For Alexa to speak like a Dubliner, Amazon researchers had to crack a problem that\u2019s vexed data scientists for years: voice disentanglement."
+        },
+        {
+            "headline": "Embracing Their Strength (or Lack Thereof)",
+            "web_url": "https://www.nytimes.com/2023/06/23/sports/baseball/rays-guardians-home-runs.html",
+            "snippet": "Tampa Bay\u2019s outrageous season has been fueled by home runs. Cleveland barely hits any. Both teams follow the numbers and emphasize what they do well."
+        },
+        {
+            "headline": "Catch Some Waves",
+            "web_url": "https://www.nytimes.com/2023/06/21/crosswords/daily-puzzle-2023-06-22.html",
+            "snippet": "Michael Baker and Jeff Chen hear what you\u2019re saying."
+        },
+        {
+            "headline": "A First Try of Apple\u2019s $3,500 Vision Pro Headset",
+            "web_url": "https://www.nytimes.com/2023/06/06/technology/personaltech/apple-vision-pro-headset-try.html",
+            "snippet": "I briefly got my hands on Apple\u2019s new high-tech goggles, which impressed and creeped me out and raised a question: Why do we need these?"
+        }
+    ],
+    "ENPH": [
+        {
+            "message": "No current articles to display"
+        }
+    ],
+    "JD": [
+        {
+            "headline": "Beyonc\u00e9, Kendrick Lamar and Adele Lead 2023 Grammy Nominations",
+            "web_url": "https://www.nytimes.com/2022/11/15/arts/music/grammy-awards-nominees.html",
+            "snippet": "Brandi Carlile, Lizzo and Harry Styles, also near the top of the pack, will compete for the biggest awards at the 65th annual ceremony in February."
+        },
+        {
+            "headline": "Grammy Awards 2023: The Full List of Nominees",
+            "web_url": "https://www.nytimes.com/2022/11/15/arts/music/grammys-nominee-list-2023.html",
+            "snippet": "Artists, albums and songs competing for trophies at the 65th annual ceremony were announced on Tuesday. The show will take place on Feb. 5 at Crypto.com Arena in Los Angeles."
+        },
+        {
+            "headline": "J.D. Vance Gets What He Came For in Ohio, No Elegy Necessary",
+            "web_url": "https://www.nytimes.com/2022/11/09/us/politics/jd-vance-ohio-senate.html",
+            "snippet": "Many Republicans woke up on Wednesday to disappointment. But in Ohio, at least, was the picture of a gambit rewarded as the best-selling author won a Senate seat."
+        },
+        {
+            "headline": "J.D. Vance Elected Senator in Ohio",
+            "web_url": "https://www.nytimes.com/video/us/politics/100000008627815/jd-vance-wins-ohio.html",
+            "snippet": "J.D. Vance, the Republican author of \u201cHillbilly Elegy,\u201d defeated Representative Tim Ryan and had the endorsement of former President Donald J. Trump."
+        },
+        {
+            "headline": "Vance Elected Senator in Ohio; Once Anti-Trump, He Benefited From His Support",
+            "web_url": "https://www.nytimes.com/2022/11/08/us/politics/jd-vance-wins-ohio.html",
+            "snippet": "J.D. Vance, the Republican author of \u201cHillbilly Elegy,\u201d defeated Representative Tim Ryan. Mr. Vance was once a sharp critic of Donald J. Trump but refashioned himself."
+        }
+    ],
+    "LCID": [
+        {
+            "message": "No current articles to display"
+        }
+    ]
+}
