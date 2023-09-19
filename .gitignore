@@ -3,7 +3,6 @@
 
 
 # Ignore CSV_Data folder
-CSV_Data
 keys.py
 __pycache__
 stockdata

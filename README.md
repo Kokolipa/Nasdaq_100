@@ -129,6 +129,9 @@
 │   |   ├── js             
 │   |   |   ├── about.js
 │   |   |   ├── logic.js
+│   |   ├── CSV_Data            
+│   |   |   ├── nytimes_articles.json
+│   |   |   ├── response.json
 │   |   ├── about.html                                             
 │   |   ├── index.html                                              
 │   ├── NYTimes API                                     
