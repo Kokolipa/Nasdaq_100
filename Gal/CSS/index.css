@@ -1,0 +1,226 @@
+html {
+    background-color: #90c5e1;
+}
+
+body {
+    margin: 0;
+    padding: 0px 10px 10px 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+    background-color: #90c5e1;
+}
+
+
+header {
+    max-width: 100%;
+    padding: 5px;
+    background-color: #0B0544;
+    text-align: center;
+    border-radius: 18px;
+    color: rgb(0, 255, 102);
+}   
+header h1{
+    font-size: 58px;
+    margin-top: 5px;
+    padding: 25px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+.buttons {
+    font-size: 18px;
+}
+
+select[id="sector"] {
+    width: 8%;
+    text-align: left;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #041878;
+    font-size: 78%;
+    border-radius: 6px;
+    margin-left: 5px;
+    font-weight: bold;
+    align-self: left;
+}
+
+select[id="sector"]:hover,
+select[id="sector"]:focus {
+    background-color: #90c5e1;
+    color: white;
+}
+select[id="selDataset"] {
+    width: 8%;
+    text-align: left;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #041878;
+    font-size: 78%;
+    border-radius: 6px;
+    margin-left: 5px;
+    font-weight: bold;
+    align-self: left;
+    
+}
+
+select[id="selDataset"]:hover,
+select[id="selDataset"]:focus {
+    background-color: #90c5e1;
+    color: white;
+}
+.Dashboard .main {
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 16% 55% auto; 
+    column-gap: 10px;
+    width: 100%;
+    position: relative;
+  }
+
+#bar{
+    border-radius: 15px;
+}
+  .main #pie {
+    width: 100%; /* The rest of the available space will be used by the pie chart */
+    background-color: #041878;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 30;
+    margin-top: auto;
+  }
+
+
+
+/* ! Modifying the side bar */
+/* ! ###################### */
+.side-bar {
+    background-color: #0B0544;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    position:relative;
+}   
+
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+}
+#icon-info{
+    background-color: #041878;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 92%;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; /* Vertically center content */
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+
+#icon-dashboard{
+    background-color: #041878;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 92%;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; /* Vertically center content */
+    position: absolute;
+    top: 18.5%;
+    left: 2%
+}
+
+#icon-info img {
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    top: 14%;
+    left:6%;
+    margin-right: 10px; 
+}
+#icon-dashboard img{
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    top:14%;
+    left:6%;
+    margin-right: 10px; 
+}
+#icon-info a{
+    font-size: 130%;
+    margin-top: 12px;
+    position:absolute;
+    top:12%;
+    left: 35%;
+    color: white;
+}
+#icon-dashboard a{
+    font-size: 130%;
+    margin-top: 12px;
+    position:absolute;
+    top:10%;
+    left: 35%;
+    color: white;
+}
+
+#icon-info:hover, #icon-info:focus,
+#icon-dashboard:hover, #icon-dashboard:focus {
+    background-color: #90c5e1;
+    box-shadow: 1px 1px 1px #90c5e1;
+    color: black;
+}
+
+#breakdown{
+    background-color:#041878;
+    width: 92%;
+    height: 220px;
+    border-radius: 15px;
+    position:absolute;
+    top: 46%;
+    left: 5%;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 90%;
+}
+
+#breakdown-info{
+    position: absolute;
+    font-size: 115%;
+    left:5.7%;
+    top:36%;
+}
+
+#timeline {
+    grid-template-columns: 1fr;
+    background-color: #041878;
+    border-radius: 10px;
+    line-height: 37;    
+    margin-top: auto;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.candlestick-chart-container {
+    width: 100%;
+    height: 460px;
+}
+
+
+footer li{
+    list-style: none;
+    font-size: 15px;
+    color: black;
+}
+
+

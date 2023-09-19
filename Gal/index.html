@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasdaq-dashboard</title>
+    <!-- ##### LIBRARIES ###### -->
+     <!-- * Bootstracsn -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <!-- * D3 Library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+     <!-- * Plotly Library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+     <!-- * JavaScript Files -->
+
+     <!-- * CSS files -->
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <!-- * Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- * highcharts.js Library -->    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    
+    <!-- * Add JavaScript file ref below-->
+    <script src="js/logic.js"></script>
+     
+    <!-- * Custom CSS for styling the Plotly charts -->
+     <style>
+     .xy-axis-bg {
+        fill: rgba(4, 24, 120, 0.8);
+    }
+    
+    #timeline {
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: #041878;
+    }
+    #pie {
+        border-radius: 15px;
+        overflow:hidden;
+        background-color: #041878;
+    }
+     </style>
+
+</head>
+
+    <body>
+        <div id="container">
+            <center>
+                <header> 
+                    <center>
+                        <h1>Nasdaq 100  - Dashboard</h1>
+                        <p>Use the interactive charts below to explore the dataset</p>
+                    </center>
+                    <div class="buttons">
+                        <label for="stock"><b>Select sector:</b></label>
+                        <select id="sector" onchange="optionChanged(this.value)"></select>
+                        <label for="stock"><b>Select a Stock:</b></label>
+                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                    </div>
+                </header>
+            </center>
+            <!-- DASHBOARD -->
+            <center>
+                <div class="Dashboard">
+                    <div class="main">
+                        <!-- * Side Bar -->
+                        <div class="side-bar">
+                            <div class="icon-container">
+                                <div id="icon-info">
+                                    <a href="about.html">Information</a>
+                                        <img src="Icons/info.png"    type="png">
+                                    </a>
+                                </div>
+
+                                <div id="icon-dashboard">
+                                    <a href="index.html">Dashboard</a>
+                                        <img src="Icons/dashboard.png"    type="png">
+                                    </a>
+                                </div> 
+                                <h3 id="breakdown-info">About the stock:</h3>
+                            
+                                <div id="breakdown">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- * Bar chart -->
+                        <div id="bar">
+                        </div>
+                       
+                        <!-- * Vis 1 -->
+                        <div id="pie" class="vis-1">
+                        </div>
+
+                    </div>
+
+                    <div class="sub">
+                        <!-- * Timeline -->
+                        <div id= "timeline" class="candlestick-chart-container">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <footer>
+                    <li>&copy; 2023 - Monash Bootcamp - Group 2 </li>
+                </footer>
+            </center>
+
+        </div>
+
+
+    </body>
+</html>

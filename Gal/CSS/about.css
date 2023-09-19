@@ -1,0 +1,224 @@
+html {
+    background-color: #90c5e1;
+}
+
+body {
+    margin: 0;
+    padding: 0px 10px 10px 20px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+    background-color: #90c5e1;
+}
+
+
+header {
+    max-width: 100%;
+    padding: 15px;
+    background-color: #0B0544;
+    text-align: center;
+    border-radius: 18px;
+    color: rgb(0, 255, 102);
+    position: relative;
+}   
+header h1{
+    font-size: 58px;
+    margin-top: 0px;
+    padding: 50px;
+}
+
+header p {
+    font-size: 24px;
+    position: absolute;
+    top: 66%;
+    left: 40%;
+}
+#stock {
+    position: absolute;
+    left: 19%;
+    top: 82%;
+}
+
+select[id="selDataset"] {
+    width: 8%;
+    text-align: left;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #041878;
+    font-size: 90%;
+    border-radius: 6px;
+    margin-left: 5px;
+    font-weight: bold;
+    align-self: left;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+}
+
+select[id="selDataset"]:hover,
+select[id="selDataset"]:focus {
+    background-color: #90c5e1;
+    color: white;
+}
+/* Adding specicications to the main dashboard area - Seperating elements by column*/
+.Dashboard .main{
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    grid-template-columns:  16% repeat(1, 1fr);
+    column-gap: 10px;
+    width: 100%;
+}
+/* ! INFO PANNEL */
+/* ! Modifying the Main info pannel */
+.main .info {
+    background-color: #041878;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    height: 720px;
+}
+.info img{
+    position: absolute;
+    top:40%;
+    left: 1%;
+    width: 98%;
+    height: 420px;
+    border-radius: 15px;
+}
+
+#dataset {
+    position: absolute;
+    top:0%;
+    left:1.7%;
+    font-size: 25px;
+}
+
+#aboutDS {
+    background-color: #0B0544;
+    border-radius: 15px;
+    width: 98%;
+    height: 180px;
+    padding: 10px;
+    position: absolute;
+    top: 10.1%;
+    left:1%;
+}
+
+
+#links {
+    position: absolute;
+    top:30%;
+    left:1.7% ;
+    font-size: 25px;
+}
+#valuablelinks {
+    background-color: #0B0544;
+    border-radius: 15px;
+    width: 98%;
+    height: 420px;
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    left:1%;
+    background-color: rgba(4, 24, 120, 0.5);
+    color: white;
+}
+.white-text {
+    color: white;
+}
+
+/* ! Modifying the side bar */
+/* ! ###################### */
+.side-bar {
+    background-color: #0B0544;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    position:relative;
+}   
+
+.icon-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+}
+#icon-info{
+    background-color: #041878;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 92%;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; /* Vertically center content */
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+
+#icon-dashboard{
+    background-color: #041878;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 92%;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items:center; /* Vertically center content */
+    position: absolute;
+    top: 12%;
+    left: 2%
+}
+
+#icon-info img {
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    top: 14%;
+    left:6%;
+    margin-right: 10px; 
+}
+#icon-dashboard img{
+    position: absolute;
+    width: 25%;
+    height: 70%;
+    top:14%;
+    left:6%;
+    margin-right: 10px; 
+}
+#icon-info a{
+    font-size: 130%;
+    margin-top: 12px;
+    position:absolute;
+    top:12%;
+    left: 35%;
+    color: white;
+}
+#icon-dashboard a{
+    font-size: 130%;
+    margin-top: 12px;
+    position:absolute;
+    top:10%;
+    left: 35%;
+    color: white;
+}
+
+#icon-info:hover, #icon-info:focus,
+#icon-dashboard:hover, #icon-dashboard:focus {
+    background-color: #90c5e1;
+    box-shadow: 1px 1px 1px #90c5e1;
+    color: black;
+}
+
+/* ! FOOTER SPECIFICATIONS */
+footer li{
+    list-style: none;
+    font-size: 15px;
+    color: black;
+}
+
+
