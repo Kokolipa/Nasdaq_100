@@ -1,5 +1,5 @@
 # Nasdaq 100 - Interactive Dashboard
-## TLDR - Project Description - [![Presentation](https://img.shields.io/badge/Presentation-red?style=flat&logo=codereview)](https://docs.google.com/presentation/d/1TGgtrsVOVzgK9oL2wOtrSuxz2anh69CpDysVYDjF-t4/edit#slide=id.g23188ea39e2_0_61)
+## TLDR - Project Description - [![Leaflet-map](https://img.shields.io/badge/Dashboard-Presentation-black?style=flat&logo=atandt)](https://kokolipa.github.io/leaflet-challenge/) 
 * Creating an interactive dashboard to explore the Nasdaq 100 share index using API's to call the data, Python and SQLAlchemy to clean and transform the data as well loading the data to a SQLite database using SQLAlchemy's ORM.
 * Reading the data from "nasdaq.sqlite" to create a Flask API.
 * Rendering the Flask API using D3 library and JavaScript to feed the HTML elements with data.
