@@ -1,8 +1,6 @@
 // ! #########################################################################################################
 // ! Subsets Variables
 // ! #########################################################################################################
-let selectedDate;
-let selectedEndDate;
 let tradesData; 
 let metadata; 
 let breakdownInfo;
@@ -54,7 +52,8 @@ function modifyDashboard(selectedValue) {
       alert("Trade not found");
       candleContainer.style.display = 'none';
     }
-    else{
+    else if (selectedSectorData) {
+      let button = d3.select("setYears");
       // ! Plotting the Candlestick
       // ! #################################################################################################
       const dates = selectedSectorData.dates;
@@ -500,10 +499,8 @@ function modifyDashboard(selectedValue) {
   }
 }
 
-
 function optionChanged(selectedValue) {
     modifyDashboard(selectedValue);
-
 }
 
 
@@ -512,9 +509,8 @@ function optionChanged(selectedValue) {
 // ! #################################################################################################################################
 // ! USING D3 TO READ JSON DATA -- DATA FUNNEL
 // ! #################################################################################################################################
-// http://127.0.0.1:5000/ All is good!! 
-const path = "CSV_Data/response.json";
-d3.json(path).then(function(data) {
+const url = "http://127.0.0.1:5000";
+d3.json(url).then(function(data) {
     console.log(data);
 
     // * Extracting each subset to a variable
@@ -610,7 +606,6 @@ d3.json(path).then(function(data) {
     // ! Creating the breakdown information to display the information per stock =>
     // ! #################################################################################################################################
     breakdownInfo = [];
-
     for (i = 0; i < metadata.length; i++) {
 
       let meta  = metadata[i];
@@ -681,23 +676,6 @@ d3.json(path).then(function(data) {
       optionSect.text = sect;
       optionSect.value = sect;
       sectorElement.appendChild(optionSect);  
-    });
-
-    // Creating a default option for DATES and appending all the options
-    console.log(dateValues.filter(d=> d.slice(0, 4) ==="2023"))
-    dateSet = [... new Set(dateValues.map(d => d.slice(0, 4)))]
-    console.log("Date Set: " , dateSet);
-
-    const dateElement = document.getElementById("setYears");
-    const defaultDateElement = document.createElement("option");
-    defaultDateElement.text = "Select Year";
-    defaultDateElement.value = "";
-    dateElement.appendChild(defaultDateElement);
-    dateSet.forEach( year => {
-      const dateOption = document.createElement("option");
-      dateOption.text = year;
-      dateOption.value = year;
-      dateElement.appendChild(dateOption);
     });
 
     // modifyDashboard(symbols[0]);

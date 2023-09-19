@@ -33,27 +33,7 @@ header p {
 .buttons {
     font-size: 18px;
 }
-/* Style the label and input elements */
-#setYears {
-    width: 8%;
-    text-align: left;
-    padding: 10px;
-    margin-top: 5px;
-    background-color: #041878;
-    font-size: 90%;
-    border-radius: 6px;
-    margin-left: 5px;
-    font-weight: bold;
-    align-self: left;
-    color: white;
-}
 
-/* Style the label and input elements on hover and focus */
-#setYears:hover,
-#setYears:focus {
-    background-color: #90c5e1;
-    color: white;
-}
 select[id="sector"] {
     width: 8%;
     text-align: left;
