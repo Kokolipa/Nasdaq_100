@@ -39,6 +39,14 @@
 ### Dashboard Functionality: 
 ----------------------------------------------------------------
 #### Dashboard
+* The backend design was implemented with CSS and HTML. To insure the design flexability we've used position relative and absolute as well as sizing HTML elements with precentage as apposed to pixels.
+* To enable the modification of the dashboard based on a user selection we stored within the HTML element a function and called it in the JavaScript code.
+``` HTML
+<label for="stock"><b>Select sector:</b></label>
+<select id="sector" onchange="optionChanged(this.value)"></select>
+<label for="stock"><b>Select a Stock:</b></label>
+<select id="selDataset" onchange="optionChanged(this.value)"></select>
+```
 * The dashboard allow the selection from the the sector and stock drop buttons.
 * Initially, if sector is selected, the dashboard will provide:
     * A candlestick chart to which summurise trading period for the sector selected(inclusive, all time, based on the api GET call) and enable an overview of:
