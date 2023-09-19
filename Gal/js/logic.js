@@ -43,7 +43,9 @@ function modifyDashboard(selectedValue) {
     alert("Please select a trade");
     // Hide the chart container when the default option is selected
     candleContainer.style.display = 'none';
-
+    barContainer.style.display = 'none';
+    pieContainer.style.display = 'none';
+    breakdownContainer.display = 'none';
   } 
   else if (selectedValue in sectorTrades) {
     const selectedSectorData = sectorTrades[selectedValue];
@@ -51,6 +53,9 @@ function modifyDashboard(selectedValue) {
     if (!selectedSectorData) {
       alert("Trade not found");
       candleContainer.style.display = 'none';
+      barContainer.style.display = 'none';
+      pieContainer.style.display = 'none';
+      breakdownContainer.display = 'none';
     }
     else if (selectedSectorData) {
       let button = d3.select("setYears");
@@ -138,7 +143,6 @@ function modifyDashboard(selectedValue) {
       };
 
       Plotly.newPlot('timeline', data, layout);
-      candleContainer.style.display = 'block';
 
 
       // ! Plotting the Pie Chart info
@@ -216,7 +220,7 @@ function modifyDashboard(selectedValue) {
         title: {
             text: "Volume time series for " + selectedValue + " Sector",
             style:{
-                color: 'white',
+                color: 'white'
             }
         },
         series: [{
@@ -262,6 +266,7 @@ function modifyDashboard(selectedValue) {
       })
       candleContainer.style.display = 'block';
       barContainer.style.display = 'block';
+      pieContainer.style.display = 'block';
     }
   }
   else {
@@ -271,6 +276,9 @@ function modifyDashboard(selectedValue) {
       alert("Trade not found");
       // Hide the chart container when an invalid trade is selected
       candleContainer.style.display = 'none';
+      barContainer.style.display = 'none';
+      pieContainer.style.display = 'none';
+      breakdownContainer.display = 'none';
     } 
     else {
       // ! Plot the CandleStick chart
@@ -401,7 +409,7 @@ function modifyDashboard(selectedValue) {
             align: 'center',
             style: {
               color: 'white',
-              fontSize: '24px',
+              fontSize: '22px',
             }
         },
         tooltip: {
@@ -422,7 +430,7 @@ function modifyDashboard(selectedValue) {
                 dataLabels: {
                     enabled: true,
                     style: {
-                      fontSize: '10px',
+                      fontSize: '11px',
                     }
                 },
             }
@@ -495,6 +503,7 @@ function modifyDashboard(selectedValue) {
       candleContainer.style.display = 'block';
       barContainer.style.display = 'block';
       breakdownContainer.display = 'block';
+      pieContainer.style.display = 'block';
     }
   }
 }

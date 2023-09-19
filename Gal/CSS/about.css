@@ -141,8 +141,8 @@ select[id="selDataset"]:focus {
 
 .icon-container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center horizontally */
+    flex-direction: column; 
+    align-items: center;
 }
 #icon-info{
     background-color: #041878;
@@ -153,7 +153,7 @@ select[id="selDataset"]:focus {
     height: 70px;
     border-radius: 15px;
     display: flex;
-    align-items:center; /* Vertically center content */
+    align-items:center; 
     position: absolute;
     top: 0;
     left: 2%;
@@ -168,7 +168,7 @@ select[id="selDataset"]:focus {
     height: 70px;
     border-radius: 15px;
     display: flex;
-    align-items:center; /* Vertically center content */
+    align-items:center; 
     position: absolute;
     top: 12%;
     left: 2%
