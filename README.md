@@ -30,7 +30,8 @@
     * Creating an API using Flask and SQLAlchemy. Loading data from the "nasdaq.sqlite" and assigning and the data to each Flask route that was created. Two routes were created, one to retrive all the data in jsonified format(a list of dicrionaries with two keys: **matadata**, **trades**, and **tickers**). 
     * Calling the API created with JavaScript D3 library to render the data and feed the interactive visuals there were created with Plotly and HighChart. 
     * Retriving the data from the NYT to feed the HTML elements using JavaScript and D3. 
-<!-- TODO => Add the ERD Image HERE -->
+![ERD](https://github.com/Kokolipa/Nasdaq_100/blob/main/ETL/ERD.png)
+
 
 ### Dashboard Functionality: 
 ----------------------------------------------------------------
