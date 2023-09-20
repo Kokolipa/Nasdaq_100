@@ -1,3 +1,5 @@
+# Create list of tickers to use in Alpha Vantage API calls
+# (list extracted from NASDAQ_100.txt)
 nasdaq100 = ['AAPL',
 'MSFT',
 'AMZN',

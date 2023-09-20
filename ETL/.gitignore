@@ -107,6 +107,8 @@ AAPL_monthly.csv
 overview_nasdaq.csv
 data_test.csv
 WDAY_monthly.csv
+NASDAQ_Tickers.csv
+NASDAQ_100.txt
 =======
 keys.py
 >>>>>>> 7271217047a3c82e41da96f7157484bccf03c1f6
