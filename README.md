@@ -115,6 +115,9 @@ To enable the above functionality, the logic was separated into two funnels.
 │   |   ├── alpha_vantage_constants.py             
 │   |   ├── alpha_vantage_extract.ipynb             
 │   |   ├── alpha_vantage_load.ipynb             
+│   |   ├── alpha_vantage_transform.ipynb          
+│   |   ├── NASDAQ_Tickers.csv        # This CSV file contains the tickers names from the slickercharts website   
+│   |   ├── nasdaq_tickers_isolate.ipynb # This file retrieves the tickers from the slickercharts website        
 │   |   ├── alpha_vantage_transform.ipynb            
 │   |   ├── nasdaq.sqlite                   # This is the database             
 │   ├── flask_sqlite     
